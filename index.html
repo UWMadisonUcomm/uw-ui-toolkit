@@ -5,16 +5,16 @@ layout: default
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-4 col-sm-push-8 screenshots">
+    <div class="col-sm-8 main bold-first-graph">
+      {{ intro | markdownify }}
+    </div>
+    <div class="col-sm-4 sidebar">
       <p>
         <a class="btn btn-info">Downloads <span class="glyphicon glyphicon-arrow-down"</span></a>
       </p>
       <p>
         <a class="btn btn-info">Fork on Github <span class="glyphicon glyphicon-share-alt"></span></a>
       </p>
-    </div>
-    <div class="col-sm-8 col-sm-pull-4 readme">
-      {{ intro | markdownify }}
     </div>
   </div>
 </div>
