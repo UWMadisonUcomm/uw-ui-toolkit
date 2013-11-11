@@ -18,6 +18,6 @@ If you want to integrate the toolkit into your development environment, check ou
 
 ## A work in progress
 
-We’re releasing this project into the wild early. As we go, look for more examples, more layout and designs and more documentation.
+We’re releasing this project into the wild early. As we go, look for more examples, more layouts and designs, and more documentation.
 
 And please [let us know what you think](mailto:webteam@uc.wisc.edu).
