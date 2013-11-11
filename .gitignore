@@ -7,3 +7,4 @@ node_modules
 *.sublime-workspace
 .ruby-version
 _site
+.bundle
