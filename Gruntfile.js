@@ -6,8 +6,7 @@ module.exports = function(grunt){
       img: {
         files: [{src: 'src/img/*', dest: 'dist/img/', flatten: true, expand: true}]
       },
-      // Copy Bootstrap files from the vendor/bootstrap submodule
-      // Run this when the submodule is updated
+      // Copy Bootstrap LESS files to src/less/bootstrap/less/ and Fonts to dist/fonts/ (used manually)
       bootstrap: {
         files: [
           {src: 'node_modules/bootstrap/less/*.less',dest: 'src/less/bootstrap/less/', flatten: true, expand: true},
