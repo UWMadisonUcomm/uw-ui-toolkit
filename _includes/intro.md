@@ -1,5 +1,3 @@
-<h1>UW UI Toolkit <small>{% uw_ui_toolkit_version %}</small></h1>
-
 A web front-end toolkit based on [Bootstrap](http://getbootstrap.com) for designing and developing modern, mobile-first websites for the [University of Wisconsin-Madison](http://www.wisc.edu).
 
 ## What is it?
