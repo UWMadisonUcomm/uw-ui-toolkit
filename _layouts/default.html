@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{site.name}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Bootstrap -->
+    <link href="/dist/css/uw-ui-toolkit.css" rel="stylesheet" media="screen">
+    <link href="/doc-assets/select2/select2.css" rel="stylesheet" media="screen">
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    <script src="/doc-assets/select2/select2.min.js"></script>
+    <style type="text/css" media="screen">
+      body {
+        position: relative; /* For scrollyspy */
+        padding-top: 60px; /* Account for fixed navbar */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">UW UI Toolkit</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/kitchensink/">Getting started</a></li>
+            <li><a href="/documentation/">Documentation</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Examples<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Formal UW template</a></li>
+                <li><a href="#">Classic left sidebar</a></li>
+                <li><a href="#">Classic right sidebar</a></li>
+                <li><a href="#">Minimal UW navbar</a></li>
+                <li><a href="#">Kitchen sink web app UI</a></li>
+              </ul>
+            </li>
+            <li><a href="contact">Contact us</a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    {{ content }}
+    <script>
+      $('[data-active]').each(function(i,el) {
+        var active = new RegExp($(this).data('active'));
+        if (active.test(location.pathname))
+          $(this).addClass('active');
+      });
+      $("[data-toggle='tooltip']").tooltip();
+    </script>
+  </body>
+</html>

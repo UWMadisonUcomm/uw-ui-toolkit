@@ -1,0 +1,4 @@
+---
+name: UW Bootstrap
+permalink: pretty
+exclude: [".gitignore", "CNAME", "LICENSE", "Gruntfile.js", "package.json", "node_modules", "README.md", "src", "Gemfile*", "vendor"]

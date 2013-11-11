@@ -1,0 +1,9 @@
+.DS_Store
+.DS_Store?
+
+node_modules
+# Sublime
+*.sublime-project
+*.sublime-workspace
+.ruby-version
+_site
