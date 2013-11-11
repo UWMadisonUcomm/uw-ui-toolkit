@@ -10,6 +10,8 @@ This toolkit, developed by [University Communications](http://uc.wisc.edu), sits
 
 This project is for employees at the University of Wisconsin–Madison who are designing and developing websites for official offices, programs and projects affiliated with the university. 
 
+The templates and logo file provided here should be used in accordance with the University of Wisconsin–Madison [Branding and Visual Identity Guidelines](http://uc.wisc.edu/brand/). 
+
 ## A work in progress
 
 We’re releasing this project into the wild early. As we go, look for more examples, more layout and designs and more documentation.
