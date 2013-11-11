@@ -887,6 +887,7 @@ th.hidden-lg,td.hidden-lg{display:table-cell !important}
 @media (min-width:768px){.navbar{padding-left:15px}.navbar .navbar-collapse{background-color:transparent} .navbar .dropdown-menu .divider{margin:9px 0;background-color:#eee}}body>.container{margin-top:24px;margin-bottom:24px}
 .menu{margin-top:72px}.menu .nav li>a{text-align:right}
 .menu .nav li.divider{border-top:1px solid #C8C5BB;margin-top:.5em;padding-top:.5em}
-.screenshots{margin-top:72px}.screenshots .btn{width:100%;max-width:200px;margin-bottom:.5em;background-color:#2390b0;border-color:#1b6d85;font-size:1em;text-transform:uppercase}
+.screenshots{margin-top:72px}
+.btn.btn-info{width:auto;display:inline-block;margin-bottom:.5em;background-color:#2390b0;border-color:#1b6d85;font-size:1em;text-transform:uppercase}
 .readme h1:first-child+p{font-size:1.75em;font-weight:bold;margin-bottom:1em;color:#777}
 .readme a{font-weight:bold}
