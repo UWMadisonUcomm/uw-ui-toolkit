@@ -883,5 +883,5 @@ th.hidden-lg,td.hidden-lg{display:table-cell !important}
 .navbar .dropdown-menu .divider{margin:4px 0;background-color:transparent}
 .page-header{margin-top:0}.page-header h1{margin-top:0}
 @media (min-width:768px){.navbar{padding-left:15px}.navbar .navbar-collapse{background-color:transparent} .navbar .dropdown-menu .divider{margin:9px 0;background-color:#eee}}body>.container{margin-top:24px;margin-bottom:24px}
-.main a{font-weight:bold}
+[class*="col-"] p a,[class*="col-"] li a{font-weight:bold}
 .bold-first-graph p:first-of-type{font-size:1.75em;font-weight:bold;margin-bottom:1em;color:#777}
