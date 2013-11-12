@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="page-header">
+        <h1>UW UI Toolkit <small>{% uw_ui_toolkit_version %}</small></h1>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8 main {% if page.bold-first-graph %}bold-first-graph{% endif %}">
+      {{ content }}
+    </div>
+    <div class="col-sm-4 sidebar">
+      <p>
+        <a href="https://github.com/UWMadisonUcomm/uw-ui-toolkit/releases" class="btn btn-default btn-lg">Download <span class="glyphicon glyphicon-arrow-down"</span></a>
+      </p>
+      <p>
+        <a href="https://github.com/UWMadisonUcomm/uw-ui-toolkit" class="btn btn-default btn-lg"><i class="fa fa-github"></i> Fork on Github</a>
+      </p>
+    </div>
+  </div>
+</div>
