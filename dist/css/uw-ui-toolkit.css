@@ -882,7 +882,9 @@ th.hidden-lg,td.hidden-lg{display:table-cell !important}
 .navbar .navbar-collapse{background-color:#600}
 .navbar .dropdown-menu .divider{margin:4px 0;background-color:transparent}
 .page-header{margin-top:0}.page-header h1{margin-top:0}
+.navbar-fixed-top+.jumbotron{margin-top:50px}
+.navbar-fixed-top+.container,.navbar-fixed-top+.row{margin-top:72px}
 @media (min-width:768px){.navbar{padding-left:15px}.navbar .navbar-collapse{background-color:transparent} .navbar .dropdown-menu .divider{margin:9px 0;background-color:#eee}}body>.container{margin-top:24px;margin-bottom:24px}
-.jumbotron{background-color:#efe8d8}.jumbotron h1{font-size:45px;margin-top:0}
+.jumbotron{background-color:#efe8d8;background-image:url('/doc-assets/jumbo-pattern.png');border-bottom:1px solid #C8C8C8}.jumbotron h1{font-size:45px;margin-top:0}
 [class*="col-"] p a,[class*="col-"] li a{font-weight:bold}
 .uw-intro{font-size:1.5em;font-weight:bold;margin-bottom:1em;color:#777}
