@@ -11,7 +11,7 @@
 // Core variables and mixins
 // UW Bootstrap replaces the entire Boostrap variables.less with a copy that has UW-specific values defined
 // @import "../bootstrap/less/variables.less";
-@import "uw-variables.less";
+@import "uw-bootstrap-overrides/variables.less";
 
 @import "bootstrap/less/mixins.less";
 
@@ -61,11 +61,12 @@
 @import "bootstrap/less/utilities.less";
 @import "bootstrap/less/responsive-utilities.less";
 
-// UW navbar template
-@import "uw-navbar.less";
+// UW Bootstrap ovverides
+@import "uw-bootstrap-overrides/navbar.less";
+@import "uw-bootstrap-overrides/jumbotron.less";
 
 // UW-specific page layouts
-@import "uw-page-layouts.less";
+@import "uw-ui-toolkit/page-layouts.less";
 
-// UW CSS patterns
-@import "uw-css-patterns.less";
+// UW CSS components
+@import "uw-ui-toolkit/css-components.less";

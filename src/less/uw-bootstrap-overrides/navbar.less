@@ -25,6 +25,14 @@
   }
 }
 
+// If we're using a fixed navbar, add margin-top to adjacent sibling containers
+.navbar-fixed-top + .jumbotron {
+  margin-top: 50px;
+}
+.navbar-fixed-top + .container, .navbar-fixed-top + .row {
+  margin-top: 72px;
+}
+
 @media (min-width: @grid-float-breakpoint) {
   .navbar {
     padding-left: 15px;
