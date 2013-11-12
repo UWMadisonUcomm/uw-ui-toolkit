@@ -1,10 +1,8 @@
 ---
-layout: home
+layout: page
 slug: home
 bold-first-graph: true
 ---
-A web front-end toolkit based on [Bootstrap](http://getbootstrap.com) for designing and developing modern, mobile-first websites for the [University of Wisconsin-Madison](http://www.wisc.edu).
-
 ## What is it?
 
 This toolkit, developed by [University Communications](http://uc.wisc.edu), sits on top of [Bootstrap](http://getbootstrap.com), providing all its features and functionality, with UW-Madison’s look and feel layered on top.
