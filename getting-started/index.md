@@ -6,11 +6,28 @@ slug: getting-started
 
 ## Download the precompiled files ##
 
-<p>
-  <a href="/downloads/" class="btn btn-info">Download the compiled files <span class="glyphicon glyphicon-arrow-down"></span></a>
-</p>
+**1.** [Download the precompiled and minified CSS and Javascript files](#) for use in your website. Link the CSS and Javascript files in your HTML as follows:
 
-We will provide a download link here soon for downloading the precompiled and minified CSS and Javascript files for use in your website.
+```html
+<html>
+  <head>
+    <title>Your site title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="/css/uw-ui-toolkit.css" rel="stylesheet" media="screen">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  </head>
+  
+  ...
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+```
+
+**2.** Then visit the [documentation](/documentation/) for how to use the toolkit in your website.
 
 ## Developing with the Toolkit ##
 
