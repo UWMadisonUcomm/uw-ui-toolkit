@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Getting Started
+slug: getting-started
 ---
 
 ## Download the precompiled files ##
