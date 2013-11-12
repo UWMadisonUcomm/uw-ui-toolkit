@@ -1,7 +1,7 @@
 ---
 layout: page
 slug: home
-bold-first-graph: true
+bold-first-graph: false
 ---
 ## What is it?
 

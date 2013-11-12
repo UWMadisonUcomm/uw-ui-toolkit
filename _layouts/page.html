@@ -2,10 +2,10 @@
 layout: default
 ---
 {% if page.slug == 'home' %}
-<div class="toolkit-header" style="background-color:#efe8d8;padding:30px 15px 40px">
-  <div class="container bold-first-graph">
+<div class="row jumbotron">
+  <div class="container">
     <h1>UW UI Toolkit</h1>
-    <p>
+    <p class="uw-intro">
       A web front-end toolkit based on <a href="http://getbootstrap.com">Bootstrap</a> for designing and developing modern, mobile-first websites for the  <a href="http://wisc.edu">University of Wisconsin-Madison</a>.
     </p>
     <p>
@@ -26,7 +26,7 @@ layout: default
   </div>
   {% endif %}
   <div class="row">
-    <div class="col-md-12 main {% if page.bold-first-graph %}bold-first-graph{% endif %}">
+    <div class="col-md-12 main">
       {{ content }}
     </div>
   </div>
