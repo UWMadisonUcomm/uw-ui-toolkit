@@ -6,7 +6,12 @@ module.exports = function(grunt){
       img: {
         files: [{src: 'src/img/*', dest: 'dist/img/', flatten: true, expand: true}]
       },
-      // Copy Bootstrap LESS files to src/less/bootstrap/less/ and Fonts to dist/fonts/ (used manually)
+
+      /**
+       * copy:bootstrap is used to upgrade bootstrap in src/less/bootstrap, and should not be run routinely
+       * First, upgrade the tag ref for the bootstrap devDependency in package.json.
+       * Then, npm install, grunt copy:bootstrap.
+       */
       bootstrap: {
         files: [
           {src: 'node_modules/bootstrap/less/*.less',dest: 'src/less/bootstrap/', flatten: true, expand: true},
@@ -43,6 +48,5 @@ module.exports = function(grunt){
 
   // Register tasks
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('copy-bootstrap', ['copy:bootstrap']);
   grunt.registerTask('build', ['less','copy:img']);
 }
