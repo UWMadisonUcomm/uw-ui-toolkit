@@ -9,7 +9,7 @@ module.exports = function(grunt){
       // Copy Bootstrap LESS files to src/less/bootstrap/less/ and Fonts to dist/fonts/ (used manually)
       bootstrap: {
         files: [
-          {src: 'node_modules/bootstrap/less/*.less',dest: 'src/less/bootstrap/less/', flatten: true, expand: true},
+          {src: 'node_modules/bootstrap/less/*.less',dest: 'src/less/bootstrap/', flatten: true, expand: true},
           {src: 'node_modules/bootstrap/fonts/*', dest: 'dist/fonts/', flatten: true, expand: true}
         ]
       }
