@@ -22,7 +22,8 @@ module.exports = function(grunt){
           compress: true
         },
         files: {
-          'dist/css/uw-ui-toolkit.css': ["src/less/uw-ui-toolkit.less"]
+          'dist/css/uw-ui-toolkit.css': ["src/less/uw-ui-toolkit.less"],
+          'css/custom.css': ["src/less/custom.less"]
         }
       }
     },
