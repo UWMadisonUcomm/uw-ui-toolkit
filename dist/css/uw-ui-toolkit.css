@@ -885,6 +885,7 @@ th.hidden-lg,td.hidden-lg{display:table-cell !important}
 .navbar-fixed-top+.jumbotron{margin-top:50px}
 .navbar-fixed-top+.container,.navbar-fixed-top+.row{margin-top:72px}
 @media (min-width:768px){.navbar{padding-left:15px}.navbar .navbar-collapse{background-color:transparent} .navbar .dropdown-menu .divider{margin:9px 0;background-color:#eee}}body>.container{margin-top:24px;margin-bottom:24px}
-.jumbotron{background-color:#efe8d8;background-image:url('/doc-assets/jumbo-pattern.png');border-bottom:1px solid #C8C8C8;padding:15px}@media (min-width:768px){.jumbotron{padding:30px}}.jumbotron h1{font-size:24px;margin-top:0}@media (min-width:768px){.jumbotron h1{font-size:45px}}
+.jumbotron{background-color:#efe8d8;border-bottom:1px solid #C8C8C8;padding:15px}@media (min-width:768px){.jumbotron{padding:30px}}.jumbotron h1{font-size:24px;margin-top:0}@media (min-width:768px){.jumbotron h1{font-size:45px}}
 [class*="col-"] p a,[class*="col-"] li a{font-weight:bold}
 .uw-intro{font-size:1em;font-weight:bold;margin-bottom:1em;color:#777}@media (min-width:768px){.uw-intro{font-size:1.5em}}
+.uw-texture-tan-light{background:url('../img/noise.png') #efe8d8}
