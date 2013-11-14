@@ -23,7 +23,6 @@ module.exports = function(grunt){
     less: {
       all: {
         options: {
-          yiucompress: true,
           compress: true
         },
         files: {
