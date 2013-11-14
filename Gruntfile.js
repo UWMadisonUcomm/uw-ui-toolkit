@@ -21,14 +21,20 @@ module.exports = function(grunt){
     },
 
     less: {
-      all: {
+      toolkit: {
+        files: { 'dist/css/uw-ui-toolkit.css': ["src/less/uw-ui-toolkit.less"] }
+      },
+      min: {
         options: {
           compress: true
         },
-        files: {
-          'dist/css/uw-ui-toolkit.css': ["src/less/uw-ui-toolkit.less"],
-          'css/custom.css': ["src/less/custom.less"]
-        }
+        files: { 'dist/css/uw-ui-toolkit.min.css': ["src/less/uw-ui-toolkit.less"] }
+      },
+      custom: {
+        options: {
+          compress: true
+        },
+        files: { 'doc-assets/custom.min.css': ["src/less/custom.less"] }
       }
     },
 
