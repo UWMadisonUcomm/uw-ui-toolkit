@@ -29,12 +29,6 @@ module.exports = function(grunt){
           compress: true
         },
         files: { 'dist/css/uw-ui-toolkit.min.css': ["src/less/uw-ui-toolkit.less"] }
-      },
-      custom: {
-        options: {
-          compress: true
-        },
-        files: { 'doc-assets/custom.min.css': ["src/less/custom.less"] }
       }
     },
 
