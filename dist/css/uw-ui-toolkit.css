@@ -6098,14 +6098,15 @@ body > .container {
   margin-top: -22px;
 }
 .uw-header-classic .uw-header-inner .uw-header-branding #wordmark {
-  left: 95px;
+  left: 68px;
   position: absolute;
   top: -16px;
 }
 .uw-header-classic .uw-header-inner .uw-header-branding #site-title {
-  left: 95px;
+  left: 76px;
+  margin-top: 15px;
   position: absolute;
-  top: 9px;
+  top: 0;
 }
 .uw-header-classic .uw-header-inner .uw-header-branding #site-title a {
   color: #ffffff;
