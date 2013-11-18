@@ -1,0 +1,173 @@
+
+// UW Specific code, like uw-background classes, for example.
+
+#header {
+  background-color: #7C0D00;
+  .gradientBar(#9A0002, #7C0D00, @textColor: #fff, @textShadow: 0 -1px 0 rgba(0,0,0,.25));
+  color: #FFFFFF;
+  padding-top: 40px;
+
+  #header-inner {
+    background: none repeat scroll 0 0 #B70101;
+    height: 90px;
+    position:relative;
+    #site-branding {
+      padding: 0 20px;
+      #logo {
+        margin-top: -22px;
+      }
+      #wordmark {
+        left: 95px;
+        position: absolute;
+        top: -16px;
+      }
+      #site-title {
+        left: 95px;
+        position: absolute;
+        top: 9px;
+        a {
+          color: @white;
+          text-decoration: none;
+        }
+      }
+    }
+    #site-search {
+      text-align: right;
+      padding: 28px 20px 0;
+      #search-submit {
+        display:none;
+      }
+    }
+  }
+}
+
+// #site-navigation {
+//   background-color: #AC0809;
+//   .navbar {
+//     margin-bottom:0;
+//     height:25px;
+//     .nav-collapse {
+//       background-color: #F0E7D8;
+//     }
+//     .nav {
+//       text-transform: uppercase;
+//       font-size: @baseFontSize - 1; //13px
+//       > li {
+//         line-height:16px;
+//         > a {
+//           color: @redMedium;
+//           padding: 4px 15px;
+//           &:hover {
+//             .gradientBar(#FDFCFA, #D9C39E, @redMedium, none);
+//           }
+//         }
+//       }
+//       .dropdown-menu {
+//         background:#F0E7D8;
+//         border:0;
+//         .border-radius(0);
+//         margin:0;
+//         &:before,
+//         &:after {
+//           display:none;
+//         }
+//         a {
+//           color: @redMedium;
+//         }
+//         li {
+//           > a {
+//             &:hover {
+//               background: #D1BD98;
+//               text-shadow: none;
+//             }
+//           }
+//         }
+//       }
+//     }
+//     .navbar-inner {
+//       .border-radius(0);
+//       .gradientBar(#E7DBCB, #D9C39E);
+//     }
+//     .divider-vertical {
+//       height:25px;
+//     }
+//     .divider {
+//       border-color: #D1BD98;
+//     }
+//     .caret {
+//       margin-top:6px;
+//     }
+//   }
+// }
+
+// .navbar .nav > .active > a,
+// .navbar .nav > .active > a:hover,
+// .navbar .nav > .active > a:focus,
+// .navbar .nav li.dropdown.open > .dropdown-toggle,
+// .navbar .nav li.dropdown.active > .dropdown-toggle,
+// .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+//     // .gradientBar(#FDFCFA, #D9C39E, @redMedium, none);
+//     text-decoration: none;
+//     .box-shadow(none);
+// }
+
+
+
+// #content{
+//   background-color: @white;
+//   .gradientBar(@tanLight, @white, @textColor: @textColor, @textShadow: 0 -1px 0 rgba(0,0,0,.25));
+//   #content-inner {
+//     background-color: @white;
+//     min-height: 500px;
+//     border-bottom: 2px solid #B70101;
+//   }
+// }
+// #primary {
+//   padding:20px;
+// }
+// #secondary {
+//   padding:20px;
+// }
+
+// #footer {
+//   #footer-inner {
+//     text-align:center;
+//     background-color: #FFFFFF;
+//     border-top: 10px solid #666152;
+//     font-size: @fontSizeMini;
+//     padding-bottom: 20px;
+//     padding-top: 20px;
+//   }
+// }
+
+// // UW crest in the brand
+// .navbar .brand img.uw-crest {
+//   width:30px;
+//   margin-top:-19px;
+//   margin-bottom:-28px;
+//   margin-right:6px;
+// }
+
+// .uw-light-bg-gradient {
+//   .gradientBar(@tanLight, @white, @textColor: @textColor, @textShadow: 0 -1px 0 rgba(0,0,0,.25));
+//   background-color: @white;
+// }
+
+// .uw-light-bg {
+//   background-color: @tanLight;
+// }
+
+// //
+// // Responsive: Navbar
+// // --------------------------------------------------
+
+
+// // TABLETS AND BELOW
+// // -----------------
+// @media (max-width: @navbarCollapseWidth) {
+//   #site-navigation {
+//     .navbar {
+//       height:40px;
+//     }
+//   }
+// }
