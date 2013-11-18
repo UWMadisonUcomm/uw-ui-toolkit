@@ -34,6 +34,17 @@ module.exports = function(grunt){
         files: { 'dist/css/uw-ui-toolkit.min.css': ["src/less/uw-ui-toolkit.less"] }
       }
     },
+    uglify: {
+      all: {
+        options: {
+          beautify: false,
+          mangle: true
+        },
+        files: { 
+          "dist/js/uw-ui-toolkit.js": "src/js/bootstrap/*.js"
+        }
+      }
+    },    
 
     watch: {
       all: {
@@ -47,8 +58,9 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Register tasks
   grunt.registerTask('default', ['build']);
-  grunt.registerTask('build', ['less','copy:img']);
+  grunt.registerTask('build', ['less','copy:img','uglify']);
 }
