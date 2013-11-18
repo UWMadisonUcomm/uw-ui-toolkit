@@ -8,14 +8,17 @@ module.exports = function(grunt){
       },
 
       /**
-       * copy:bootstrap is used to upgrade bootstrap in src/less/bootstrap, and should not be run routinely
-       * First, upgrade the tag ref for the bootstrap devDependency in package.json.
+       * copy:bootstrap is used to upgrade bootstrap in
+       * src/less/bootstrap, and should not be run routinely
+       * First, upgrade the tag ref for the bootstrap 
+       * devDependency in package.json.
        * Then, npm install, grunt copy:bootstrap.
        */
       bootstrap: {
         files: [
           {src: 'node_modules/bootstrap/less/*.less',dest: 'src/less/bootstrap/', flatten: true, expand: true},
-          {src: 'node_modules/bootstrap/fonts/*', dest: 'dist/fonts/', flatten: true, expand: true}
+          {src: 'node_modules/bootstrap/fonts/*', dest: 'dist/fonts/', flatten: true, expand: true},
+          {src: 'node_modules/bootstrap/js/*.js', dest: 'src/js/bootstrap/', flatten: true, expand: true}
         ]
       }
     },
