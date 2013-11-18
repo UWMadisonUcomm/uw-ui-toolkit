@@ -6075,6 +6075,43 @@ body > .container {
     font-size: 45px;
   }
 }
+#header {
+  background-color: #7C0D00;
+  color: #FFFFFF;
+  padding-top: 40px;
+}
+#header #header-inner {
+  background: none repeat scroll 0 0 #B70101;
+  height: 90px;
+  position: relative;
+}
+#header #header-inner #site-branding {
+  padding: 0 20px;
+}
+#header #header-inner #site-branding #logo {
+  margin-top: -22px;
+}
+#header #header-inner #site-branding #wordmark {
+  left: 95px;
+  position: absolute;
+  top: -16px;
+}
+#header #header-inner #site-branding #site-title {
+  left: 95px;
+  position: absolute;
+  top: 9px;
+}
+#header #header-inner #site-branding #site-title a {
+  color: #ffffff;
+  text-decoration: none;
+}
+#header #header-inner #site-search {
+  text-align: right;
+  padding: 28px 20px 0;
+}
+#header #header-inner #site-search #search-submit {
+  display: none;
+}
 #footer {
   border-top: 1px solid #ccc;
   margin-top: 36px;
