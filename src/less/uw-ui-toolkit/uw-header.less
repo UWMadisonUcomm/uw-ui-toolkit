@@ -12,15 +12,15 @@
     position:relative;
     .uw-header-branding {
       padding:0 2px;
-      #logo {
+      .uw-header-logo {
         margin-top: -22px;
       }
-      #wordmark {
+      .uw-header-wordmark {
         left: 68px;
         position: absolute;
         top: -16px;
       }
-      #site-title {
+      .uw-header-site-title {
         left: 76px;
         margin-top: 15px;
         position: absolute;
@@ -29,6 +29,14 @@
           color: #ffffff;
           text-decoration: none;
         }
+      }
+      .uw-header-tagline {
+        color: @uw-cream;
+        font-size: @font-size-small ;
+        font-weight: bold;
+        position: absolute;
+        top: 36px;
+        left: 76px;        
       }
     }
     .uw-header-search {

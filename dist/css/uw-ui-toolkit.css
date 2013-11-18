@@ -6094,23 +6094,31 @@ body > .container {
 .uw-header-classic .uw-header-inner .uw-header-branding {
   padding: 0 2px;
 }
-.uw-header-classic .uw-header-inner .uw-header-branding #logo {
+.uw-header-classic .uw-header-inner .uw-header-branding .uw-header-logo {
   margin-top: -22px;
 }
-.uw-header-classic .uw-header-inner .uw-header-branding #wordmark {
+.uw-header-classic .uw-header-inner .uw-header-branding .uw-header-wordmark {
   left: 68px;
   position: absolute;
   top: -16px;
 }
-.uw-header-classic .uw-header-inner .uw-header-branding #site-title {
+.uw-header-classic .uw-header-inner .uw-header-branding .uw-header-site-title {
   left: 76px;
   margin-top: 15px;
   position: absolute;
   top: 0;
 }
-.uw-header-classic .uw-header-inner .uw-header-branding #site-title a {
+.uw-header-classic .uw-header-inner .uw-header-branding .uw-header-site-title a {
   color: #ffffff;
   text-decoration: none;
+}
+.uw-header-classic .uw-header-inner .uw-header-branding .uw-header-tagline {
+  color: #f7f5e8;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  top: 36px;
+  left: 76px;
 }
 .uw-header-classic .uw-header-inner .uw-header-search {
   text-align: right;
