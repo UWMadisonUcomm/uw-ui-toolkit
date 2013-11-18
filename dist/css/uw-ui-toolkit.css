@@ -6091,31 +6091,31 @@ body > .container {
   height: 90px;
   position: relative;
 }
-.uw-header-classic .uw-header-inner #site-branding {
-  padding: 0 20px;
+.uw-header-classic .uw-header-inner .uw-header-branding {
+  padding: 0 2px;
 }
-.uw-header-classic .uw-header-inner #site-branding #logo {
+.uw-header-classic .uw-header-inner .uw-header-branding #logo {
   margin-top: -22px;
 }
-.uw-header-classic .uw-header-inner #site-branding #wordmark {
+.uw-header-classic .uw-header-inner .uw-header-branding #wordmark {
   left: 95px;
   position: absolute;
   top: -16px;
 }
-.uw-header-classic .uw-header-inner #site-branding #site-title {
+.uw-header-classic .uw-header-inner .uw-header-branding #site-title {
   left: 95px;
   position: absolute;
   top: 9px;
 }
-.uw-header-classic .uw-header-inner #site-branding #site-title a {
+.uw-header-classic .uw-header-inner .uw-header-branding #site-title a {
   color: #ffffff;
   text-decoration: none;
 }
-.uw-header-classic .uw-header-inner #site-search {
+.uw-header-classic .uw-header-inner .uw-header-search {
   text-align: right;
-  padding: 28px 20px 0;
+  padding: 8px 8px 0;
 }
-.uw-header-classic .uw-header-inner #site-search #search-submit {
+.uw-header-classic .uw-header-inner .uw-header-search #search-submit {
   display: none;
 }
 #footer {
