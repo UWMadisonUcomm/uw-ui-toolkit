@@ -6077,6 +6077,12 @@ body > .container {
 }
 #header {
   background-color: #7C0D00;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#a60800), to(#6f0500));
+  background-image: -webkit-linear-gradient(top, #a60800 0%, #6f0500 100%);
+  background-image: -moz-linear-gradient(top, #a60800 0%, #6f0500 100%);
+  background-image: linear-gradient(to bottom, #a60800 0%, #6f0500 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa60800', endColorstr='#ff6f0500', GradientType=0);
   color: #FFFFFF;
   padding-top: 40px;
 }
