@@ -35,15 +35,25 @@ module.exports = function(grunt){
       }
     },
     uglify: {
-      all: {
+      toolkit: {
+        options: {
+          beautify: true,
+          mangle: false,
+          preserveComments: true
+        },
+        files: { 
+          "dist/js/uw-ui-toolkit.js": "src/js/bootstrap/*.js"
+        }
+      },
+      min: {
         options: {
           beautify: false,
           mangle: true
         },
         files: { 
-          "dist/js/uw-ui-toolkit.js": "src/js/bootstrap/*.js"
+          "dist/js/uw-ui-toolkit.min.js": "src/js/bootstrap/*.js"
         }
-      }
+      }      
     },    
 
     watch: {
