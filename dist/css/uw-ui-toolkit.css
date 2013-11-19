@@ -6203,6 +6203,26 @@ body > .container {
 .uw-header-classic .container .uw-header-search #search-submit {
   display: none;
 }
+.uw-content-classic {
+  background-color: #ffffff;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#efe8d8), to(#ffffff));
+  background-image: -webkit-linear-gradient(top, #efe8d8 0%, #ffffff 100%);
+  background-image: -moz-linear-gradient(top, #efe8d8 0%, #ffffff 100%);
+  background-image: linear-gradient(to bottom, #efe8d8 0%, #ffffff 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffefe8d8', endColorstr='#ffffffff', GradientType=0);
+}
+.uw-content-classic .container {
+  background-color: #ffffff;
+  min-height: 500px;
+  border-bottom: 2px solid #B70101;
+}
+.uw-content-classic #primary {
+  padding: 20px;
+}
+.uw-content-classic #secondary {
+  padding: 20px;
+}
 #footer {
   border-top: 1px solid #ccc;
   margin-top: 36px;
