@@ -6167,13 +6167,13 @@ body > .container {
   background: none repeat scroll 0 0 #B70101;
   height: 90px;
   position: relative;
+  padding: 0;
 }
 .uw-header-classic .container .uw-header-branding {
   padding: 0 2px;
 }
 .uw-header-classic .container .uw-header-branding .uw-header-logo {
   margin-top: -22px;
-  margin-left: -14px;
 }
 .uw-header-classic .container .uw-header-branding .uw-header-wordmark {
   left: 68px;
