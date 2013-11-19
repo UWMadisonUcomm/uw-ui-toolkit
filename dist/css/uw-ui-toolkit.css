@@ -6173,6 +6173,7 @@ body > .container {
 }
 .uw-header-classic .container .uw-header-branding .uw-header-logo {
   margin-top: -22px;
+  margin-left: -14px;
 }
 .uw-header-classic .container .uw-header-branding .uw-header-wordmark {
   left: 68px;
