@@ -6073,6 +6073,7 @@ body > .container {
   background-image: linear-gradient(to bottom, #e7dbcb 0%, #d9c39e 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe7dbcb', endColorstr='#ffd9c39e', GradientType=0);
+  padding: 0;
 }
 .navbar.uw-navbar-classic .container .nav-collapse {
   background-color: #F0E7D8;
@@ -6173,7 +6174,7 @@ body > .container {
   padding: 0 2px;
 }
 .uw-header-classic .container .uw-header-branding .uw-header-logo {
-  margin-top: -22px;
+  margin-top: -23px;
 }
 .uw-header-classic .container .uw-header-branding .uw-header-wordmark {
   left: 68px;
