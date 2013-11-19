@@ -6162,33 +6162,33 @@ body > .container {
   color: #FFFFFF;
   padding-top: 40px;
 }
-.uw-header-classic .uw-header-inner {
+.uw-header-classic .container {
   background: none repeat scroll 0 0 #B70101;
   height: 90px;
   position: relative;
 }
-.uw-header-classic .uw-header-inner .uw-header-branding {
+.uw-header-classic .container .uw-header-branding {
   padding: 0 2px;
 }
-.uw-header-classic .uw-header-inner .uw-header-branding .uw-header-logo {
+.uw-header-classic .container .uw-header-branding .uw-header-logo {
   margin-top: -22px;
 }
-.uw-header-classic .uw-header-inner .uw-header-branding .uw-header-wordmark {
+.uw-header-classic .container .uw-header-branding .uw-header-wordmark {
   left: 68px;
   position: absolute;
   top: -18px;
 }
-.uw-header-classic .uw-header-inner .uw-header-branding .uw-header-site-title {
+.uw-header-classic .container .uw-header-branding .uw-header-site-title {
   left: 76px;
   margin-top: 15px;
   position: absolute;
   top: 0;
 }
-.uw-header-classic .uw-header-inner .uw-header-branding .uw-header-site-title a {
+.uw-header-classic .container .uw-header-branding .uw-header-site-title a {
   color: #ffffff;
   text-decoration: none;
 }
-.uw-header-classic .uw-header-inner .uw-header-branding .uw-header-tagline {
+.uw-header-classic .container .uw-header-branding .uw-header-tagline {
   color: #f7f5e8;
   font-size: 12px;
   font-weight: bold;
@@ -6196,11 +6196,11 @@ body > .container {
   top: 36px;
   left: 76px;
 }
-.uw-header-classic .uw-header-inner .uw-header-search {
+.uw-header-classic .container .uw-header-search {
   text-align: right;
   padding: 8px 8px 0;
 }
-.uw-header-classic .uw-header-inner .uw-header-search #search-submit {
+.uw-header-classic .container .uw-header-search #search-submit {
   display: none;
 }
 #footer {
