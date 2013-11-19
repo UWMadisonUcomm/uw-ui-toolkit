@@ -6060,7 +6060,7 @@ body > .container {
 .navbar.uw-navbar-classic {
   background-color: #AC0809;
   border-radius: 0;
-  min-height: 40px;
+  min-height: 25px;
 }
 .navbar.uw-navbar-classic .container {
   margin-bottom: 0;
