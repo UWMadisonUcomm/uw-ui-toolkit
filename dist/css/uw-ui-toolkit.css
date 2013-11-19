@@ -6062,6 +6062,7 @@ body > .container {
   border: 0;
   border-radius: 0;
   min-height: 25px;
+  padding: 0;
 }
 .navbar.uw-navbar-classic .container {
   margin-bottom: 0;
