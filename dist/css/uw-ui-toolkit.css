@@ -6082,12 +6082,9 @@ body > .container {
   text-transform: uppercase;
   font-size: 13px;
 }
-.navbar.uw-navbar-classic .container .nav > li {
-  line-height: 16px;
-}
 .navbar.uw-navbar-classic .container .nav > li > a {
   color: #990000;
-  padding: 4px 15px;
+  padding: 3px 15px 2px;
 }
 .navbar.uw-navbar-classic .container .nav > li > a:hover {
   color: #990000;
@@ -6122,7 +6119,7 @@ body > .container {
   border-color: #D1BD98;
 }
 .navbar.uw-navbar-classic .container .caret {
-  margin-top: 6px;
+  margin-top: -2px;
 }
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
