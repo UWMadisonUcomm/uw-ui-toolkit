@@ -6065,18 +6065,15 @@ body > .container {
   padding: 0;
 }
 .navbar.uw-navbar-classic .container {
-  margin-bottom: 0;
-  height: 25px;
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#e7dbcb), to(#d9c39e));
   background-image: -webkit-linear-gradient(top, #e7dbcb 0%, #d9c39e 100%);
   background-image: -moz-linear-gradient(top, #e7dbcb 0%, #d9c39e 100%);
   background-image: linear-gradient(to bottom, #e7dbcb 0%, #d9c39e 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe7dbcb', endColorstr='#ffd9c39e', GradientType=0);
+  height: 25px;
+  margin-bottom: 0;
   padding: 0;
-}
-.navbar.uw-navbar-classic .container .nav-collapse {
-  background-color: #F0E7D8;
 }
 .navbar.uw-navbar-classic .container .nav {
   text-transform: uppercase;
@@ -6112,11 +6109,14 @@ body > .container {
   background: #D1BD98;
   text-shadow: none;
 }
-.navbar.uw-navbar-classic .container .divider-vertical {
-  height: 25px;
+.navbar.uw-navbar-classic .container .navbar-collapse {
+  padding-left: 0;
 }
 .navbar.uw-navbar-classic .container .divider {
   border-color: #D1BD98;
+}
+.navbar.uw-navbar-classic .container .divider-vertical {
+  height: 25px;
 }
 .navbar.uw-navbar-classic .container .caret {
   margin-top: -2px;

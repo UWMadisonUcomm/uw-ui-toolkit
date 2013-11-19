@@ -65,15 +65,11 @@ body > .container {
   padding:0;
   
   .container {
-    margin-bottom:0;
-    height:25px;
     #gradient > .vertical (#E7DBCB, #D9C39E);
+    height:25px;
+    margin-bottom:0;
     padding:0;
-  
-    .nav-collapse {
-      background-color: #F0E7D8;
-    }
-  
+ 
     .nav {
       text-transform: uppercase;
       font-size: @font-size-base - 1; //13px
@@ -109,13 +105,15 @@ body > .container {
           }
         }
       }
-    }
-
-    .divider-vertical {
-      height:25px;
+    }  
+    .navbar-collapse {
+      padding-left:0;
     }
     .divider {
       border-color: #D1BD98;
+    }  
+    .divider-vertical {
+      height:25px;
     }
     .caret {
       margin-top:-2px;
