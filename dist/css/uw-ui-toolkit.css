@@ -6232,13 +6232,6 @@ body > .container {
   padding-bottom: 20px;
   padding-top: 20px;
 }
-#footer {
-  border-top: 1px solid #ccc;
-  margin-top: 36px;
-  padding-top: 16px;
-  padding-bottom: 4px;
-  font-size: 12px;
-}
 [class*="col-"] p a,
 [class*="col-"] li a {
   font-weight: bold;
