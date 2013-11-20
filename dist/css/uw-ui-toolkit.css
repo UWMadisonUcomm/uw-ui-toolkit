@@ -6123,8 +6123,12 @@ body > .container {
   margin-top: -2px;
 }
 /* UW Utility */
+.uw-navbar-utility .nav > li.open > a {
+  background: transparent;
+}
 .uw-navbar-utility .nav > li > a {
   color: #FFF;
+  font-size: 11px;
 }
 .uw-navbar-utility .nav > li > a:hover {
   background: transparent;

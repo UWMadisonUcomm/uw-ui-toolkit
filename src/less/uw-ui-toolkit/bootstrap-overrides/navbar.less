@@ -126,8 +126,12 @@ body > .container {
 .uw-navbar-utility {
   .nav {
     > li {
+      &.open > a {
+        background: transparent;
+      }
       > a {
         color: #FFF;
+        font-size: @font-size-base - 3; // 11px;
         &:hover {
           background: transparent;
           text-decoration:underline;
