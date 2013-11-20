@@ -6122,6 +6122,72 @@ body > .container {
 .uw-navbar-classic .navbar .container .caret {
   margin-top: -2px;
 }
+/* UW Utility */
+.uw-navbar-utility .navbar {
+  background-color: #AC0809;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  min-height: 25px;
+  padding: 0;
+}
+.uw-navbar-utility .navbar .container {
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#e7dbcb), to(#d9c39e));
+  background-image: -webkit-linear-gradient(top, #e7dbcb 0%, #d9c39e 100%);
+  background-image: -moz-linear-gradient(top, #e7dbcb 0%, #d9c39e 100%);
+  background-image: linear-gradient(to bottom, #e7dbcb 0%, #d9c39e 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe7dbcb', endColorstr='#ffd9c39e', GradientType=0);
+  height: 25px;
+  margin-bottom: 0;
+  padding: 0;
+}
+.uw-navbar-utility .navbar .container .nav {
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.uw-navbar-utility .navbar .container .nav > li > a {
+  color: #990000;
+  padding: 3px 15px 2px;
+}
+.uw-navbar-utility .navbar .container .nav > li > a:hover {
+  color: #990000;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#fdfcfa), to(#d9c39e));
+  background-image: -webkit-linear-gradient(top, #fdfcfa 0%, #d9c39e 100%);
+  background-image: -moz-linear-gradient(top, #fdfcfa 0%, #d9c39e 100%);
+  background-image: linear-gradient(to bottom, #fdfcfa 0%, #d9c39e 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffdfcfa', endColorstr='#ffd9c39e', GradientType=0);
+}
+.uw-navbar-utility .navbar .container .nav .dropdown-menu {
+  background: #F0E7D8;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
+}
+.uw-navbar-utility .navbar .container .nav .dropdown-menu:before,
+.uw-navbar-utility .navbar .container .nav .dropdown-menu:after {
+  display: none;
+}
+.uw-navbar-utility .navbar .container .nav .dropdown-menu a {
+  color: #990000;
+}
+.uw-navbar-utility .navbar .container .nav .dropdown-menu li > a:hover {
+  background: #D1BD98;
+  text-shadow: none;
+}
+.uw-navbar-utility .navbar .container .navbar-collapse {
+  padding-left: 0;
+}
+.uw-navbar-utility .navbar .container .divider {
+  border-color: #D1BD98;
+}
+.uw-navbar-utility .navbar .container .divider-vertical {
+  height: 25px;
+}
+.uw-navbar-utility .navbar .container .caret {
+  margin-top: -2px;
+}
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus,
