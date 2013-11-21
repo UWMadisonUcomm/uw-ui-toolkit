@@ -6125,9 +6125,6 @@ body > .container {
 .uw-navbar-classic .navbar .container .divider {
   border-color: #D1BD98;
 }
-.uw-navbar-classic .navbar .container .divider-vertical {
-  height: 25px;
-}
 .uw-navbar-classic .navbar .container .caret {
   margin-top: -2px;
 }
