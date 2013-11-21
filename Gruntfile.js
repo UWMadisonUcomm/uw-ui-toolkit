@@ -1,4 +1,21 @@
 module.exports = function(grunt){
+
+  // Bootstrap javascript files
+  var bootstrap_js = [
+    'src/js/bootstrap/transition.js',
+    'src/js/bootstrap/alert.js',
+    'src/js/bootstrap/button.js',
+    'src/js/bootstrap/carousel.js',
+    'src/js/bootstrap/collapse.js',
+    'src/js/bootstrap/dropdown.js',
+    'src/js/bootstrap/modal.js',
+    'src/js/bootstrap/tooltip.js',
+    'src/js/bootstrap/popover.js',
+    'src/js/bootstrap/scrollspy.js',
+    'src/js/bootstrap/tab.js',
+    'src/js/bootstrap/affix.js'
+  ];
+
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
@@ -10,7 +27,7 @@ module.exports = function(grunt){
       /**
        * copy:bootstrap is used to upgrade bootstrap in
        * src/less/bootstrap, and should not be run routinely
-       * First, upgrade the tag ref for the bootstrap 
+       * First, upgrade the tag ref for the bootstrap
        * devDependency in package.json.
        * Then, npm install, grunt copy:bootstrap.
        */
@@ -41,8 +58,8 @@ module.exports = function(grunt){
           mangle: false,
           preserveComments: true
         },
-        files: { 
-          "dist/js/uw-ui-toolkit.js": "src/js/bootstrap/*.js"
+        files: {
+          "dist/js/uw-ui-toolkit.js": bootstrap_js
         }
       },
       min: {
@@ -50,11 +67,11 @@ module.exports = function(grunt){
           beautify: false,
           mangle: true
         },
-        files: { 
-          "dist/js/uw-ui-toolkit.min.js": "src/js/bootstrap/*.js"
+        files: {
+          "dist/js/uw-ui-toolkit.min.js": bootstrap_js
         }
-      }      
-    },    
+      }
+    },
 
     watch: {
       all: {
