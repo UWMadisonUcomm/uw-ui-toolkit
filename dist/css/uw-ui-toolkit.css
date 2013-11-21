@@ -6229,6 +6229,8 @@ body > .container {
   background-color: #ffffff;
   min-height: 500px;
   border-bottom: 2px solid #B70101;
+  border-left: 1px solid #c1b49a;
+  border-right: 1px solid #c1b49a;
 }
 .uw-content-classic #primary {
   padding: 20px;
@@ -6236,12 +6238,13 @@ body > .container {
 .uw-content-classic #secondary {
   padding: 20px;
 }
-#footer {
-  border-top: 1px solid #ccc;
-  margin-top: 36px;
-  padding-top: 16px;
-  padding-bottom: 4px;
+.uw-footer-classic .container {
+  text-align: center;
+  background-color: #FFFFFF;
+  border-top: 10px solid #666152;
   font-size: 12px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 [class*="col-"] p a,
 [class*="col-"] li a {
