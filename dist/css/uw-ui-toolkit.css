@@ -6007,23 +6007,22 @@ td.visible-print {
     display: none !important;
   }
 }
-.navbar .navbar-fixed-top {
+.navbar.navbar-fixed-top {
   background-image: url('../img/uwcrest_web_sm.png');
   background-position: -13px -13px;
   background-repeat: no-repeat;
   background-size: 50px;
+  background-color: #660000;
   padding-left: 0;
 }
-.navbar .navbar-fixed-top .container {
+.navbar.navbar-fixed-top .container {
   width: auto;
+  padding-left: 15px;
 }
-.navbar .navbar-fixed-top .navbar-header {
+.navbar.navbar-fixed-top .navbar-header {
   margin-left: 18px;
 }
-.navbar .navbar-fixed-top .navbar-collapse {
-  background-color: #660000;
-}
-.navbar .navbar-fixed-top .dropdown-menu .divider {
+.navbar.navbar-fixed-top .dropdown-menu .divider {
   margin: 4px 0;
   background-color: transparent;
 }
@@ -6041,13 +6040,13 @@ td.visible-print {
   margin-top: 72px;
 }
 @media (min-width: 768px) {
-  .navbar {
+  .navbar.navbar-fixed-top {
     padding-left: 15px;
   }
-  .navbar .navbar-collapse {
+  .navbar.navbar-fixed-top .navbar-collapse {
     background-color: transparent;
   }
-  .navbar .dropdown-menu .divider {
+  .navbar.navbar-fixed-top .dropdown-menu .divider {
     margin: 9px 0;
     background-color: #eeeeee;
   }

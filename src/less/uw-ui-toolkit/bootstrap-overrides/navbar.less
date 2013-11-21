@@ -1,17 +1,16 @@
-.navbar .navbar-fixed-top {
+.navbar.navbar-fixed-top {
   background-image: url('../img/uwcrest_web_sm.png');
   background-position: -13px -13px;
   background-repeat: no-repeat;
   background-size: 50px;
+  background-color: @uw-red-dark;
   padding-left: 0;
   .container {
     width: auto; //Keep navbar content always aligned to left no matter page width
+    padding-left: 15px;
   }
   .navbar-header {
     margin-left: 18px;
-  }
-  .navbar-collapse {
-    background-color: @uw-red-dark;
   }
   .dropdown-menu .divider {
     margin: 4px 0;
@@ -34,7 +33,7 @@
 }
 
 @media (min-width: @grid-float-breakpoint) {
-  .navbar {
+  .navbar.navbar-fixed-top {
     padding-left: 15px;
     .navbar-collapse {
       background-color: transparent;
