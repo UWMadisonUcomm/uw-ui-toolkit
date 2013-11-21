@@ -6133,10 +6133,18 @@ body > .container {
   right: 0px;
   top: -115px;
 }
+.uw-navbar-classic .navbar .container .uw-navbar-classic-utility > li:last-child {
+  border-right: none;
+}
 .uw-navbar-classic .navbar .container .uw-navbar-classic-utility > li > a {
   color: #FFF;
   font-size: 13px;
   text-transform: none;
+  border-right: 1px solid #c1b49a;
+  line-height: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 15px;
 }
 .uw-navbar-classic .navbar .container .uw-navbar-classic-utility > li > a:hover {
   background: transparent;
