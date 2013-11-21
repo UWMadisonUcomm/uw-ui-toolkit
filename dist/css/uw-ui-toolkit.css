@@ -6073,6 +6073,8 @@ body > .container {
   height: 25px;
   margin-bottom: 0;
   padding: 0;
+  position: relative;
+  /* UW Utility */
 }
 .uw-navbar-classic .navbar .container .nav {
   text-transform: uppercase;
@@ -6129,7 +6131,24 @@ body > .container {
 .uw-navbar-classic .navbar .container .caret {
   margin-top: -2px;
 }
-/* UW Utility */
+.uw-navbar-classic .navbar .container .uw-navbar-utility {
+  position: absolute;
+  right: 0px;
+  top: -115px;
+}
+.uw-navbar-classic .navbar .container .uw-navbar-utility > li.open > a,
+.uw-navbar-classic .navbar .container .uw-navbar-utility > li.active > a {
+  background: transparent;
+}
+.uw-navbar-classic .navbar .container .uw-navbar-utility > li > a {
+  color: #FFF;
+  font-size: 13px;
+  text-transform: none;
+}
+.uw-navbar-classic .navbar .container .uw-navbar-utility > li > a:hover {
+  background: transparent;
+  text-decoration: underline;
+}
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus,

@@ -68,6 +68,7 @@ body > .container {
     height:25px;
     margin-bottom:0;
     padding:0;
+    position: relative;
  
     .nav {
       text-transform: uppercase;
@@ -120,27 +121,34 @@ body > .container {
     .caret {
       margin-top:-2px;
     }
+  
+    /* UW Utility */
+    .uw-navbar-utility {
+      position: absolute;
+      right: 0px;
+      top: -115px;
+      > li {
+        &.open, &.active {
+          > a {
+            background: transparent;
+          }
+        }
+        > a {
+          color: #FFF;
+          font-size: @font-size-base - 1; // 11px;
+          text-transform: none;
+          &:hover {
+            background: transparent;
+            text-decoration:underline;
+          }
+        }
+      }
+    }
+
   }
 }
 
-/* UW Utility */
-.uw-navbar-utility {
-  // .nav {
-  //   > li {
-  //     &.open > a {
-  //       background: transparent;
-  //     }
-  //     > a {
-  //       color: #FFF;
-  //       font-size: @font-size-base - 3; // 11px;
-  //       &:hover {
-  //         background: transparent;
-  //         text-decoration:underline;
-  //       }
-  //     }
-  //   }
-  // }
-}
+
 
 
 .navbar .nav > .active > a,
