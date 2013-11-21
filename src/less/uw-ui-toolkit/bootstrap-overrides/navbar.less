@@ -79,8 +79,12 @@ body > .container {
           padding: 3px 15px 2px;
           &:hover {
             color: @uw-red-medium;
-            #gradient > .vertical (#FDFCFA, #D9C39E);
+            background:transparent;
           }
+        }
+        &.active,
+        &:hover {
+          #gradient > .vertical (#FDFCFA, #D9C39E);
         }
       }
       .dropdown-menu {
