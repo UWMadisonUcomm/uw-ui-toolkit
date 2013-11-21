@@ -6007,21 +6007,21 @@ td.visible-print {
     display: none !important;
   }
 }
-.navbar.navbar-fixed-top {
+.navbar.navbar-inverse {
   background-image: url('../img/uwcrest_web_sm.png');
   background-position: -13px -13px;
   background-repeat: no-repeat;
   background-size: 50px;
   padding-left: 0;
 }
-.navbar.navbar-fixed-top .container {
+.navbar.navbar-inverse .container {
   width: auto;
   padding-left: 15px;
 }
-.navbar.navbar-fixed-top .navbar-header {
+.navbar.navbar-inverse .navbar-header {
   margin-left: 18px;
 }
-.navbar.navbar-fixed-top .dropdown-menu .divider {
+.navbar.navbar-inverse .dropdown-menu .divider {
   margin: 4px 0;
   background-color: transparent;
 }
@@ -6160,16 +6160,6 @@ body > .container {
   position: absolute;
   right: 0px;
   top: -77px;
-}
-.navbar .nav > .active > a,
-.navbar .nav > .active > a:hover,
-.navbar .nav > .active > a:focus,
-.navbar .nav li.dropdown.open > .dropdown-toggle,
-.navbar .nav li.dropdown.active > .dropdown-toggle,
-.navbar .nav li.dropdown.open.active > .dropdown-toggle {
-  text-decoration: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
 }
 .jumbotron {
   background-color: #efe8d8;
