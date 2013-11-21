@@ -6131,16 +6131,18 @@ body > .container {
 .uw-navbar-classic .navbar .container .uw-navbar-classic-utility {
   position: absolute;
   right: 0px;
-  top: -115px;
+  top: -110px;
 }
-.uw-navbar-classic .navbar .container .uw-navbar-classic-utility > li:last-child {
-  border-right: none;
+.uw-navbar-classic .navbar .container .uw-navbar-classic-utility > li {
+  border-left: 1px solid #c1b49a;
+}
+.uw-navbar-classic .navbar .container .uw-navbar-classic-utility > li:first-child {
+  border-left: none;
 }
 .uw-navbar-classic .navbar .container .uw-navbar-classic-utility > li > a {
   color: #FFF;
   font-size: 13px;
   text-transform: none;
-  border-right: 1px solid #c1b49a;
   line-height: 100%;
   padding-top: 0;
   padding-bottom: 0;
@@ -6153,6 +6155,11 @@ body > .container {
 .uw-navbar-classic .navbar .container .uw-navbar-classic-utility > li.open > a,
 .uw-navbar-classic .navbar .container .uw-navbar-classic-utility > li.active > a {
   background: transparent;
+}
+.uw-navbar-classic .navbar .container .uw-navbar-classic-search {
+  position: absolute;
+  right: 0px;
+  top: -77px;
 }
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,

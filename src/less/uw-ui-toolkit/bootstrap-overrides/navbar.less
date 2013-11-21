@@ -123,17 +123,16 @@ body > .container {
     .uw-navbar-classic-utility {
       position: absolute;
       right: 0px;
-      top: -115px;
+      top: -110px;
       > li {
-
-        &:last-child{
-          border-right: none;
+        border-left: 1px solid @uw-brown-light;
+        &:first-child {
+          border-left: none;
         }
         > a {
           color: #FFF;
           font-size: @font-size-base - 1; // 11px;
           text-transform: none;
-          border-right: 1px solid @uw-brown-light;
           line-height: 100%;
           padding-top: 0;
           padding-bottom: 0;
@@ -142,7 +141,8 @@ body > .container {
             background: transparent;
             text-decoration:underline;
           }
-        }        
+        }
+        
         &.open, &.active {
           > a {
             background: transparent;
@@ -150,7 +150,11 @@ body > .container {
         }
       }
     }
-
+    .uw-navbar-classic-search {
+      position: absolute;
+      right: 0px;
+      top: -77px;    
+    }
   }
 }
 
