@@ -6120,6 +6120,18 @@ body > .container {
 .uw-navbar-classic .navbar .container .caret {
   margin-top: -2px;
 }
+/* UW Utility */
+.uw-navbar-utility .nav > li.open > a {
+  background: transparent;
+}
+.uw-navbar-utility .nav > li > a {
+  color: #FFF;
+  font-size: 11px;
+}
+.uw-navbar-utility .nav > li > a:hover {
+  background: transparent;
+  text-decoration: underline;
+}
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus,
@@ -6214,9 +6226,15 @@ body > .container {
 .uw-content-classic .container {
   background-color: #ffffff;
   min-height: 500px;
+<<<<<<< HEAD
   border-width: 1px 1px 2px;
   border-color: #c3bca1 #c3bca1 #b70101;
   border-style: none solid solid;
+=======
+  border-bottom: 2px solid #B70101;
+  border-left: 1px solid #c1b49a;
+  border-right: 1px solid #c1b49a;
+>>>>>>> develop
 }
 .uw-content-classic #primary {
   padding: 20px;

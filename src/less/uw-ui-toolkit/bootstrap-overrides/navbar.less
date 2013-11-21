@@ -120,6 +120,26 @@ body > .container {
   }
 }
 
+/* UW Utility */
+.uw-navbar-utility {
+  .nav {
+    > li {
+      &.open > a {
+        background: transparent;
+      }
+      > a {
+        color: #FFF;
+        font-size: @font-size-base - 3; // 11px;
+        &:hover {
+          background: transparent;
+          text-decoration:underline;
+        }
+      }
+    }
+  }
+}
+
+
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus,
