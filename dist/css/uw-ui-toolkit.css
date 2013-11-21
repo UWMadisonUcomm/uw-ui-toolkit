@@ -6082,8 +6082,8 @@ body > .container {
   color: #990000;
   padding: 3px 15px 2px;
 }
-.uw-navbar-classic .navbar .container .nav > li > a:hover {
-  color: #990000;
+.uw-navbar-classic .navbar .container .nav > li > a:hover,
+.uw-navbar-classic .navbar .container .nav > li > a:focus {
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#fdfcfa), to(#d9c39e));
   background-image: -webkit-linear-gradient(top, #fdfcfa 0%, #d9c39e 100%);
   background-image: -moz-linear-gradient(top, #fdfcfa 0%, #d9c39e 100%);

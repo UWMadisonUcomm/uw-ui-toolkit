@@ -73,22 +73,18 @@ body > .container {
       text-transform: uppercase;
       font-size: @font-size-base - 1; //13px
       > li {
-        // line-height:16px;
         > a {
           color: @uw-red-medium;
           padding: 3px 15px 2px;
-          &:hover {
-            color: @uw-red-medium;
+          &:hover, &:focus {
             #gradient > .vertical (#FDFCFA, #D9C39E);
-          }
+          } 
         }
-        &.active,
-        &.open {
+        &.active, &.open {
           > a {
-          #gradient > .vertical (#FDFCFA, #D9C39E);
-          }
-        }
-
+            #gradient > .vertical (#FDFCFA, #D9C39E);
+          }             
+        }        
       }
       .dropdown-menu {
         background:#F0E7D8;
