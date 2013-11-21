@@ -123,16 +123,11 @@ body > .container {
     }
   
     /* UW Utility */
-    .uw-navbar-utility {
+    .uw-navbar-classic-utility {
       position: absolute;
       right: 0px;
       top: -115px;
       > li {
-        &.open, &.active {
-          > a {
-            background: transparent;
-          }
-        }
         > a {
           color: #FFF;
           font-size: @font-size-base - 1; // 11px;
@@ -140,6 +135,11 @@ body > .container {
           &:hover {
             background: transparent;
             text-decoration:underline;
+          }
+        }        
+        &.open, &.active {
+          > a {
+            background: transparent;
           }
         }
       }

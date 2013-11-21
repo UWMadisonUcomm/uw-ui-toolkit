@@ -6131,23 +6131,23 @@ body > .container {
 .uw-navbar-classic .navbar .container .caret {
   margin-top: -2px;
 }
-.uw-navbar-classic .navbar .container .uw-navbar-utility {
+.uw-navbar-classic .navbar .container .uw-navbar-classic-utility {
   position: absolute;
   right: 0px;
   top: -115px;
 }
-.uw-navbar-classic .navbar .container .uw-navbar-utility > li.open > a,
-.uw-navbar-classic .navbar .container .uw-navbar-utility > li.active > a {
-  background: transparent;
-}
-.uw-navbar-classic .navbar .container .uw-navbar-utility > li > a {
+.uw-navbar-classic .navbar .container .uw-navbar-classic-utility > li > a {
   color: #FFF;
   font-size: 13px;
   text-transform: none;
 }
-.uw-navbar-classic .navbar .container .uw-navbar-utility > li > a:hover {
+.uw-navbar-classic .navbar .container .uw-navbar-classic-utility > li > a:hover {
   background: transparent;
   text-decoration: underline;
+}
+.uw-navbar-classic .navbar .container .uw-navbar-classic-utility > li.open > a,
+.uw-navbar-classic .navbar .container .uw-navbar-classic-utility > li.active > a {
+  background: transparent;
 }
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
