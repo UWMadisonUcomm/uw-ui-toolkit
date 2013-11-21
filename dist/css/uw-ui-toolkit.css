@@ -6084,10 +6084,15 @@ body > .container {
 }
 .uw-navbar-classic .navbar .container .nav > li > a:hover {
   color: #990000;
-  background: transparent;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#fdfcfa), to(#d9c39e));
+  background-image: -webkit-linear-gradient(top, #fdfcfa 0%, #d9c39e 100%);
+  background-image: -moz-linear-gradient(top, #fdfcfa 0%, #d9c39e 100%);
+  background-image: linear-gradient(to bottom, #fdfcfa 0%, #d9c39e 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffdfcfa', endColorstr='#ffd9c39e', GradientType=0);
 }
-.uw-navbar-classic .navbar .container .nav > li.active,
-.uw-navbar-classic .navbar .container .nav > li:hover {
+.uw-navbar-classic .navbar .container .nav > li.active > a,
+.uw-navbar-classic .navbar .container .nav > li.open > a {
   background-image: -webkit-gradient(linear, left 0%, left 100%, from(#fdfcfa), to(#d9c39e));
   background-image: -webkit-linear-gradient(top, #fdfcfa 0%, #d9c39e 100%);
   background-image: -moz-linear-gradient(top, #fdfcfa 0%, #d9c39e 100%);

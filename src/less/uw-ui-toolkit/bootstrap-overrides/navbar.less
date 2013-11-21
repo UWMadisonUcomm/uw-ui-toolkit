@@ -79,13 +79,16 @@ body > .container {
           padding: 3px 15px 2px;
           &:hover {
             color: @uw-red-medium;
-            background:transparent;
+            #gradient > .vertical (#FDFCFA, #D9C39E);
           }
         }
         &.active,
-        &:hover {
+        &.open {
+          > a {
           #gradient > .vertical (#FDFCFA, #D9C39E);
+          }
         }
+
       }
       .dropdown-menu {
         background:#F0E7D8;
