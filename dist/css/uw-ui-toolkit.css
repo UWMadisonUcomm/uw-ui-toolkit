@@ -6171,6 +6171,11 @@ body > .container {
   right: 0px;
   top: -77px;
 }
+@media (max-width: 768px) {
+  .uw-navbar-classic .navbar .container {
+    min-height: 50px;
+  }
+}
 .jumbotron {
   background-color: #efe8d8;
   border-bottom: 1px solid #C8C8C8;
