@@ -6080,9 +6080,13 @@ body > .container {
   text-transform: uppercase;
   font-size: 13px;
 }
+.uw-navbar-classic .navbar .container .nav > li {
+  border-right: 1px solid #c1b49a;
+}
 .uw-navbar-classic .navbar .container .nav > li > a {
   color: #990000;
   padding: 3px 15px 2px;
+  border-right: 1px solid #eee5c7;
 }
 .uw-navbar-classic .navbar .container .nav > li > a:hover,
 .uw-navbar-classic .navbar .container .nav > li > a:focus {
@@ -6092,6 +6096,12 @@ body > .container {
   background-image: linear-gradient(to bottom, #fdfcfa 0%, #d9c39e 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffdfcfa', endColorstr='#ffd9c39e', GradientType=0);
+}
+.uw-navbar-classic .navbar .container .nav > li:first-child {
+  border-left: 0;
+}
+.uw-navbar-classic .navbar .container .nav > li:first-child a {
+  border-left: 0;
 }
 .uw-navbar-classic .navbar .container .nav > li.active > a,
 .uw-navbar-classic .navbar .container .nav > li.open > a {
@@ -6134,12 +6144,13 @@ body > .container {
   top: -110px;
 }
 .uw-navbar-classic .navbar .container .uw-navbar-classic-utility > li {
-  border-left: 1px solid #c1b49a;
+  border-right: 1px solid #c1b49a;
 }
-.uw-navbar-classic .navbar .container .uw-navbar-classic-utility > li:first-child {
-  border-left: none;
+.uw-navbar-classic .navbar .container .uw-navbar-classic-utility > li:last-child {
+  border-right: none;
 }
 .uw-navbar-classic .navbar .container .uw-navbar-classic-utility > li > a {
+  border: 0;
   color: #FFF;
   font-size: 13px;
   text-transform: none;

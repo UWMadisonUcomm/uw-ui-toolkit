@@ -74,13 +74,23 @@ body > .container {
       text-transform: uppercase;
       font-size: @font-size-base - 1; //13px
       > li {
+        border-right: 1px solid @uw-brown-light;
         > a {
           color: @uw-red-medium;
           padding: 3px 15px 2px;
+          border-right: 1px solid @uw-tan;
+          
           &:hover, &:focus {
             #gradient > .vertical (#FDFCFA, #D9C39E);
           } 
         }
+        &:first-child {
+          border-left:0;
+          a {
+            border-left:0;
+          }
+        } 
+
         &.active, &.open {
           > a {
             #gradient > .vertical (#FDFCFA, #D9C39E);
@@ -125,11 +135,12 @@ body > .container {
       right: 0px;
       top: -110px;
       > li {
-        border-left: 1px solid @uw-brown-light;
-        &:first-child {
-          border-left: none;
+        border-right: 1px solid @uw-brown-light;
+        &:last-child {
+          border-right: none;
         }
         > a {
+          border:0;
           color: #FFF;
           font-size: @font-size-base - 1; // 11px;
           text-transform: none;
