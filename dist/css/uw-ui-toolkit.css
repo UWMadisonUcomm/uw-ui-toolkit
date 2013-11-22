@@ -6144,8 +6144,7 @@ body > .container {
   font-size: 13px;
   text-transform: none;
   line-height: 100%;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0 10px;
   height: 15px;
 }
 .uw-navbar-classic .navbar .container .uw-navbar-classic-utility > li > a:hover {
