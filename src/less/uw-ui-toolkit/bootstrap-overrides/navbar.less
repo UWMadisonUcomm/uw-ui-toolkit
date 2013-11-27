@@ -68,9 +68,8 @@ body > .container {
     #gradient > .vertical (#E7DBCB, #D9C39E);
     height:25px;
     margin-bottom:0;
-    padding:0;
+    padding-left: 0; //force menu items to flush to left
     position: relative;
- 
     .nav {
       text-transform: uppercase;
       font-size: @font-size-base - 1; //13px
@@ -165,6 +164,10 @@ body > .container {
       position: absolute;
       right: 0px;
       top: -77px;    
+    }
+  
+    .navbar-toggle {
+      border: 1px solid @uw-brown-dark;
     }
   }
 }

@@ -6072,7 +6072,7 @@ body > .container {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe7dbcb', endColorstr='#ffd9c39e', GradientType=0);
   height: 25px;
   margin-bottom: 0;
-  padding: 0;
+  padding-left: 0;
   position: relative;
   /* UW Utility */
 }
@@ -6170,6 +6170,9 @@ body > .container {
   position: absolute;
   right: 0px;
   top: -77px;
+}
+.uw-navbar-classic .navbar .container .navbar-toggle {
+  border: 1px solid #ae9779;
 }
 @media (max-width: 768px) {
   .uw-navbar-classic .navbar .container {
