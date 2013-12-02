@@ -6181,6 +6181,7 @@ body > .container {
   }
   .navbar.uw-navbar-classic .container .nav {
     margin-top: 0;
+    margin-bottom: 0;
   }
   .navbar.uw-navbar-classic .container .navbar-collapse {
     background: #F0E7D8;
