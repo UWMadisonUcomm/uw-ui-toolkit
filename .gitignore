@@ -8,3 +8,4 @@ node_modules
 .ruby-version
 _site
 .bundle
+config.json

@@ -18,7 +18,7 @@ module.exports = function(grunt){
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-
+    conf: require('nconf').env().file({ file:'config.json' }),
     copy: {
       img: {
         files: [{src: 'src/img/*', dest: 'dist/img/', flatten: true, expand: true}]
@@ -72,7 +72,22 @@ module.exports = function(grunt){
         }
       }
     },
-
+    s3: {
+      options: {
+        bucket: "<%= conf.get('BUCKET') || 'uw-ui-toolkit' %>",
+        access: 'public-read'
+      },
+      snapshot: {
+        sync: [
+          {
+            src: 'dist/**/*.*',
+            rel: 'dist/',
+            dest: 'snapshot/',
+            options: { verify: true }
+          }
+        ]
+      }
+    },
     watch: {
       all: {
         files: ['src/**/*.less'],
@@ -86,6 +101,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-s3');
 
   // Register tasks
   grunt.registerTask('default', ['build']);
