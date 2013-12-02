@@ -86,6 +86,16 @@ module.exports = function(grunt){
             options: { verify: true }
           }
         ]
+      },
+      release: {
+        sync: [
+          {
+            src: 'dist/**/*.*',
+            rel: 'dist/',
+            dest: '<%= pkg.version %>/',
+            options: { verify: false }
+          }
+        ]
       }
     },
     watch: {
