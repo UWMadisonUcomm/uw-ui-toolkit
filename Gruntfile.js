@@ -18,7 +18,9 @@ module.exports = function(grunt){
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    conf: require('nconf').env().file({ file:'config.json' }),
+    conf: require('nconf').env().file({ file:'config.json' }).defaults({
+      "BUCKET": "uw-ui-toolkit"
+    }),
     copy: {
       img: {
         files: [{src: 'src/img/*', dest: 'dist/img/', flatten: true, expand: true}]
@@ -74,7 +76,7 @@ module.exports = function(grunt){
     },
     s3: {
       options: {
-        bucket: "<%= conf.get('BUCKET') || 'uw-ui-toolkit' %>",
+        bucket: "<%= conf.get('BUCKET') %>",
         access: 'public-read'
       },
       snapshot: {
