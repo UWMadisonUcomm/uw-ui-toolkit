@@ -18,9 +18,7 @@ module.exports = function(grunt){
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    conf: require('nconf').env().file({ file:'config.json' }).defaults({
-      "BUCKET": "uw-ui-toolkit"
-    }),
+    conf: require('nconf').file({ file:'config.json' }).env(),
     copy: {
       img: {
         files: [{src: 'src/img/*', dest: 'dist/img/', flatten: true, expand: true}]
@@ -74,29 +72,22 @@ module.exports = function(grunt){
         }
       }
     },
-    s3: {
+    aws_s3: {
       options: {
-        bucket: "<%= conf.get('BUCKET') %>",
-        access: 'public-read'
+        accessKeyId: "<%= conf.get('AWS_ACCESS_KEY_ID') %>",
+        secretAccessKey: "<%= conf.get('AWS_SECRET_ACCESS_KEY') %>",
+        bucket: "<%= conf.get('BUCKET') || 'uw-ui-toolkit' %>",
+        region: 'us-east-1',
+        differential: true
       },
       snapshot: {
-        sync: [
-          {
-            src: 'dist/**/*.*',
-            rel: 'dist/',
-            dest: 'snapshot/',
-            options: { verify: true }
-          }
+        files: [
+          { cwd: 'dist', src: ['**'], dest: 'snapshot', expand: true }
         ]
       },
       release: {
-        sync: [
-          {
-            src: 'dist/**/*.*',
-            rel: 'dist/',
-            dest: '<%= pkg.version %>/',
-            options: { verify: false }
-          }
+        files: [
+          { cwd: 'dist', src: ['**'], dest: '<%= pkg.version %>', expand: true }
         ]
       }
     },
@@ -113,7 +104,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-s3');
+  grunt.loadNpmTasks('grunt-aws-s3');
 
   // Register tasks
   grunt.registerTask('default', ['build']);
