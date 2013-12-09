@@ -9,3 +9,4 @@ node_modules
 _site
 .bundle
 config.json
+/build

@@ -91,6 +91,24 @@ module.exports = function(grunt){
         ]
       }
     },
+    compress: {
+      snapshot_zip: {
+        options: {
+          archive: 'build/uw-ui-toolkit-snapshot.zip'
+        },
+        files: [
+          {src:['**'], cwd: 'dist',expand: true}
+        ]
+      },
+      versioned_zip: {
+        options: {
+          archive: 'build/uw-ui-toolkit-<%=pkg.version %>.zip'
+        },
+        files: [
+          {src:['**'], cwd: 'dist',expand: true}
+        ]
+      },
+    },
     watch: {
       all: {
         files: ['src/**/*.less'],
@@ -105,6 +123,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-aws-s3');
+  grunt.loadNpmTasks('grunt-contrib-compress');
 
   // Register tasks
   grunt.registerTask('default', ['build']);
