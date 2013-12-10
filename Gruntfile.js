@@ -86,8 +86,11 @@ module.exports = function(grunt){
         ]
       },
       release: {
+        options: {
+          differential: false
+        },
         files: [
-          { cwd: 'dist', src: ['**'], dest: '<%= pkg.version %>', expand: true }
+          { cwd: 'dist', src: ['**'], dest: '<%= pkg.version %>', expand: true, params: { CacheControl: 'public, max-age=2000' } }
         ]
       }
     },
