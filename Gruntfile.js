@@ -82,15 +82,20 @@ module.exports = function(grunt){
       },
       snapshot: {
         files: [
-          { cwd: 'dist', src: ['**'], dest: 'snapshot', expand: true }
+          { cwd: 'dist', src: ['**'], dest: 'snapshot', expand: true },
+          { cwd: 'build', src: 'uw-ui-toolkit-snapshot.zip', dest: 'downloads/', expand: true }
         ]
       },
       release: {
         options: {
-          differential: false
+          differential: false,
+          params: {
+            CacheControl: 'public, max-age=2000'
+          }
         },
         files: [
-          { cwd: 'dist', src: ['**'], dest: '<%= pkg.version %>', expand: true, params: { CacheControl: 'public, max-age=2000' } }
+          { cwd: 'dist', src: ['**'], dest: '<%= pkg.version %>', expand: true },
+          { cwd: 'build', src: 'uw-ui-toolkit-<%=pkg.version %>.zip', dest: 'downloads/', expand: true }
         ]
       }
     },
@@ -103,7 +108,7 @@ module.exports = function(grunt){
           {src:['**'], cwd: 'dist',expand: true}
         ]
       },
-      versioned_zip: {
+      release_zip: {
         options: {
           archive: 'build/uw-ui-toolkit-<%=pkg.version %>.zip'
         },
@@ -131,4 +136,8 @@ module.exports = function(grunt){
   // Register tasks
   grunt.registerTask('default', ['build']);
   grunt.registerTask('build', ['less','copy:img','uglify']);
+
+  // Deploy builds to S3
+  grunt.registerTask('snapshot', ['build', 'compress:snapshot_zip', 'aws_s3:snapshot']);
+  grunt.registerTask('release', ['build', 'compress:release_zip', 'aws_s3:release']);
 }
