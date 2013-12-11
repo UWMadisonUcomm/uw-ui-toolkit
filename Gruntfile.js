@@ -16,9 +16,13 @@ module.exports = function(grunt){
     'src/js/bootstrap/affix.js'
   ];
 
+  // Load configuration in with nconf, allowing config.json overrides.
+  // https://github.com/flatiron/nconf
+  var nconf = require('nconf').file({ file:'config.json' }).env();
+
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    conf: require('nconf').file({ file:'config.json' }).env(),
+    conf: nconf,
     copy: {
       img: {
         files: [{src: 'src/img/*', dest: 'dist/img/', flatten: true, expand: true}]
