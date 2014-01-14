@@ -29,7 +29,7 @@ slug: getting-started
 
 **2.** Then visit the [documentation](/documentation/) for how to use the toolkit in your website.
 
-## Developing with the Toolkit ##
+## Developing with the UW UI Toolkit ##
 
 ### Get the code ###
 
