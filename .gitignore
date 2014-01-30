@@ -10,3 +10,4 @@ _site
 .bundle
 config.json
 /build
+/bower_components
