@@ -139,11 +139,20 @@ body > .container {
     .nav > li.active > a, .nav > li.open > a, .nav > li:hover > a {
       background-image: none;
     }
+    .nav > li.active {
+      background-image: none;
+    }
     .nav > li > a:hover {
       bacground-image: none;
     }
+    .nav > li > a:focus {
+      background-color: transparent;
+    }
     .nav .open > a {
       background-color: @gray-dark;
+      @media (min-width: @container-sm) {
+        background-color: transparent;
+      }
     }
     .navbar-collapse {
       padding: 0;
@@ -189,7 +198,7 @@ body > .container {
           border-bottom: none;
         }
         a {
-          padding: 5px 15px;
+          padding: 6px 15px;
           color: #fff;
           &:hover {
             background-color: lighten(@gray-light,4%);
@@ -201,10 +210,21 @@ body > .container {
             color: @uw-red-badger;
           }
         }
+        &.dropdown-header {
+          color: #000;
+          font-weight: bold;
+          text-transform: uppercase;
+          padding: 5px 15px;
+        }
+        &.divider {
+          display: none;
+        }
       }
     }
     .caret {
       margin-top:-2px;
+      border-top-color: @uw-red;
+      border-bottom-color: @uw-red;
     }
     /* UW Utility */
     .nav.uw-navbar-classic-utility {
@@ -231,6 +251,7 @@ body > .container {
         }
 
         &.open, &.active {
+          background-image: none;
           > a {
             background: transparent;
           }
@@ -251,8 +272,11 @@ body > .container {
     .container {
       .nav {
         > li {
+          &.active {
+            #gradient > .vertical (#FDFCFA, #D9C39E);
+          }
           > a {
-            &:hover, &:focus {
+            &:hover {
               #gradient > .vertical (#FDFCFA, #D9C39E);
             }
           }

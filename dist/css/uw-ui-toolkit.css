@@ -6125,11 +6125,22 @@ body > .container {
 .navbar.uw-navbar-classic .container .nav > li:hover > a {
   background-image: none;
 }
+.navbar.uw-navbar-classic .container .nav > li.active {
+  background-image: none;
+}
 .navbar.uw-navbar-classic .container .nav > li > a:hover {
   bacground-image: none;
 }
+.navbar.uw-navbar-classic .container .nav > li > a:focus {
+  background-color: transparent;
+}
 .navbar.uw-navbar-classic .container .nav .open > a {
   background-color: #333333;
+}
+@media (min-width: 770px) {
+  .navbar.uw-navbar-classic .container .nav .open > a {
+    background-color: transparent;
+  }
 }
 .navbar.uw-navbar-classic .container .navbar-collapse {
   padding: 0;
@@ -6185,7 +6196,7 @@ body > .container {
   border-bottom: none;
 }
 .navbar.uw-navbar-classic .container .nav .dropdown-menu li a {
-  padding: 5px 15px;
+  padding: 6px 15px;
   color: #fff;
 }
 .navbar.uw-navbar-classic .container .nav .dropdown-menu li a:hover {
@@ -6201,8 +6212,19 @@ body > .container {
     color: #b70101;
   }
 }
+.navbar.uw-navbar-classic .container .nav .dropdown-menu li.dropdown-header {
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 15px;
+}
+.navbar.uw-navbar-classic .container .nav .dropdown-menu li.divider {
+  display: none;
+}
 .navbar.uw-navbar-classic .container .caret {
   margin-top: -2px;
+  border-top-color: #ac0809;
+  border-bottom-color: #ac0809;
 }
 .navbar.uw-navbar-classic .container .nav.uw-navbar-classic-utility {
   position: absolute;
@@ -6228,6 +6250,10 @@ body > .container {
   background: transparent;
   text-decoration: underline;
 }
+.navbar.uw-navbar-classic .container .nav.uw-navbar-classic-utility > li.open,
+.navbar.uw-navbar-classic .container .nav.uw-navbar-classic-utility > li.active {
+  background-image: none;
+}
 .navbar.uw-navbar-classic .container .nav.uw-navbar-classic-utility > li.open > a,
 .navbar.uw-navbar-classic .container .nav.uw-navbar-classic-utility > li.active > a {
   background: transparent;
@@ -6238,8 +6264,13 @@ body > .container {
   top: 0px;
 }
 @media (min-width: 768px) {
-  .navbar.uw-navbar-classic .container .nav > li > a:hover,
-  .navbar.uw-navbar-classic .container .nav > li > a:focus {
+  .navbar.uw-navbar-classic .container .nav > li.active {
+    background-image: -webkit-linear-gradient(top, #fdfcfa 0%, #d9c39e 100%);
+    background-image: linear-gradient(to bottom, #fdfcfa 0%, #d9c39e 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffdfcfa', endColorstr='#ffd9c39e', GradientType=0);
+  }
+  .navbar.uw-navbar-classic .container .nav > li > a:hover {
     background-image: -webkit-linear-gradient(top, #fdfcfa 0%, #d9c39e 100%);
     background-image: linear-gradient(to bottom, #fdfcfa 0%, #d9c39e 100%);
     background-repeat: repeat-x;
