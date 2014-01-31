@@ -6259,9 +6259,22 @@ body > .container {
   background: transparent;
 }
 .navbar.uw-navbar-classic .container .uw-navbar-classic-search {
-  position: absolute;
-  right: 0px;
-  top: 0px;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0px;
+  padding: 10px 15px;
+  box-shadow: none;
+}
+@media (min-width: 770px) {
+  .navbar.uw-navbar-classic .container .uw-navbar-classic-search {
+    position: absolute;
+    right: 0;
+    top: -80px;
+    margin-bottom: 8px;
+  }
+}
+.navbar.uw-navbar-classic .container .uw-navbar-classic-search + ul li:first-child a {
+  border-top: 1px dotted #797979;
 }
 @media (min-width: 768px) {
   .navbar.uw-navbar-classic .container .nav > li.active {
