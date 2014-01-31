@@ -56,13 +56,12 @@ body > .container {
 
 /* UW Classic */
 .navbar.uw-navbar-classic {
-  min-height: inherit;
   background-color: #AC0809;
+  min-height: inherit;
   border: 0;
   border-radius: 0;
   margin-bottom: 0;
   padding:0;
-
   @media (min-width: @grid-float-breakpoint) {
     min-height: 25px;
   }
@@ -92,7 +91,6 @@ body > .container {
     .navbar-toggle {
       border: none;
       position: absolute;
-      margin-right: 25px;
       top: -47px;
       right: -20px;
       .icon-bar {
@@ -104,44 +102,38 @@ body > .container {
     @media (min-width: @grid-float-breakpoint) {
       text-transform: uppercase;
     }
-    .nav > li {
-      border-right: none;
-      @media (min-width: @grid-float-breakpoint) {
-        border-right: 1px solid @uw-brown-light;
-      }
-      &:last-child > a {
-        border-bottom: none;
-      }
-      > a {
+    .nav {
+      text-transform: uppercase;
+      font-size: @font-size-base - 1; //13px
+      > li {
         border-right: none;
-        color: #fff;
-        border-bottom: 1px dotted #797979;
-        padding: 5px 15px 4px;
-        &:hover, &:focus {
-          background-color: @gray;
-        }
         @media (min-width: @grid-float-breakpoint) {
+          border-right: 1px solid @uw-brown-light;
+        }
+        &:last-child > a {
           border-bottom: none;
-          color: @uw-red-medium;
-          padding: 3px 15px 2px;
-          border-right: 1px solid @uw-tan;
-          &:hover, &:focus {
-            #gradient > .vertical (#FDFCFA, #D9C39E);
-          }
         }
-        &:first-child {
-          border-left:0;
-          a {
+        > a {
+          border-right: none;
+          color: #fff;
+          border-bottom: 1px dotted #797979;
+          padding: 5px 15px 4px;
+          &:hover {
+            background-color: @gray;
+          }
+          &:first-child {
             border-left:0;
+            a {
+              border-left:0;
+            }
+          }
+          @media (min-width: @grid-float-breakpoint) {
+            border-bottom: none;
+            color: @uw-red-medium;
+            padding: 3px 15px 2px;
+            border-right: 1px solid @uw-tan;
           }
         }
-
-        &.active, &.open {
-          > a {
-            #gradient > .vertical (#FDFCFA, #D9C39E);
-          }
-        }
-
       }
     }
     .nav > li.active > a, .nav > li.open > a, .nav > li:hover > a {
@@ -172,18 +164,21 @@ body > .container {
     }
     .nav .dropdown-menu {
       text-transform: none;
-      border:0;
-      border-radius:0;
-      margin:0;
       padding-top: 0;
       padding-bottom: 0;
       background-color: @gray-light;
+      border:0;
+      border-radius:0;
+      margin:0;
       &:before,
       &:after {
         display:none;
       }
       @media (min-width: @grid-float-breakpoint) {
         background-color: #F0E7D8;
+        .divider {
+          background-color: @uw-gold;
+        }
       }
       li {
         border-bottom: 1px dotted #797979;
@@ -208,21 +203,49 @@ body > .container {
         }
       }
     }
-    .dropdown-menu .divider {
-      background-color: @uw-gold;
-    }
     .caret {
       margin-top:-2px;
     }
+    /* UW Utility */
+    .nav.uw-navbar-classic-utility {
+      position: absolute;
+      right: 0px;
+      top: -110px;
+      > li {
+        border-right: 1px solid @uw-brown-light;
+        &:last-child {
+          border-right: none;
+        }
+        > a {
+          border:0;
+          color: @uw-tan-light;
+          font-size: @font-size-base - 1; // 11px;
+          text-transform: none;
+          line-height: 100%;
+          padding: 0 10px;
+          height: 15px;
+          &:hover {
+            background: transparent;
+            text-decoration:underline;
+          }
+        }
+
+        &.open, &.active {
+          > a {
+            background: transparent;
+          }
+        }
+      }
+    }
+    .uw-navbar-classic-search {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
   }
 }
 
-@media (max-width: @grid-float-breakpoint) {
-  .navbar.uw-navbar-classic .container {
-    min-height: 0;
-  }
-}
-
+// I can't get LESS to override this with an embedded MQ above for some reason - NW
 @media (min-width: @grid-float-breakpoint) {
   .navbar.uw-navbar-classic  {
     .container {

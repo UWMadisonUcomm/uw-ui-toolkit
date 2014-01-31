@@ -1,8 +1,15 @@
+
+@font-face {
+  font-family: 'FrizQuadrataSH-Regular';
+  src: url('/dist/fonts/25F17F_0_0.eot');
+  src: url('/dist/fonts/25F17F_0_0.eot?#iefix') format('embedded-opentype'), url('/dist/fonts/25F17F_0_0.woff') format('woff'), url('/dist/fonts/25F17F_0_0.ttf') format('truetype'), url('/dist/fonts/25F17F_0_0.svg#wf') format('svg');
+}
+
 .uw-header-classic {
-  background-image: none;
-  background-color: @uw-red-dark;
-  padding-top: 24px;
   color: #fff;
+  // background-image: none;
+  background-color: #7C0D00;
+  padding-top: 24px;
   @media (min-width: @grid-float-breakpoint) {
     #gradient > .vertical(#a60800, #6f0500);
     background-color: #7C0D00;
@@ -10,17 +17,17 @@
   }
   .container {
     background: none repeat scroll 0 0 #B70101;
-    height:40px;
     position:relative;
     padding:0;
+    height:40px;
     @media (min-width: @grid-float-breakpoint) {
       height: 90px;
     }
     .uw-header-branding {
       padding:0 2px;
       .uw-header-logo {
-        width: 30px;
         margin-top: -23px;
+        width: 30px;
         @media (min-width: @grid-float-breakpoint) {
           width: 70px;
         }

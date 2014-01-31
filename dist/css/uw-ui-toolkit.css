@@ -6020,8 +6020,8 @@ body > .container {
 }
 /* UW Classic */
 .navbar.uw-navbar-classic {
-  min-height: inherit;
   background-color: #AC0809;
+  min-height: inherit;
   border: 0;
   border-radius: 0;
   margin-bottom: 0;
@@ -6044,6 +6044,7 @@ body > .container {
   padding-right: 0;
   background-image: none;
   text-transform: none;
+  /* UW Utility */
 }
 @media (min-width: 768px) {
   .navbar.uw-navbar-classic .container {
@@ -6069,7 +6070,6 @@ body > .container {
 .navbar.uw-navbar-classic .container .navbar-toggle {
   border: none;
   position: absolute;
-  margin-right: 25px;
   top: -47px;
   right: -20px;
 }
@@ -6081,6 +6081,10 @@ body > .container {
   .navbar.uw-navbar-classic .container {
     text-transform: uppercase;
   }
+}
+.navbar.uw-navbar-classic .container .nav {
+  text-transform: uppercase;
+  font-size: 13px;
 }
 .navbar.uw-navbar-classic .container .nav > li {
   border-right: none;
@@ -6099,9 +6103,14 @@ body > .container {
   border-bottom: 1px dotted #797979;
   padding: 5px 15px 4px;
 }
-.navbar.uw-navbar-classic .container .nav > li > a:hover,
-.navbar.uw-navbar-classic .container .nav > li > a:focus {
+.navbar.uw-navbar-classic .container .nav > li > a:hover {
   background-color: #555555;
+}
+.navbar.uw-navbar-classic .container .nav > li > a:first-child {
+  border-left: 0;
+}
+.navbar.uw-navbar-classic .container .nav > li > a:first-child a {
+  border-left: 0;
 }
 @media (min-width: 768px) {
   .navbar.uw-navbar-classic .container .nav > li > a {
@@ -6110,26 +6119,6 @@ body > .container {
     padding: 3px 15px 2px;
     border-right: 1px solid #eee5c7;
   }
-  .navbar.uw-navbar-classic .container .nav > li > a:hover,
-  .navbar.uw-navbar-classic .container .nav > li > a:focus {
-    background-image: -webkit-linear-gradient(top, #fdfcfa 0%, #d9c39e 100%);
-    background-image: linear-gradient(to bottom, #fdfcfa 0%, #d9c39e 100%);
-    background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffdfcfa', endColorstr='#ffd9c39e', GradientType=0);
-  }
-}
-.navbar.uw-navbar-classic .container .nav > li > a:first-child {
-  border-left: 0;
-}
-.navbar.uw-navbar-classic .container .nav > li > a:first-child a {
-  border-left: 0;
-}
-.navbar.uw-navbar-classic .container .nav > li > a.active > a,
-.navbar.uw-navbar-classic .container .nav > li > a.open > a {
-  background-image: -webkit-linear-gradient(top, #fdfcfa 0%, #d9c39e 100%);
-  background-image: linear-gradient(to bottom, #fdfcfa 0%, #d9c39e 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffdfcfa', endColorstr='#ffd9c39e', GradientType=0);
 }
 .navbar.uw-navbar-classic .container .nav > li.active > a,
 .navbar.uw-navbar-classic .container .nav > li.open > a,
@@ -6165,12 +6154,12 @@ body > .container {
 }
 .navbar.uw-navbar-classic .container .nav .dropdown-menu {
   text-transform: none;
-  border: 0;
-  border-radius: 0;
-  margin: 0;
   padding-top: 0;
   padding-bottom: 0;
   background-color: #999999;
+  border: 0;
+  border-radius: 0;
+  margin: 0;
 }
 .navbar.uw-navbar-classic .container .nav .dropdown-menu:before,
 .navbar.uw-navbar-classic .container .nav .dropdown-menu:after {
@@ -6179,6 +6168,9 @@ body > .container {
 @media (min-width: 768px) {
   .navbar.uw-navbar-classic .container .nav .dropdown-menu {
     background-color: #F0E7D8;
+  }
+  .navbar.uw-navbar-classic .container .nav .dropdown-menu .divider {
+    background-color: #e7d9c1;
   }
 }
 .navbar.uw-navbar-classic .container .nav .dropdown-menu li {
@@ -6209,16 +6201,41 @@ body > .container {
     color: #b70101;
   }
 }
-.navbar.uw-navbar-classic .container .dropdown-menu .divider {
-  background-color: #e7d9c1;
-}
 .navbar.uw-navbar-classic .container .caret {
   margin-top: -2px;
 }
-@media (max-width: 768px) {
-  .navbar.uw-navbar-classic .container {
-    min-height: 0;
-  }
+.navbar.uw-navbar-classic .container .nav.uw-navbar-classic-utility {
+  position: absolute;
+  right: 0px;
+  top: -110px;
+}
+.navbar.uw-navbar-classic .container .nav.uw-navbar-classic-utility > li {
+  border-right: 1px solid #c1b49a;
+}
+.navbar.uw-navbar-classic .container .nav.uw-navbar-classic-utility > li:last-child {
+  border-right: none;
+}
+.navbar.uw-navbar-classic .container .nav.uw-navbar-classic-utility > li > a {
+  border: 0;
+  color: #efe8d8;
+  font-size: 13px;
+  text-transform: none;
+  line-height: 100%;
+  padding: 0 10px;
+  height: 15px;
+}
+.navbar.uw-navbar-classic .container .nav.uw-navbar-classic-utility > li > a:hover {
+  background: transparent;
+  text-decoration: underline;
+}
+.navbar.uw-navbar-classic .container .nav.uw-navbar-classic-utility > li.open > a,
+.navbar.uw-navbar-classic .container .nav.uw-navbar-classic-utility > li.active > a {
+  background: transparent;
+}
+.navbar.uw-navbar-classic .container .uw-navbar-classic-search {
+  position: absolute;
+  right: 0px;
+  top: 0px;
 }
 @media (min-width: 768px) {
   .navbar.uw-navbar-classic .container .nav > li > a:hover,
@@ -6248,11 +6265,15 @@ body > .container {
     font-size: 45px;
   }
 }
+@font-face {
+  font-family: 'FrizQuadrataSH-Regular';
+  src: url('/dist/fonts/25F17F_0_0.eot');
+  src: url('/dist/fonts/25F17F_0_0.eot?#iefix') format('embedded-opentype'), url('/dist/fonts/25F17F_0_0.woff') format('woff'), url('/dist/fonts/25F17F_0_0.ttf') format('truetype'), url('/dist/fonts/25F17F_0_0.svg#wf') format('svg');
+}
 .uw-header-classic {
-  background-image: none;
-  background-color: #660000;
-  padding-top: 24px;
   color: #fff;
+  background-color: #7C0D00;
+  padding-top: 24px;
 }
 @media (min-width: 768px) {
   .uw-header-classic {
@@ -6266,9 +6287,9 @@ body > .container {
 }
 .uw-header-classic .container {
   background: none repeat scroll 0 0 #B70101;
-  height: 40px;
   position: relative;
   padding: 0;
+  height: 40px;
 }
 @media (min-width: 768px) {
   .uw-header-classic .container {
@@ -6279,8 +6300,8 @@ body > .container {
   padding: 0 2px;
 }
 .uw-header-classic .container .uw-header-branding .uw-header-logo {
-  width: 30px;
   margin-top: -23px;
+  width: 30px;
 }
 @media (min-width: 768px) {
   .uw-header-classic .container .uw-header-branding .uw-header-logo {
