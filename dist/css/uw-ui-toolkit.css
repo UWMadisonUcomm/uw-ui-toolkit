@@ -6127,6 +6127,7 @@ body > .container {
 }
 .navbar.uw-navbar-classic .container .nav > li.active {
   background-image: none;
+  background-color: #555;
 }
 .navbar.uw-navbar-classic .container .nav > li > a:hover {
   bacground-image: none;
@@ -6253,6 +6254,7 @@ body > .container {
 .navbar.uw-navbar-classic .container .nav.uw-navbar-classic-utility > li.open,
 .navbar.uw-navbar-classic .container .nav.uw-navbar-classic-utility > li.active {
   background-image: none;
+  background-color: transparent;
 }
 .navbar.uw-navbar-classic .container .nav.uw-navbar-classic-utility > li.open > a,
 .navbar.uw-navbar-classic .container .nav.uw-navbar-classic-utility > li.active > a {
