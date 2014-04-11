@@ -6457,6 +6457,7 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   position: relative;
   padding-top: 24px;
   padding-bottom: 24px;
+  height: 100%;
 }
 .sidebar.sidebar-right {
   border-left: 1px solid #c8c5bb;
@@ -6464,4 +6465,9 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 .sidebar .nav-sidebar a:hover,
 .sidebar .nav-sidebar a:focus {
   background-color: transparent;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    height: auto;
+  }
 }
