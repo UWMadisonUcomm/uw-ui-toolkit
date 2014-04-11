@@ -6464,7 +6464,12 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   background: #efe8d8;
   position: relative;
   height: 100%;
+  padding-top: 24px;
 }
 .sidebar.sidebar-right {
   border-left: 1px solid #c8c5bb;
+}
+.sidebar .nav-sidebar a:hover,
+.sidebar .nav-sidebar a:focus {
+  background-color: transparent;
 }
