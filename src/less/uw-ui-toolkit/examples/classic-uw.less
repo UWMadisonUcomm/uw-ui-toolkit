@@ -5,6 +5,7 @@
 	position:relative;
 	padding-top:24px;
 	padding-bottom:24px;
+	height:100%;
 	&.sidebar-right {
 		border-left: 1px solid @uw-gray-medium;
 	}
@@ -14,7 +15,8 @@
 			background-color: transparent;
 		}
 	}
-	@media (min-width: @grid-float-breakpoint) {
-    height:100%;
+	@media (max-width: @grid-float-breakpoint) {
+    height:auto;
+    margin-top:60px;
   }
 }
