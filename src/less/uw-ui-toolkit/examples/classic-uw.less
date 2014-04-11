@@ -8,14 +8,17 @@
 	padding-bottom:24px;
 	height:100%;
 	&.sidebar-right {
-		border-left: 1px solid @uw-gray-medium;	
-		.nav-sidebar {
-			a:hover,
-			a:focus {
-				background-color: transparent;
-			}
-		}
+		border-left: 1px solid @uw-gray-medium;
 	}
+	&.sidebar-left {
+		border-right: 1px solid @uw-gray-medium;	
+	}
+	.nav-sidebar {
+		a:hover,
+		a:focus {
+			background-color: transparent;
+		}
+	}	
 	&.sidebar-right,
 	&.sidebar-left {
 		@media (max-width: @grid-float-breakpoint) {
