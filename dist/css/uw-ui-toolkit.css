@@ -6423,6 +6423,14 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   border-color: #c8c5bb #c8c5bb #b70101;
   border-style: none solid solid;
 }
+.uw-content-classic .container .main {
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .uw-content-classic .container {
+    border: none;
+  }
+}
 .uw-footer-classic .container {
   text-align: center;
   background-color: #FFFFFF;
@@ -6459,13 +6467,18 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 .sidebar.sidebar-right {
   border-left: 1px solid #c8c5bb;
 }
-.sidebar .nav-sidebar a:hover,
-.sidebar .nav-sidebar a:focus {
+.sidebar.sidebar-right .nav-sidebar a:hover,
+.sidebar.sidebar-right .nav-sidebar a:focus {
   background-color: transparent;
+}
+@media (max-width: 768px) {
+  .sidebar.sidebar-right,
+  .sidebar.sidebar-left {
+    border: none;
+  }
 }
 @media (max-width: 768px) {
   .sidebar {
     height: auto;
-    margin-top: 60px;
   }
 }
