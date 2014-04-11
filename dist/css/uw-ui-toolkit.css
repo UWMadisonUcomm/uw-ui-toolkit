@@ -5976,6 +5976,9 @@ td.visible-print {
 .navbar.navbar-inverse .navbar-header {
   margin-left: 18px;
 }
+.navbar.navbar-inverse .navbar-collapse {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
 .navbar.navbar-inverse .dropdown-menu .divider {
   margin: 4px 0;
   background-color: transparent;
@@ -6034,6 +6037,7 @@ body > .container {
   padding-left: 0;
   padding-right: 0;
   background-image: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   text-transform: none;
   /* UW Utility */
 }
@@ -6451,4 +6455,21 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 }
 .uw-texture-tan-light {
   background: url('../img/noise.png') #efe8d8;
+}
+.container > .row {
+  border-left: 1px solid #c8c5bb;
+  border-right: 1px solid #c8c5bb;
+}
+.sidebar {
+  background: #efe8d8;
+  position: relative;
+  height: 100%;
+  padding-top: 24px;
+}
+.sidebar.sidebar-right {
+  border-left: 1px solid #c8c5bb;
+}
+.sidebar .nav-sidebar a:hover,
+.sidebar .nav-sidebar a:focus {
+  background-color: transparent;
 }
