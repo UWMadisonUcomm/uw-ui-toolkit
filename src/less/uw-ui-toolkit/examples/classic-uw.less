@@ -8,15 +8,24 @@
 	padding-bottom:24px;
 	height:100%;
 	&.sidebar-right {
-		border-left: 1px solid @uw-gray-medium;
-	}
-	.nav-sidebar {
-		a:hover,
-		a:focus {
-			background-color: transparent;
+		border-left: 1px solid @uw-gray-medium;	
+		.nav-sidebar {
+			a:hover,
+			a:focus {
+				background-color: transparent;
+			}
 		}
 	}
+	&.sidebar-right,
+	&.sidebar-left {
+		@media (max-width: @grid-float-breakpoint) {
+			border:none;
+		}		
+	}
+
+
+	//.sidebar media queries
 	@media (max-width: @grid-float-breakpoint) {
-    height:auto;
-  }
+		height:auto;
+	}
 }
