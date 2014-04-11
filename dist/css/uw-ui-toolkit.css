@@ -6419,10 +6419,10 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 }
 .uw-content-classic .container {
   background-color: #ffffff;
-  min-height: 530px;
   border-width: 1px 1px 2px;
-  border-color: #c3bca1 #c3bca1 #b70101;
+  border-color: #c8c5bb #c8c5bb #b70101;
   border-style: none solid solid;
+  padding-bottom: 60px;
 }
 .uw-content-classic #primary {
   padding: 20px;
@@ -6456,15 +6456,11 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 .uw-texture-tan-light {
   background: url('../img/noise.png') #efe8d8;
 }
-.container > .row {
-  border-left: 1px solid #c8c5bb;
-  border-right: 1px solid #c8c5bb;
-}
 .sidebar {
   background: #efe8d8;
   position: relative;
-  height: 100%;
   padding-top: 24px;
+  padding-bottom: 24px;
 }
 .sidebar.sidebar-right {
   border-left: 1px solid #c8c5bb;
@@ -6472,4 +6468,9 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 .sidebar .nav-sidebar a:hover,
 .sidebar .nav-sidebar a:focus {
   background-color: transparent;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    height: 100%;
+  }
 }

@@ -1,15 +1,10 @@
 
 // Classic UW - right sidebar
-
-.container > .row {
-	border-left: 1px solid @uw-gray-medium;
-	border-right: 1px solid @uw-gray-medium;
-}
 .sidebar {
 	background: @uw-tan-light;
 	position:relative;
-	height:100%;
 	padding-top:24px;
+	padding-bottom:24px;
 	&.sidebar-right {
 		border-left: 1px solid @uw-gray-medium;
 	}
@@ -19,4 +14,7 @@
 			background-color: transparent;
 		}
 	}
+	@media (min-width: @grid-float-breakpoint) {
+    height:100%;
+  }
 }
