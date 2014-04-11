@@ -6452,8 +6452,15 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 .uw-texture-tan-light {
   background: url('../img/noise.png') #efe8d8;
 }
+.container > .row {
+  border-left: 1px solid #c8c5bb;
+  border-right: 1px solid #c8c5bb;
+}
 .sidebar {
-  background: #f7f5e8;
+  background: #efe8d8;
   position: relative;
   height: 100%;
+}
+.sidebar.sidebar-right {
+  border-left: 1px solid #c8c5bb;
 }

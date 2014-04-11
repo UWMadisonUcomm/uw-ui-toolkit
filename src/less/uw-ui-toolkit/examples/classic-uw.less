@@ -1,7 +1,15 @@
 
 // Classic UW - right sidebar
+
+.container > .row {
+	border-left: 1px solid @uw-gray-medium;
+	border-right: 1px solid @uw-gray-medium;
+}
 .sidebar {
-	background: @uw-cream;
+	background: @uw-tan-light;
 	position:relative;
 	height:100%;
+	&.sidebar-right {
+		border-left: 1px solid @uw-gray-medium;
+	}
 }
