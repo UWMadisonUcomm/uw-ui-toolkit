@@ -6453,5 +6453,7 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   background: url('../img/noise.png') #efe8d8;
 }
 .sidebar {
-  border: 1px solid red;
+  background: #efe8d8;
+  position: relative;
+  height: 100%;
 }
