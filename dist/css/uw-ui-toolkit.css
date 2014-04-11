@@ -6452,3 +6452,6 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 .uw-texture-tan-light {
   background: url('../img/noise.png') #efe8d8;
 }
+.sidebar {
+  border: 1px solid red;
+}
