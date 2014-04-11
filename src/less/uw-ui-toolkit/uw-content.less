@@ -2,21 +2,18 @@
 
   background-color: #ffffff;
   #gradient > .vertical(@uw-tan-light, #ffffff);
-
   .container {
     background-color: #ffffff;
     border-width: 0 1px 2px;
     border-color: @uw-gray-medium @uw-gray-medium @uw-red-badger;
     border-style: none solid solid;
+    .main {
+      height:100%;
+    }
   }
-
-  // #primary {
-  //   padding:20px;
-  // }
-  // #secondary {
-  //   padding:20px;
-  // }
-
+  @media (min-width: @grid-float-breakpoint) {
+    // height:auto;
+  }
 }
 
 

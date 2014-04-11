@@ -6423,6 +6423,9 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   border-color: #c8c5bb #c8c5bb #b70101;
   border-style: none solid solid;
 }
+.uw-content-classic .container .main {
+  height: 100%;
+}
 .uw-footer-classic .container {
   text-align: center;
   background-color: #FFFFFF;
@@ -6454,7 +6457,6 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   position: relative;
   padding-top: 24px;
   padding-bottom: 24px;
-  height: 100%;
 }
 .sidebar.sidebar-right {
   border-left: 1px solid #c8c5bb;
@@ -6462,10 +6464,4 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 .sidebar .nav-sidebar a:hover,
 .sidebar .nav-sidebar a:focus {
   background-color: transparent;
-}
-@media (max-width: 768px) {
-  .sidebar {
-    height: auto;
-    margin-top: 60px;
-  }
 }
