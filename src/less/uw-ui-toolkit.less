@@ -1,8 +1,6 @@
 // Core variables and mixins
-// UW Bootstrap replaces the entire Boostrap variables.less with a copy that has UW-specific values defined
-// @import "../bootstrap/variables.less";
-@import "uw-ui-toolkit/bootstrap-overrides/variables.less";
-
+@import "uw-ui-toolkit/bootstrap-overrides/variables.less"; // Replaces "../bootstrap/variables.less"
+@import "bootstrap/mixins.less";
 @import "bootstrap/mixins.less";
 
 // Reset
@@ -53,10 +51,14 @@
 
 
 
-// UW Bootstrap overrides
+// UW UI Toolkit Custom styles //
+// --------------------------- //
+
+// UW UI Toolkit custom styles to override deafult Bootstrap components.
+// Create separate files in bootstrap-overrides/ dir to keep 
+// track of what we've done.
 @import "uw-ui-toolkit/bootstrap-overrides/navbar.less";
 @import "uw-ui-toolkit/bootstrap-overrides/jumbotron.less";
-
 
 // UW Header
 @import "uw-ui-toolkit/uw-header.less";
