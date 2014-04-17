@@ -325,8 +325,7 @@
                 var complete = function() {
                     this.transitioning = 0, this.$element.trigger("hidden.bs.collapse").removeClass("collapsing").addClass("collapse");
                 };
-                return $.support.transition ? (this.$element[dimension](0).one($.support.transition.end, $.proxy(complete, this)).emulateTransitionEnd(350), 
-                void 0) : complete.call(this);
+                return $.support.transition ? void this.$element[dimension](0).one($.support.transition.end, $.proxy(complete, this)).emulateTransitionEnd(350) : complete.call(this);
             }
         }
     }, Collapse.prototype.toggle = function() {
@@ -608,14 +607,14 @@
         }), options;
     }, Tooltip.prototype.enter = function(obj) {
         var self = obj instanceof this.constructor ? obj : $(obj.currentTarget)[this.type](this.getDelegateOptions()).data("bs." + this.type);
-        return clearTimeout(self.timeout), self.hoverState = "in", self.options.delay && self.options.delay.show ? (self.timeout = setTimeout(function() {
+        return clearTimeout(self.timeout), self.hoverState = "in", self.options.delay && self.options.delay.show ? void (self.timeout = setTimeout(function() {
             "in" == self.hoverState && self.show();
-        }, self.options.delay.show), void 0) : self.show();
+        }, self.options.delay.show)) : self.show();
     }, Tooltip.prototype.leave = function(obj) {
         var self = obj instanceof this.constructor ? obj : $(obj.currentTarget)[this.type](this.getDelegateOptions()).data("bs." + this.type);
-        return clearTimeout(self.timeout), self.hoverState = "out", self.options.delay && self.options.delay.hide ? (self.timeout = setTimeout(function() {
+        return clearTimeout(self.timeout), self.hoverState = "out", self.options.delay && self.options.delay.hide ? void (self.timeout = setTimeout(function() {
             "out" == self.hoverState && self.hide();
-        }, self.options.delay.hide), void 0) : self.hide();
+        }, self.options.delay.hide)) : self.hide();
     }, Tooltip.prototype.show = function() {
         var e = $.Event("show.bs." + this.type);
         if (this.hasContent() && this.enabled) {
@@ -676,6 +675,7 @@
             height: el.offsetHeight
         }, this.$element.offset());
     }, Tooltip.prototype.getCalculatedOffset = function(placement, pos, actualWidth, actualHeight) {
+        /* placement == 'right' */
         return "bottom" == placement ? {
             top: pos.top + pos.height,
             left: pos.left + pos.width / 2 - actualWidth / 2
@@ -685,8 +685,7 @@
         } : "left" == placement ? {
             top: pos.top + pos.height / 2 - actualHeight / 2,
             left: pos.left - actualWidth
-        } : /* placement == 'right' */
-        {
+        } : {
             top: pos.top + pos.height / 2 - actualHeight / 2,
             left: pos.left + pos.width
         };
@@ -813,7 +812,7 @@
     // ==========================
     function ScrollSpy(element, options) {
         var href, process = $.proxy(this.process, this);
-        this.$element = $(element).is("body") ? $(window) : $(element), this.$body = $("body"), 
+        this.$element = $($(element).is("body") ? window : element), this.$body = $("body"), 
         this.$scrollElement = this.$element.on("scroll.bs.scroll-spy.data-api", process), 
         this.options = $.extend({}, ScrollSpy.DEFAULTS, options), this.selector = (this.options.target || (href = $(element).attr("href")) && href.replace(/.*(?=#[^\s]+$)/, "") || "") + " .nav li > a", 
         this.offsets = $([]), this.targets = $([]), this.activeTarget = null, this.refresh(), 

@@ -37,9 +37,9 @@ module.exports = function(grunt){
        */
       bootstrap: {
         files: [
-          {src: 'node_modules/bootstrap/less/*.less',dest: 'src/less/bootstrap/', flatten: true, expand: true},
-          {src: 'node_modules/bootstrap/fonts/*', dest: 'dist/fonts/', flatten: true, expand: true},
-          {src: 'node_modules/bootstrap/js/*.js', dest: 'src/js/bootstrap/', flatten: true, expand: true}
+          {src: 'bower_components/bootstrap/less/*.less',dest: 'src/less/bootstrap/', flatten: true, expand: true},
+          {src: 'bower_components/bootstrap/fonts/*', dest: 'dist/fonts/', flatten: true, expand: true},
+          {src: 'bower_components/bootstrap/js/*.js', dest: 'src/js/bootstrap/', flatten: true, expand: true}
         ]
       }
     },
