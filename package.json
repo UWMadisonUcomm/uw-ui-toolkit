@@ -7,7 +7,6 @@
     "url": "https://github.com/UWMadisonUcomm/uw-ui-toolkit.git"
   },
   "devDependencies": {
-    "bootstrap": "git://github.com/twbs/bootstrap.git#v3.0.3",
     "grunt": "~0.4.1",
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-less": "~0.8.2",
