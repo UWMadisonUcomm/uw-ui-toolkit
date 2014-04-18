@@ -1,6 +1,8 @@
-// Core variables and mixins
-@import "uw-ui-toolkit/bootstrap-overrides/variables.less"; // Replaces "../bootstrap/variables.less"
-@import "bootstrap/mixins.less";
+// Core variables
+@import "bootstrap/variables.less"; // Load original BS variables
+@import "uw-ui-toolkit/uw-variables.less"; // Load to 1) create new UW variables and 2) assign them to original BS variables
+
+// Mixins
 @import "bootstrap/mixins.less";
 
 // Reset
@@ -24,12 +26,14 @@
 @import "bootstrap/input-groups.less";
 @import "bootstrap/navs.less";
 @import "bootstrap/navbar.less";
+@import "uw-ui-toolkit/uw-navbar.less"; // Overrides original bootstrap/navbar.less
 @import "bootstrap/breadcrumbs.less";
 @import "bootstrap/pagination.less";
 @import "bootstrap/pager.less";
 @import "bootstrap/labels.less";
 @import "bootstrap/badges.less";
 @import "bootstrap/jumbotron.less";
+@import "uw-ui-toolkit/uw-jumbotron.less"; // Overrides original bootstrap/jumbotron.less"
 @import "bootstrap/thumbnails.less";
 @import "bootstrap/alerts.less";
 @import "bootstrap/progress-bars.less";
@@ -53,10 +57,6 @@
 
 // UW UI Toolkit Custom styles //
 // --------------------------- //
-
-// UW UI Toolkit custom styles
-@import "uw-ui-toolkit/bootstrap-overrides/navbar.less"; // Overrides original "../bootstrap/navbar.less"
-@import "uw-ui-toolkit/bootstrap-overrides/jumbotron.less";  // Overrides original "../bootstrap/jumbotron.less"
 
 // UW Header
 @import "uw-ui-toolkit/uw-header.less";
