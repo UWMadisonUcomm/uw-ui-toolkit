@@ -5774,11 +5774,11 @@ button.close {
 }
 .navbar.navbar-default,
 .navbar.navbar-inverse {
+  background-image: url('../img/uwcrest_web_sm.png');
   background-position: -13px -13px;
   background-repeat: no-repeat;
   background-size: 50px;
   padding-left: 0;
-  background-image: url('../img/uwcrest_web_sm.png');
 }
 .navbar.navbar-default .container,
 .navbar.navbar-inverse .container {
