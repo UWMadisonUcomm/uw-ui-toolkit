@@ -5,7 +5,7 @@
 //== Paths
 //
 //## Image path 
-@uw-image-path:         '../img/';  //uwut  // is this necessary?
+@uw-image-path:         '../img/';  //uw  // is this necessary?
 
 //== Colors
 //
@@ -35,7 +35,7 @@
 @gray-light:             lighten(#000, 60%);   // #999
 @gray-lighter:           lighten(#000, 93.5%); // #eee
 
-@brand-primary:         @uw-red-badger; //uwut
+@brand-primary:         @uw-red-badger; //uw
 @brand-success:         #5cb85c;
 @brand-info:            #5bc0de;
 @brand-warning:         #f0ad4e;
@@ -49,7 +49,7 @@
 //** Background color for `<body>`.
 @body-bg:               #fff;
 //** Global text color on `<body>`.
-@text-color:            @gray;  //uwut
+@text-color:            @gray;  //uw
 
 //** Global textual link color.
 @link-color:            @brand-primary;
@@ -355,15 +355,15 @@
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 @navbar-collapse-max-height:       340px;
 
-@navbar-default-color:             #777;
-@navbar-default-bg:                #f8f8f8;
+@navbar-default-color:             @uw-gray-dark; //uw
+@navbar-default-bg:                #fff; //uw
 @navbar-default-border:            darken(@navbar-default-bg, 6.5%);
 
 // Navbar links
-@navbar-default-link-color:                #777;
-@navbar-default-link-hover-color:          #333;
-@navbar-default-link-hover-bg:             transparent;
-@navbar-default-link-active-color:         #555;
+@navbar-default-link-color:                @uw-gray-dark; //uw
+@navbar-default-link-hover-color:          @uw-gray-dark;  //uw
+@navbar-default-link-hover-bg:             darken(@navbar-default-bg, 6.5%); //uw
+@navbar-default-link-active-color:        @uw-gray-dark; //uw
 @navbar-default-link-active-bg:            darken(@navbar-default-bg, 6.5%);
 @navbar-default-link-disabled-color:       #ccc;
 @navbar-default-link-disabled-bg:          transparent;
@@ -381,14 +381,14 @@
 
 // Inverted navbar
 // Reset inverted navbar basics
-@navbar-inverse-color:                      #fff; //uwut
-@navbar-inverse-bg:                         @uw-red-medium; //uwut
+@navbar-inverse-color:                      #fff; //uw
+@navbar-inverse-bg:                         @uw-red-medium; //uw
 @navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
 
 // Inverted navbar links
-@navbar-inverse-link-color:                 #fff; //uwut
-@navbar-inverse-link-hover-color:           #fff;
-@navbar-inverse-link-hover-bg:              darken(@navbar-inverse-bg, 10%); //uwut
+@navbar-inverse-link-color:                 #fff; //uw
+@navbar-inverse-link-hover-color:           #fff; //uw
+@navbar-inverse-link-hover-bg:              darken(@navbar-inverse-bg, 10%); //uw
 @navbar-inverse-link-active-color:          @navbar-inverse-link-hover-color;
 @navbar-inverse-link-active-bg:             darken(@navbar-inverse-bg, 10%);
 @navbar-inverse-link-disabled-color:        #444;
