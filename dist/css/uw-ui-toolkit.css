@@ -4137,18 +4137,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-fixed-top + .row {
   margin-top: 72px;
 }
-@media (min-width: 768px) {
-  .navbar.navbar-fixed-top {
-    padding-left: 15px;
-  }
-  .navbar.navbar-fixed-top .navbar-collapse {
-    background-color: transparent;
-  }
-  .navbar.navbar-fixed-top .dropdown-menu .divider {
-    margin: 9px 0;
-    background-color: #eeeeee;
-  }
-}
 body > .container {
   margin-top: 24px;
   margin-bottom: 24px;
