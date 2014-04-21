@@ -1,25 +1,33 @@
 .navbar {
   &.navbar-default,
   &.navbar-inverse {
-  background-image: url('../img/uwcrest_web_sm.png');
-  background-position: -13px -13px;
-  background-repeat: no-repeat;
-  background-size: 50px;
-  padding-left: 0;
-  .container {
-    width: auto; //Keep navbar content always aligned to left no matter page width
-    padding-left: 15px;
-  }
-  .navbar-header {
-    margin-left: 28px;
-  }
-
-  .dropdown-menu .divider {
-    margin: 4px 0;
-    background-color: transparent;
+    background-image: url('../img/uwcrest_web_sm.png');
+    background-position: -13px -13px;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    padding-left: 0;
+    .container {
+      width: auto; //Keep navbar content always aligned to left no matter page width
+      padding-left: 15px;
+    }
+    .navbar-header {
+      margin-left: 28px;
+    }
   }
 
+  @media (max-width: @grid-float-breakpoint) {
+    &.navbar-default {
+      .navbar-collapse {
+        background-color: @navbar-default-bg;
+      }
+    }
+    &.navbar-inverse {
+      .navbar-collapse {
+        background-color: @navbar-inverse-bg;
+      }
+    }
   }
+
 }
 .page-header {
   margin-top: 0;
