@@ -2,9 +2,6 @@
 
 The following CSS rules override the default UW UI Toolkit's UW Classic starter template, removing the borders around the #header, #content, and #footer areas */
 
-body {
-	color: #6e6a5b; /* @uw-gray-dark */
-}
 
 #header {
 	background: #fff;
