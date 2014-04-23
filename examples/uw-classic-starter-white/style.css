@@ -1,0 +1,31 @@
+#header .container {
+	background-color: transparent;
+}
+
+.uw-navbar-classic {
+	background-image: linear-gradient(to bottom, #e7dbcb 0%, #d9c39e 100%);
+	background-image: -webkit-linear-gradient(top, #e7dbcb 0%, #d9c39e 100%);
+
+}
+#navbar .uw-navbar-classic .container {
+	box-shadow: none;
+}
+#navbar .navbar-nav li,
+#navbar .navbar-nav a {
+	border:none;
+}
+
+#content {
+	background:none;
+}
+#content .container {
+	border:none;
+}
+
+#footer {
+	border-top: 10px solid #666152;
+}
+
+#footer .container {
+	border:0;
+}
