@@ -8,7 +8,6 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 
 .uw-navbar-classic {
 	background-image: linear-gradient(to bottom, #e7dbcb 0%, #d9c39e 100%);
-	background-image: -webkit-linear-gradient(top, #e7dbcb 0%, #d9c39e 100%);
 }
 
 #navbar .container {
@@ -16,15 +15,15 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 }
 #navbar .navbar-nav li,
 #navbar .navbar-nav a {
-	border:none;
+	border: none;
 }
 
 #content {
-	background:none;
+	background: none;
 }
 
 #content .container {
-	border:none;
+	border: none;
 }
 
 #footer {
@@ -32,5 +31,5 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 }
 
 #footer .container {
-	border:0;
+	border: 0;
 }
