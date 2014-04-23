@@ -1,6 +1,6 @@
-/*  This is example of how you can write your own CSS to customize any template using the UW UI Toolkit.
+/*  This is example of how you can write your own CSS to customize any template based on the UW UI Toolkit.
 
-The following CSS rules override the default UW UI Toolkit's UW Classic starter template, removingthe borders around the #header, #content, and #footer areas */
+The following CSS rules override the default UW UI Toolkit's UW Classic starter template, removing the borders around the #header, #content, and #footer areas */
 
 #header .container {
 	background-color: transparent;
