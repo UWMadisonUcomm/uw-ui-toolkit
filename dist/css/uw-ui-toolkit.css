@@ -4161,7 +4161,6 @@ body > .container {
   top: 0;
   right: 0;
   z-index: 100;
-  width: 100%;
   margin-bottom: 0;
   padding-left: 0;
   padding-right: 0;
@@ -4172,7 +4171,6 @@ body > .container {
 }
 @media (min-width: 768px) {
   .navbar.uw-navbar-classic .container {
-    width: 770px;
     height: 26px;
     position: relative;
     background-image: -webkit-linear-gradient(top, #e7dbcb 0%, #d9c39e 100%);
@@ -4181,16 +4179,6 @@ body > .container {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe7dbcb', endColorstr='#ffd9c39e', GradientType=0);
     filter: none;
     background-color: #E7DBCB;
-  }
-}
-@media (min-width: 992px) {
-  .navbar.uw-navbar-classic .container {
-    width: 990px;
-  }
-}
-@media (min-width: 1190px) {
-  .navbar.uw-navbar-classic .container {
-    width: 1190px;
   }
 }
 .navbar.uw-navbar-classic .container .navbar-toggle {
