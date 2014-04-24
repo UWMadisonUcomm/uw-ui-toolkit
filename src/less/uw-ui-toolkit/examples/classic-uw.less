@@ -6,7 +6,7 @@
 	position:relative;
 	padding-top:24px;
 	padding-bottom:24px;
-	height:100%;
+	min-height: 70%;
 	&.sidebar-right {
 		border-left: 1px solid @uw-gray-medium;
 	}
@@ -29,7 +29,7 @@
 
 	//.sidebar media queries
 	@media (max-width: @grid-float-breakpoint) {
-		height:auto;
+		min-height:inherit;
 	}
 }
 
