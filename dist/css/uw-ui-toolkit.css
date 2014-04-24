@@ -6256,9 +6256,6 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
     font-size: 1.5em;
   }
 }
-.uw-texture-tan-light {
-  background: url('../img/noise.png') #efe8d8;
-}
 .sidebar {
   background: #efe8d8;
   position: relative;
