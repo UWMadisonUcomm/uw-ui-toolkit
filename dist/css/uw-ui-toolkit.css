@@ -6151,14 +6151,17 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   }
 }
 .uw-header-classic .container .uw-header-branding .uw-header-wordmark {
+  color: #FFF;
+  font-family: 'EB Garamond', serif;
   left: 36px;
   position: absolute;
-  top: -18px;
-  width: 225px;
+  top: -20px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: normal;
 }
 @media (min-width: 768px) {
   .uw-header-classic .container .uw-header-branding .uw-header-wordmark {
-    width: 260px;
     left: 68px;
   }
 }
