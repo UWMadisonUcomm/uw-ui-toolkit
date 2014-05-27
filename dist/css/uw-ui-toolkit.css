@@ -6151,14 +6151,18 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   }
 }
 .uw-header-classic .container .uw-header-branding .uw-header-wordmark {
+  color: #FFF;
+  font-family: 'EB Garamond', serif;
   left: 36px;
   position: absolute;
-  top: -18px;
-  width: 225px;
+  top: -20px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: normal;
+  text-decoration: none;
 }
 @media (min-width: 768px) {
   .uw-header-classic .container .uw-header-branding .uw-header-wordmark {
-    width: 260px;
     left: 68px;
   }
 }
@@ -6214,7 +6218,7 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   border-style: none solid solid;
 }
 .uw-content-classic .container .main {
-  height: 100%;
+  min-height: 70%;
 }
 @media (max-width: 768px) {
   .uw-content-classic .container {
@@ -6249,7 +6253,7 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   position: relative;
   padding-top: 24px;
   padding-bottom: 24px;
-  height: 100%;
+  min-height: 70%;
 }
 .sidebar.sidebar-right {
   border-left: 1px solid #c8c5bb;
@@ -6269,6 +6273,6 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 }
 @media (max-width: 768px) {
   .sidebar {
-    height: auto;
+    min-height: inherit;
   }
 }
