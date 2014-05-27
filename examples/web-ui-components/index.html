@@ -1179,12 +1179,19 @@
       </div>
     </div>
   </div>
+  <div id="source-modal" class="modal fade" tabindex="-1" aria-labelledby="SourceModal" aria-hidden="true"></div>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   <script src="/dist/js/uw-ui-toolkit.js"></script>
   <script type="text/javascript">
   $(function(){
-    $(".bs-component").append('<button class="source-button btn btn-xs btn-primary">< ></button>');
+    $(".bs-component").append('<button class="source-button btn btn-xs btn-primary" data-toggle="modal" data-target="#source-modal">< ></button>');
+    $(".source-button").on('click', function(){
+      var html = $(this).parent('.bs-component').html();
+      $("#source-modal .modal-body pre")
+        .html('')
+        .append('<code class="html">' + html.replace(/^\s+/, '').replace(/<button?.+source-button?.+<\/button>/g, "").replace(/&/g, '&amp;').replace(/</g, '&lt;') + '</code>');
+    });
   });
   </script>
 </body>

@@ -16,6 +16,9 @@
 	right:0;
 	z-index: 100;
 }
+#source-modal {
+	display:none;
+}
 .bs-component:hover {
 	/*background-color: #EEE;*/
 }
