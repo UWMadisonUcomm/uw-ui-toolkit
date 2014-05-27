@@ -4,14 +4,9 @@ title: UI Components
 slug: ui-components
 ---
 
-<div id="page-header" class="page-header" id="banner">
-  <div class="row">
-    <div class="col-xs-12">
-      <h1>UW UI Components</h1>
-      <p class="lead">Sample list of <a href="http://getbootstrap.com">Bootstrap</a> components as styled by the <a href="#">UW UI Toolkit</a>.</p>
-    </div>
-  </div>
-</div>      
+<p class="lead">Sample list of <a href="http://getbootstrap.com">Bootstrap</a> components as styled by the <a href="#">UW UI Toolkit</a>.</p>
+
+
 
 
 <!-- Navbar
