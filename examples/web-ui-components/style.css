@@ -4,4 +4,22 @@
 
 .page-header h1 {
 	margin-top:40px;
-} 
+}
+.bs-component {
+	position:relative;
+	border-radius: 8px
+}
+.source-button {
+	display:none;
+	position:absolute;
+	top:0;
+	right:0;
+	z-index: 100;
+}
+.bs-component:hover {
+	/*background-color: #EEE;*/
+}
+.bs-component:hover .source-button {
+	display: block;
+
+}
