@@ -6159,6 +6159,7 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   font-size: 13px;
   letter-spacing: 2px;
   font-weight: normal;
+  text-decoration: none;
 }
 @media (min-width: 768px) {
   .uw-header-classic .container .uw-header-branding .uw-header-wordmark {
