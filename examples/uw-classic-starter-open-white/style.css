@@ -15,6 +15,10 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 	color: #b70101; 
 }
 
+#header .uw-header-wordmark {
+	color: #333;
+}
+
 .navbar.uw-navbar-classic .container .nav.uw-navbar-classic-utility > li > a {
 	color: #c8c5bb;
 }
