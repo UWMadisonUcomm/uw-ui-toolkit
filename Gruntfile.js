@@ -33,7 +33,7 @@ module.exports = function(grunt){
       });
     return dirs;
   })();
-console.log(autoshotFiles);
+// console.log(autoshotFiles);
 
 
   // Load configuration in with nconf, allowing config.json overrides.
@@ -47,7 +47,6 @@ console.log(autoshotFiles);
       img: {
         files: [{src: 'src/img/*', dest: 'dist/img/', flatten: true, expand: true}]
       },
-
       /**
        * copy:bootstrap is used to upgrade bootstrap in
        * src/less/bootstrap, and should not be run routinely
@@ -150,21 +149,18 @@ console.log(autoshotFiles);
         }
       }
     },
-    // autoshot: {
-    //   default_options: {
-    //     options: {
-    //       path: 'src/img/examples/',
-    //       // local: {
-    //       //   path: 'examples/**/',
-    //       //   port: 4000,
-    //       //   files: autoshotFiles
-    //       // }
-    //       remote: {
-    //         files: [];
-    //       }
-    //     }
-    //   }
-    // }
+    autoshot: {
+      default_options: {
+        options: {
+          path: 'src/img/examples/',
+          local: {
+            path: './',
+            port: 4000,
+            files: autoshotFiles
+          }
+        }
+      }
+    }
   });
 
   // Load plugins
@@ -174,6 +170,7 @@ console.log(autoshotFiles);
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-aws-s3');
   grunt.loadNpmTasks('grunt-contrib-compress');
+  grunt.loadNpmTasks('grunt-autoshot');
 
   // Register tasks
   grunt.registerTask('default', ['build']);
