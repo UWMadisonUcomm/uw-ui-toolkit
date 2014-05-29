@@ -44,7 +44,7 @@ module.exports = function(grunt){
     conf: nconf,
     copy: {
       img: {
-        files: [{src: 'src/img/*', dest: 'dist/img/', flatten: true, expand: true}]
+        files: [{src: 'src/img/**/*', dest: 'dist/img/', flatten: true, expand: true}]
       },
       /**
        * copy:bootstrap is used to upgrade bootstrap in
@@ -151,10 +151,10 @@ module.exports = function(grunt){
     autoshot: {
       default_options: {
         options: {
-          path: 'src/img/examples/',
+          path: 'src/img/',
           local: {
             path: './',
-            port: 4000,
+            port: 4001,
             files: autoshotFiles
           },
           remote: {
