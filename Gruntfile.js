@@ -22,13 +22,13 @@ module.exports = function(grunt){
   // example dirs
   var autoshotFiles = (function(){
     var sp = './examples';
-    var dp = './src/examples/'
+    var dp = ''
     var dirs = fs.readdirSync(sp).filter(function(file){
         return fs.statSync(path.join(sp,file)).isDirectory();
       }).map(function(file){
         return {
           src: path.join(sp, file,'index.html'),
-          dest: path.join(dp, file + '-screenshot.jpg')
+          dest: path.join(dp, file + '-screenshot.png')
         };
       });
     return dirs;
@@ -157,7 +157,11 @@ module.exports = function(grunt){
             path: './',
             port: 4000,
             files: autoshotFiles
-          }
+          },
+          remote: {
+            files: []
+          },
+          viewport: ['1024x768']
         }
       }
     }
