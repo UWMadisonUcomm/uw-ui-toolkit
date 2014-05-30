@@ -1,20 +1,39 @@
+var fs =  require('fs');
+var path = require('path');
+
 module.exports = function(grunt){
 
   // Bootstrap javascript files
   var bootstrap_js = [
-    'src/js/bootstrap/transition.js',
-    'src/js/bootstrap/alert.js',
-    'src/js/bootstrap/button.js',
-    'src/js/bootstrap/carousel.js',
-    'src/js/bootstrap/collapse.js',
-    'src/js/bootstrap/dropdown.js',
-    'src/js/bootstrap/modal.js',
-    'src/js/bootstrap/tooltip.js',
-    'src/js/bootstrap/popover.js',
-    'src/js/bootstrap/scrollspy.js',
-    'src/js/bootstrap/tab.js',
-    'src/js/bootstrap/affix.js'
+  'src/js/bootstrap/transition.js',
+  'src/js/bootstrap/alert.js',
+  'src/js/bootstrap/button.js',
+  'src/js/bootstrap/carousel.js',
+  'src/js/bootstrap/collapse.js',
+  'src/js/bootstrap/dropdown.js',
+  'src/js/bootstrap/modal.js',
+  'src/js/bootstrap/tooltip.js',
+  'src/js/bootstrap/popover.js',
+  'src/js/bootstrap/scrollspy.js',
+  'src/js/bootstrap/tab.js',
+  'src/js/bootstrap/affix.js'
   ];
+
+  // example dirs
+  var autoshotFiles = (function(){
+    var sp = './examples';
+    var dirs = fs.readdirSync(sp).filter(function(file){
+      return fs.statSync(path.join(sp,file)).isDirectory();
+    }).map(function(file){
+      return {
+        src: path.join(sp, file,'index.html'),
+        dest: path.join(file + '-screenshot.png')
+      };
+    });
+    return dirs;
+  })();
+// console.log(autoshotFiles);
+
 
   // Load configuration in with nconf, allowing config.json overrides.
   // https://github.com/flatiron/nconf
@@ -25,9 +44,8 @@ module.exports = function(grunt){
     conf: nconf,
     copy: {
       img: {
-        files: [{src: 'src/img/*', dest: 'dist/img/', flatten: true, expand: true}]
+        files: [{src: 'src/img/**/*', dest: 'dist/img/', flatten: true, expand: true}]
       },
-
       /**
        * copy:bootstrap is used to upgrade bootstrap in
        * src/less/bootstrap, and should not be run routinely
@@ -35,11 +53,11 @@ module.exports = function(grunt){
        * devDependency in package.json.
        * Then, npm install, grunt copy:bootstrap.
        */
-      bootstrap: {
+       bootstrap: {
         files: [
-          {src: 'bower_components/bootstrap/less/*.less',dest: 'src/less/bootstrap/', flatten: true, expand: true},
-          {src: 'bower_components/bootstrap/fonts/*', dest: 'dist/fonts/', flatten: true, expand: true},
-          {src: 'bower_components/bootstrap/js/*.js', dest: 'src/js/bootstrap/', flatten: true, expand: true}
+        {src: 'bower_components/bootstrap/less/*.less',dest: 'src/less/bootstrap/', flatten: true, expand: true},
+        {src: 'bower_components/bootstrap/fonts/*', dest: 'dist/fonts/', flatten: true, expand: true},
+        {src: 'bower_components/bootstrap/js/*.js', dest: 'src/js/bootstrap/', flatten: true, expand: true}
         ]
       }
     },
@@ -86,8 +104,8 @@ module.exports = function(grunt){
       },
       snapshot: {
         files: [
-          { cwd: 'dist', src: ['**'], dest: 'snapshot', expand: true },
-          { cwd: 'build', src: 'uw-ui-toolkit-snapshot.zip', dest: 'downloads/', expand: true }
+        { cwd: 'dist', src: ['**'], dest: 'snapshot', expand: true },
+        { cwd: 'build', src: 'uw-ui-toolkit-snapshot.zip', dest: 'downloads/', expand: true }
         ]
       },
       release: {
@@ -98,8 +116,8 @@ module.exports = function(grunt){
           }
         },
         files: [
-          { cwd: 'dist', src: ['**'], dest: '<%= pkg.version %>', expand: true },
-          { cwd: 'build', src: 'uw-ui-toolkit-<%=pkg.version %>.zip', dest: 'downloads/', expand: true }
+        { cwd: 'dist', src: ['**'], dest: '<%= pkg.version %>', expand: true },
+        { cwd: 'build', src: 'uw-ui-toolkit-<%=pkg.version %>.zip', dest: 'downloads/', expand: true }
         ]
       }
     },
@@ -109,7 +127,7 @@ module.exports = function(grunt){
           archive: 'build/uw-ui-toolkit-snapshot.zip'
         },
         files: [
-          {src:['**'], cwd: 'dist',expand: true}
+        {src:['**'], cwd: 'dist',expand: true}
         ]
       },
       release_zip: {
@@ -117,7 +135,7 @@ module.exports = function(grunt){
           archive: 'build/uw-ui-toolkit-<%=pkg.version %>.zip'
         },
         files: [
-          {src:['**'], cwd: 'dist',expand: true}
+        {src:['**'], cwd: 'dist',expand: true}
         ]
       },
     },
@@ -127,6 +145,22 @@ module.exports = function(grunt){
         tasks: ['less'],
         options: {
           livereload:true
+        }
+      }
+    },
+    autoshot: {
+      default_options: {
+        options: {
+          path: 'src/img/',
+          local: {
+            path: './',
+            port: 4001,
+            files: autoshotFiles
+          },
+          remote: {
+            files: []
+          },
+          viewport: ['1024x768']
         }
       }
     }
@@ -139,6 +173,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-aws-s3');
   grunt.loadNpmTasks('grunt-contrib-compress');
+  grunt.loadNpmTasks('grunt-autoshot');
 
   // Register tasks
   grunt.registerTask('default', ['build']);
