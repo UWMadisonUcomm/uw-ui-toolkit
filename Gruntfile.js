@@ -23,14 +23,13 @@ module.exports = function(grunt){
   var autoshotFiles = (function(){
     var sp = './examples';
     var dirs = fs.readdirSync(sp).filter(function(file){
-        return fs.statSync(path.join(sp,file)).isDirectory();
-      }).map(function(file){
-        return {
-          src: path.join(sp, file,'index.html'),
-          dest: path.join(file + '-screenshot.png'),
-          delay: 3000
-        };
-      });
+      return fs.statSync(path.join(sp,file)).isDirectory();
+    }).map(function(file){
+      return {
+        src: path.join(sp, file,'index.html'),
+        dest: path.join(file + '-screenshot.png')
+      };
+    });
     return dirs;
   })();
 // console.log(autoshotFiles);
