@@ -27,7 +27,8 @@ module.exports = function(grunt){
       }).map(function(file){
         return {
           src: path.join(sp, file,'index.html'),
-          dest: path.join(file + '-screenshot.png')
+          dest: path.join(file + '-screenshot.png'),
+          delay: 3000
         };
       });
     return dirs;
