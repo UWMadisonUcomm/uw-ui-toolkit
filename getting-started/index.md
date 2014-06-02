@@ -4,32 +4,34 @@ title: Getting Started
 slug: getting-started
 ---
 
-## Download the precompiled files ##
+<p class="lead">
+  The UW UI Toolkit can be easily added to your project. There are two different ways of doing this, depending on your skills:
+</p>
 
-**1.** [Download the precompiled and minified CSS and Javascript files](#) for use in your website. Link the CSS and Javascript files in your HTML as follows:
+##1. Download the .zip file with precompiled files (easy) ##
 
-```html
-<html>
-  <head>
-    <title>Your site title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link href="/css/uw-ui-toolkit.css" rel="stylesheet" media="screen">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  </head>
-  
-  ...
+1. [Download](https://github.com/UWMadisonUcomm/uw-ui-toolkit/releases/download/v0.1.4/uw-ui-toolkit-0.1.4.zip) the compressed files and open them.
+2. Link the CSS and JavaScript files in your HTML as follows (you can also use the [examples](/examples/) as a starting point for your project):
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-  </body>
-</html>
 
-```
+        <html>
+          <head>
+            <title>Your site title</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <link href="/css/uw-ui-toolkit.css" rel="stylesheet" media="screen">
+            <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+          </head>
 
-**2.** Then visit the [documentation](/documentation/) for how to use the toolkit in your website.
+          ...
+          
+          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+          <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+          </body>
+        </html>
 
-## Developing with the UW UI Toolkit ##
+
+## 2. Download the source code (advanced) ##
 
 ### Get the code ###
 
