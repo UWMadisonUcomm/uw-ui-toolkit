@@ -5,10 +5,10 @@ slug: getting-started
 ---
 
 <p class="lead">
-  The UW UI Toolkit can be easily added to your project. There are two different ways of doing this, depending on your skills:
+  The UW UI Toolkit can be easily added to your project. There are two different ways of doing this, depending on your needs and skill level:
 </p>
 
-##1. Download the .zip file with precompiled files (easy) ##
+##1. Download the UW UI Toolkit compiled files (easy, best for front-end development): ##
 
 1. [Download](https://github.com/UWMadisonUcomm/uw-ui-toolkit/releases/download/v0.1.4/uw-ui-toolkit-0.1.4.zip) the compressed files and open them.
 2. Link the CSS and JavaScript files in your HTML as follows (you can also use the [examples](/examples/) as a starting point for your project):
@@ -30,66 +30,58 @@ slug: getting-started
           </body>
         </html>
 
+<br>
+## 2. Download the UW UI Toolkit source code (advanced, best for customizing and/or contributing to the project): ##
 
-## 2. Download the source code (advanced) ##
+<p class="lead">If you want to either customize or contribute to the UW UI Toolkit project, please follow the steps below to set up your development environment.</p>
 
-### 1. Get the code using either of these methods:
-  - Clone from GitHub:
-  
-      `$ git clone git@github.com:UWMadisonUcomm/uw-ui-toolkit.git`
+<br>
+#### 1. Get the code using either of these methods:
 
   - Install via bower:
   
-      `$ bower install uw-ui-toolkit`
+        $ bower install uw-ui-toolkit
  
   - Install via npm:
   
-      `$ npm install uw-ui-tookit (<-- need to register)`
+        $ npm install uw-ui-tookit (<-- need to register)
 
-### 2. Set up your development environment:
+  - **For contributors:** Fork from GitHub:
+  
+        $ git clone git@github.com:UWMadisonUcomm/uw-ui-toolkit.git        
+
+<br>
+#### 2. Set up your development environment:
 
 After cloning/downloading the files, `cd` into your UW UI Toolkit's directory and:
 
-1. Install Node modules ([Node.js](http://nodejs.org/) is needed for downloading the required dependencies to compile the UW UI Toolkit).
+1. Install [Node.js](http://nodejs.org/) modules (Node.js is needed for downloading the required dependencies to compile the UW UI Toolkit).
 
-      ```bash
-      $ npm install
-      ```
+        $ npm install
 
-2. Install Grunt command line tools ([Grunt](http://gruntjs.com/) is needed for building and compiling the UW UI Toolkit's source code).
+1. Install [Grunt](http://gruntjs.com/) command line tools (Grunt is needed for building and compiling the UW UI Toolkit's source code).
 
-      ```bash
-      $ npm install -g grunt-cli
-      ```
+        $ npm install -g grunt-cli
 
-See the for more details on Grunt and installation of the the command line tools.
+1. Install [Jekyll](http://jekyllrb.com/) (Jekyll is needed to generate the sample files of the UW UI Toolkit)
 
-### 3. Install Jekyll ###
+        $ bundle install
 
-If you want to controbute to the project documentation, you'll need to install Jekyll, which is what this site's pages are built in. (You'll need to also have Ruby and the gem bundler installed on your machine.)
+<br>
+#### 3. Start the local server ####
 
-To install Jekyll, run:
+1. To start the local web server, run:
+        
+        $ jekyll serve --watch
 
-```bash
-$ bundle install
-```
+1. View the site at [http://localhost:4000](http://localhost:4000)
 
-### 4. Start the local server ###
+<br>
+#### 4. Compile the LESS ####
 
-To start the local web server, run:
+1. To compile the LESS files, run:
 
-```bash
-$ jekyll serve --watch
-```
+        $ grunt watch
 
-View the site at http://localhost:4000.
-
-### 5. Compile the LESS ###
-
-To compile the LESS files, run:
-
-```bash
-$ grunt watch
-```
 
 The *watch* task will dynamically recompile your CSS as you save changes to the LESS files.
