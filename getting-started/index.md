@@ -33,35 +33,34 @@ slug: getting-started
 
 ## 2. Download the source code (advanced) ##
 
-### Get the code ###
+### 1. Get the code using either of these methods:
+  - Clone from GitHub:
+  
+      `$ git clone git@github.com:UWMadisonUcomm/uw-ui-toolkit.git`
 
-<p>
-  <a href="/downloads/" class="btn btn-info">Download the source code <span class="glyphicon glyphicon-arrow-down"></span></a>
-</p>
+  - Install via bower:
+  
+      `$ bower install uw-ui-toolkit`
+ 
+  - Install via npm:
+  
+      `$ npm install uw-ui-tookit (<-- need to register)`
 
-or
+### 2. Set up your development environment:
 
-<p>
-  <a href="https://github.com/UWMadisonUcomm/uw-ui-toolkit" class="btn btn-info"><span class="fa fa-github"></span> Fork on Github</a>
-</p>
+After cloning/downloading the files, `cd` into your UW UI Toolkit's directory and:
 
-### 1. Install Node modules ###
+1. Install Node modules ([Node.js](http://nodejs.org/) is needed for downloading the required dependencies to compile the UW UI Toolkit).
 
-After cloning repository or downloading the source code, run:
+      ```bash
+      $ npm install
+      ```
 
-```bash
-$ npm install
-```
+2. Install Grunt command line tools ([Grunt](http://gruntjs.com/) is needed for building and compiling the UW UI Toolkit's source code).
 
-The project requires Node.js. [Visit the Node.js website](http://nodejs.org/) for installation instructions.
-
-### 2. Install Grunt command line tools ###
-
-This project uses [Grunt](http://gruntjs.com/) for building and compiling the source code. If needed, install the Grunt command line tools:
-
-```bash
-$ npm install -g grunt-cli
-```
+      ```bash
+      $ npm install -g grunt-cli
+      ```
 
 See the for more details on Grunt and installation of the the command line tools.
 
