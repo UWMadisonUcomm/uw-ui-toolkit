@@ -6300,3 +6300,7 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 .bs-component:hover .source-button {
   display: block;
 }
+/* Examples page */
+[data-slug="examples"] .row {
+  margin-bottom: 50px;
+}
