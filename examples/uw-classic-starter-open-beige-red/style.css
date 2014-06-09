@@ -73,6 +73,6 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 
 @media (max-width: 768px){
 	#header .container {
-		background-color: #e7dbcb;
+		/*background-color: #e7dbcb;*/
 	}
 }
