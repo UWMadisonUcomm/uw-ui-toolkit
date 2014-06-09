@@ -1,6 +1,6 @@
 /*  This is example of how you can write your own CSS to customize any template based on the UW UI Toolkit.
 
-The following CSS rules override the default UW UI Toolkit's UW Classic starter template, removing the borders around the #header, #content, and #footer areas */
+The following CSS rules override the default UW UI Toolkit's UW Classic starter template, removing the borders around the #header, #content, and #footer areas, and adding a gradiend to the #header area */
 
 
 #header {
@@ -37,12 +37,12 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 }
 
 #navbar .uw-navbar-classic {
-	background: #e7dbcb;
+	background: #990000;
 }
 
 #navbar .container {
 	box-shadow: none;
-	background: #e7dbcb;
+	background: #990000;
 }
 #navbar .navbar-nav li,
 #navbar .navbar-nav a {
