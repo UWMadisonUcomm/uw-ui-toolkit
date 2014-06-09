@@ -27,9 +27,7 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 }
 */
 
-.navbar.uw-navbar-classic .container .nav.uw-navbar-classic-utility > li > a {
-	color: #666;
-}
+
 
 .navbar.uw-navbar-classic .container .nav > li.active,
 .navbar.uw-navbar-classic .container .nav > li > a:hover {
@@ -49,7 +47,9 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 	border: none;
 	color: #FFF;
 }
-
+ #navbar .navbar.uw-navbar-classic .container .nav.uw-navbar-classic-utility > li > a {
+	color: #aaa;
+}
 .navbar.uw-navbar-classic .container .caret {
 	border-top-color:#6e6a5b;
 	border-bottom-color:#6e6a5b;
@@ -69,10 +69,4 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 
 #footer .container {
 	border: 0;
-}
-
-@media (max-width: 768px){
-	#header .container {
-		/*background-color: #e7dbcb;*/
-	}
 }
