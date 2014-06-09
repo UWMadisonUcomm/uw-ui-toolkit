@@ -4,7 +4,10 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 
 
 #header {
-	background: #e7dbcb;
+	background: -webkit-linear-gradient(#f7f5e8, #e1dbcc);
+  background: -o-linear-gradient(#f7f5e8, #e1dbcc);
+  background: -moz-linear-gradient(#f7f5e8, #e1dbcc);
+  background: linear-gradient(#f7f5e8, #e1dbcc);
 }
 
 #header .container {
