@@ -47,6 +47,7 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 #navbar .navbar-nav li,
 #navbar .navbar-nav a {
 	border: none;
+	color: #FFF;
 }
 
 #content {
