@@ -163,6 +163,24 @@ module.exports = function(grunt){
           viewport: ['1024x768']
         }
       }
+    },
+    accessibility: {
+      options: {
+        accessibilityLevel: 'WCAG2A',
+        domElement: true,
+        verbose: false
+      },
+      test: {
+        files: [
+          {
+            expand: true,
+            cwd: 'examples/uw-classic-starter/',
+            src: ['index.html'],
+            dest: 'reports/',
+            ext: '-accessibility-report.txt'
+          }
+        ]
+      }
     }
   });
 
@@ -174,6 +192,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-aws-s3');
   grunt.loadNpmTasks('grunt-contrib-compress');
   grunt.loadNpmTasks('grunt-autoshot');
+  grunt.loadNpmTasks('grunt-accessibility');
 
   // Register tasks
   grunt.registerTask('default', ['build']);
