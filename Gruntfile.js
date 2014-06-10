@@ -19,7 +19,7 @@ module.exports = function(grunt){
   'src/js/bootstrap/affix.js'
   ];
 
-  // example dirs
+  // Generate file configuration for autoshot task
   var autoshotFiles = (function(){
     var sp = './examples';
     var dirs = fs.readdirSync(sp).filter(function(file){
@@ -32,7 +32,25 @@ module.exports = function(grunt){
     });
     return dirs;
   })();
-// console.log(autoshotFiles);
+  // console.log(autoshotFiles);
+
+  // Generate file configuration for accessibility task
+  var accessibilityTestFiles = (function(){
+    var sp = './examples';
+    var dirs = fs.readdirSync(sp).filter(function(file){
+      return fs.statSync(path.join(sp,file)).isDirectory();
+    }).map(function(file){
+      return {
+        expand: true,
+        cwd: path.join(sp, file),
+        src: ['*.html'],
+        dest: path.join('reports/', sp, file),
+        ext: '-accessibility-report.json'
+      };
+    });
+    return dirs;
+  })();
+  // console.log(accessibilityTestFiles);
 
 
   // Load configuration in with nconf, allowing config.json overrides.
@@ -163,6 +181,19 @@ module.exports = function(grunt){
           viewport: ['1024x768']
         }
       }
+    },
+    accessibility: {
+      options: {
+        accessibilityLevel: 'WCAG2A',
+        domElement: true,
+        outputFormat: 'json',
+        force: true      
+      },
+      test: {
+        files: [
+          accessibilityTestFiles
+        ]
+      }
     }
   });
 
@@ -174,6 +205,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-aws-s3');
   grunt.loadNpmTasks('grunt-contrib-compress');
   grunt.loadNpmTasks('grunt-autoshot');
+  grunt.loadNpmTasks('grunt-accessibility');
 
   // Register tasks
   grunt.registerTask('default', ['build']);
@@ -182,4 +214,5 @@ module.exports = function(grunt){
   // Deploy builds to S3
   grunt.registerTask('snapshot', ['build', 'compress:snapshot_zip', 'aws_s3:snapshot']);
   grunt.registerTask('release', ['build', 'compress:release_zip', 'aws_s3:release']);
+
 }
