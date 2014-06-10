@@ -50,7 +50,7 @@ module.exports = function(grunt){
     });
     return dirs;
   })();
-  console.log(accessibilityTestFiles);
+  // console.log(accessibilityTestFiles);
 
 
   // Load configuration in with nconf, allowing config.json overrides.
@@ -214,4 +214,5 @@ module.exports = function(grunt){
   // Deploy builds to S3
   grunt.registerTask('snapshot', ['build', 'compress:snapshot_zip', 'aws_s3:snapshot']);
   grunt.registerTask('release', ['build', 'compress:release_zip', 'aws_s3:release']);
+
 }
