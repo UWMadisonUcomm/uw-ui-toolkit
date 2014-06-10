@@ -167,14 +167,12 @@ module.exports = function(grunt){
     accessibility: {
       options: {
         accessibilityLevel: 'WCAG2A',
-        domElement: true,
-        verbose: false
-      },
+        domElement: true      },
       test: {
         files: [
           {
             expand: true,
-            cwd: 'examples/uw-classic-starter/',
+            cwd: '_site/examples/',
             src: ['index.html'],
             dest: 'reports/',
             ext: '-accessibility-report.txt'
