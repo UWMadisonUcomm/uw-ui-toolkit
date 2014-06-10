@@ -167,7 +167,10 @@ module.exports = function(grunt){
     accessibility: {
       options: {
         accessibilityLevel: 'WCAG2A',
-        domElement: true      },
+        domElement: true,
+        outputFormat: 'json',
+        force: true      
+      },
       test: {
         files: [
           {
@@ -175,7 +178,7 @@ module.exports = function(grunt){
             cwd: '_site/examples/',
             src: ['index.html'],
             dest: 'reports/',
-            ext: '-accessibility-report.txt'
+            ext: '-accessibility-report.json'
           }
         ]
       }
