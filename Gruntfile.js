@@ -19,7 +19,7 @@ module.exports = function(grunt){
   'src/js/bootstrap/affix.js'
   ];
 
-  // example dirs
+  // Generate file configuration for autoshot task
   var autoshotFiles = (function(){
     var sp = './examples';
     var dirs = fs.readdirSync(sp).filter(function(file){
@@ -32,7 +32,25 @@ module.exports = function(grunt){
     });
     return dirs;
   })();
-// console.log(autoshotFiles);
+  // console.log(autoshotFiles);
+
+  // Generate file configuration for accessibility task
+  var accessibilityTestFiles = (function(){
+    var sp = './examples';
+    var dirs = fs.readdirSync(sp).filter(function(file){
+      return fs.statSync(path.join(sp,file)).isDirectory();
+    }).map(function(file){
+      return {
+        expand: true,
+        cwd: path.join(sp, file),
+        src: ['*.html'],
+        dest: path.join('reports/', sp, file),
+        ext: '-accessibility-report.json'
+      };
+    });
+    return dirs;
+  })();
+  console.log(accessibilityTestFiles);
 
 
   // Load configuration in with nconf, allowing config.json overrides.
@@ -173,13 +191,7 @@ module.exports = function(grunt){
       },
       test: {
         files: [
-          {
-            expand: true,
-            cwd: '_site/examples/',
-            src: ['index.html'],
-            dest: 'reports/',
-            ext: '-accessibility-report.json'
-          }
+          accessibilityTestFiles
         ]
       }
     }
