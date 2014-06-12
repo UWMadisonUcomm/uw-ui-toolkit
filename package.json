@@ -17,6 +17,6 @@
     "grunt-contrib-compress": "~0.5.0",
     "nconf": "~0.6",
     "grunt-accessibility": "^1.1.1",
-    "grunt-autoshot": "git://github.com/VidalQuevedo/grunt-autoshot.git"
+    "grunt-autoshot": "^0.2.0"
   }
 }
