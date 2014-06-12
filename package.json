@@ -1,6 +1,6 @@
 {
   "name": "uw-ui-toolkit",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": "University Communications",
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
     "grunt-aws-s3": "~0.7.0",
     "grunt-contrib-compress": "~0.5.0",
     "nconf": "~0.6",
-    "grunt-autoshot": "^0.2.0",
-    "grunt-accessibility": "^1.1.1"
+    "grunt-accessibility": "^1.1.1",
+    "grunt-autoshot": "^0.2.0"
   }
 }
