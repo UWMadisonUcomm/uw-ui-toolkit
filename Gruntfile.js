@@ -79,7 +79,6 @@ module.exports = function(grunt){
         ]
       }
     },
-
     less: {
       toolkit: {
         files: { 'dist/css/uw-ui-toolkit.css': ["src/less/uw-ui-toolkit.less"] }
