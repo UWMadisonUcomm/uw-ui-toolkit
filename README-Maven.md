@@ -31,9 +31,9 @@ the target directory, and repack with the folders in the correct locations per t
 
 ### Maven Releases
 
-Maven releases require push access to (https://github.com/UWMadisonUcomm/uw-ui-toolkit).
+Maven releases require push access to https://github.com/UWMadisonUcomm/uw-ui-toolkit.
 
-1. Set the upstreamVersion property to match the latest release available at (https://github.com/UWMadisonUcomm/uw-ui-toolkit/releases).
+1. Set the upstreamVersion property to match the latest release available at https://github.com/UWMadisonUcomm/uw-ui-toolkit/releases.
 2. Make sure the version element matches, including a -SNAPSHOT suffix at the end.
 3. Verify the build succeeds with a *mvn install*
 4. If successful, continue the release:
