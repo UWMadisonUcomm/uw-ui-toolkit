@@ -1,10 +1,8 @@
 ## Maven Support
 
-A Maven pom is provided to allow us to publish this artifact to the Shared Tools Maven Artifact Repository:
-
-    [https://wiki.doit.wisc.edu/confluence/display/ST/Maven+Repository+Manager]
+A Maven pom is provided to allow us to publish this artifact to the [Shared Tools Maven Artifact Repository](https://wiki.doit.wisc.edu/confluence/display/ST/Maven+Repository+Manager).
   
-This pom is modeled after the poms used by the [http://www.webjars.org/](WebJars Project). 
+This pom is modeled after the poms used by the [WebJars Project](http://www.webjars.org/). 
 
 ### Maven Dependency Information
 
@@ -20,11 +18,12 @@ The dependency can then be referenced via:
 
 ### Local Maven Build How To
 
-If you have local modifications you need to depend on, and want to install locally, simply execute o create a jar and install
+If you have local modifications you need to depend on, and want to install locally, simply execute to create a jar and install
 it in your local maven repository:
 
     mvn install
-    
+
+Requires Maven be installed and on your PATH.    
 Maven will download the specified release from github (controlled via the *upstreamVersion* property), unpack it into
 the target directory, and repack with the folders in the correct locations per the Servlet 3.0 Resources specification.
 
