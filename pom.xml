@@ -1,0 +1,100 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+    	<groupId>edu.wisc.doit.code</groupId>
+    	<artifactId>shared-tools-uw-parent</artifactId>
+    	<version>7</version>
+	</parent>
+	<groupId>edu.wisc.uc</groupId>
+	<artifactId>uw-ui-toolkit</artifactId>
+	<version>0.1.5-SNAPSHOT</version>
+	<name>UW UI Toolkit</name>
+	<description>A web front-end toolkit based on Bootstrap for designing and developing modern, mobile-first websites for the University of Wisconsin-Madison.</description>
+
+	<organization>
+		<name>University of Wisconsin-Madison</name>
+		<url>http://www.wisc.edu</url>
+	</organization>
+	<scm>
+		<url>https://github.com/UWMadisonUcomm/uw-ui-toolkit</url>
+		<connection>scm:git:https://github.com/UWMadisonUcomm/uw-ui-toolkit.git</connection>
+		<developerConnection>scm:git:https://github.com/UWMadisonUcomm/uw-ui-toolkit.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+	
+	<developers>
+		<developer>
+			<name>Vidal Quevedo</name>
+			<email>quevedo@wisc.edu</email>
+		</developer>
+		<developer>
+			<name>Nick Weaver</name>
+			<email>jnweaver@wisc.edu</email>
+		</developer>
+	</developers>
+	
+	<contributors>
+		<contributor>
+			<name>Nicholas Blair</name>
+			<email>nicholas.blair@wisc.edu</email>
+		</contributor>
+	</contributors>
+
+	<repositories>
+	    <repository>
+	        <id>code.doit-uw-releases</id>
+	        <url>https://code.doit.wisc.edu/maven/content/repositories/uw-releases/</url>
+	    </repository>
+	</repositories>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<upstreamVersion>0.1.5</upstreamVersion>
+		<sourceRootUrl>https://github.com/UWMadisonUcomm/uw-ui-toolkit/releases/download/v${upstreamVersion}</sourceRootUrl>
+		<destDir>${project.build.outputDirectory}/META-INF/resources/${project.groupId}/${project.artifactId}/${upstreamVersion}</destDir>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>wagon-maven-plugin</artifactId>
+				<version>1.0-beta-4</version>
+				<executions>
+					<execution>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>download-single</goal>
+						</goals>
+						<configuration>
+							<url>${sourceRootUrl}</url>
+							<fromFile>${project.artifactId}-${upstreamVersion}.zip</fromFile>
+							<toFile>${project.build.directory}/${project.artifactId}.zip</toFile>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.7</version>
+                <executions>
+                    <execution>
+                        <phase>process-resources</phase>
+                        <goals>
+                        	<goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <target>
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <move todir="${destDir}">
+                                    <fileset dir="${project.build.directory}" includes="js/,css/,fonts/,img/,js/" />
+                                </move>
+                            </target>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+		</plugins>
+	</build>
+</project>
