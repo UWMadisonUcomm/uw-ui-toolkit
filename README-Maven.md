@@ -4,8 +4,7 @@ A Maven pom is provided to allow us to publish this artifact to the Shared Tools
 
     [https://wiki.doit.wisc.edu/confluence/display/ST/Maven+Repository+Manager]
   
-This pom is modeled after the poms used by the [http://www.webjars.org/}(WebJars Project). 
-
+This pom is modeled after the poms used by the [http://www.webjars.org/](WebJars Project). 
 
 ### Maven Dependency Information
 
