@@ -12,3 +12,5 @@ config.json
 /build
 /bower_components
 /reports
+.project
+target
