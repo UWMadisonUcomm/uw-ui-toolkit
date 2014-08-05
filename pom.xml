@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
     	<groupId>edu.wisc.doit.code</groupId>
@@ -8,7 +7,7 @@
 	</parent>
 	<groupId>edu.wisc.uc</groupId>
 	<artifactId>uw-ui-toolkit</artifactId>
-	<version>0.1.5-SNAPSHOT</version>
+	<version>0.1.5</version>
 	<name>UW UI Toolkit</name>
 	<description>A web front-end toolkit based on Bootstrap for designing and developing modern, mobile-first websites for the University of Wisconsin-Madison.</description>
 
@@ -20,7 +19,7 @@
 		<url>https://github.com/UWMadisonUcomm/uw-ui-toolkit</url>
 		<connection>scm:git:https://github.com/UWMadisonUcomm/uw-ui-toolkit.git</connection>
 		<developerConnection>scm:git:https://github.com/UWMadisonUcomm/uw-ui-toolkit.git</developerConnection>
-		<tag>HEAD</tag>
+		<tag>uw-ui-toolkit-0.1.5</tag>
 	</scm>
 	
 	<developers>
