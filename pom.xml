@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
     	<groupId>edu.wisc.doit.code</groupId>
-    	<artifactId>shared-tools-uw-parent</artifactId>
+    	<artifactId>shared-tools-public-parent</artifactId>
     	<version>7</version>
 	</parent>
 	<groupId>edu.wisc.uc</groupId>
