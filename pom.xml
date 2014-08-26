@@ -102,6 +102,16 @@
           			<tagNameFormat>@{project.artifactId}-maven-@{project.version}</tagNameFormat>
         		</configuration>
       		</plugin>
+      		<plugin>
+				<groupId>com.mycila.maven-license-plugin</groupId>
+				<artifactId>maven-license-plugin</artifactId>
+				<configuration>
+					<includes>
+						<include>dist/css/**</include>
+						<include>dist/js/**</include>
+					</includes>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 </project>
