@@ -107,8 +107,8 @@
 				<artifactId>maven-license-plugin</artifactId>
 				<configuration>
 					<includes>
-						<include>dist/css/**</include>
-						<include>dist/js/**</include>
+						<include>${destDir}/css/**</include>
+						<include>${destDir}/js/**</include>
 					</includes>
 				</configuration>
 			</plugin>
