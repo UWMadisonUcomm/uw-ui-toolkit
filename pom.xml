@@ -7,7 +7,7 @@
 	</parent>
 	<groupId>edu.wisc.uc</groupId>
 	<artifactId>uw-ui-toolkit</artifactId>
-	<version>0.1.5.2-SNAPSHOT</version>
+	<version>0.1.6-SNAPSHOT</version>
 	<name>UW UI Toolkit</name>
 	<description>A web front-end toolkit based on Bootstrap for designing and developing modern, mobile-first websites for the University of Wisconsin-Madison.</description>
 
