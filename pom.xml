@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
     	<groupId>edu.wisc.doit.code</groupId>
-    	<artifactId>shared-tools-uw-parent</artifactId>
+    	<artifactId>shared-tools-public-parent</artifactId>
     	<version>7</version>
 	</parent>
 	<groupId>edu.wisc.uc</groupId>
@@ -102,6 +102,16 @@
           			<tagNameFormat>@{project.artifactId}-maven-@{project.version}</tagNameFormat>
         		</configuration>
       		</plugin>
+      		<plugin>
+				<groupId>com.mycila.maven-license-plugin</groupId>
+				<artifactId>maven-license-plugin</artifactId>
+				<configuration>
+					<includes>
+						<include>${destDir}/css/**</include>
+						<include>${destDir}/js/**</include>
+					</includes>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 </project>
