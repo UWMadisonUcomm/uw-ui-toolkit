@@ -7,10 +7,10 @@
     padding: 30px;
   }
   h1 {
-    font-size: floor(@font-size-root * 1.5);
+    font-size: (@font-size-root * 1.5); // 24px
     margin-top: 0;
     @media (min-width: @grid-float-breakpoint) {
-      font-size: floor(@font-size-root * 2.8125);
+      font-size: (@font-size-root * 2.8125); // 45px
     }
   }
 }
