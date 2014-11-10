@@ -1,0 +1,32 @@
+html {
+  font-size: 100%;
+}
+
+// type.less
+.lead {
+  font-size: @font-size-root; // 16px
+  @media (min-width: @screen-sm-min) {
+    font-size: (@font-size-root * 1.3125); // 21px
+  }
+}
+
+// close.less
+.close {
+  font-size: (@font-size-root * 1.3125);
+}
+
+// code.less
+code, kbd, pre {
+  font-size: .8125rem;
+}
+
+// forms.less
+legend {
+  font-size: (@font-size-root * 1.3125);
+}
+
+// panels.less
+panel-title {
+  font-size: (@font-size-root);
+}
+

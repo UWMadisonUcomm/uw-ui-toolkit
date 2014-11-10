@@ -66,6 +66,7 @@
 
 @font-size-html:          100%;
 @font-size-root:          1rem; // 16px
+@font-size-base-pixels:   14px; // to preserve padding & margin calculations; change this when you change font-size-base
 @font-size-base:          (@font-size-root * .875); // 14px
 @font-size-large:         (@font-size-root * 1.125); // 18px
 @font-size-small:         (@font-size-root * .75); // 12px
@@ -78,10 +79,10 @@
 @font-size-h6:            (@font-size-root * .75); // 12px
 
 //** Unit-less `line-height` for use in components like buttons.
-// @line-height-base:        1.428571429; // 20/14
-@line-height-base:        1.25; // 20/16
+@line-height-base:        1.428571429; // ~20/14
+
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
-@line-height-computed:    (@font-size-root * @line-height-base); // 20px
+@line-height-computed:    (@font-size-base-pixels * @line-height-base); // 20px
 
 //** By default, this inherits from the `<body>`.
 @headings-font-family:    inherit;
