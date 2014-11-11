@@ -1,5 +1,5 @@
 html {
-  font-size: 100%;
+@font-size-html;
 }
 
 // type.less
@@ -30,3 +30,24 @@ panel-title {
   font-size: (@font-size-root);
 }
 
+// type.less
+// Abbreviations and acronyms
+abbr,
+abbr[title],
+// Add data-* attribute to help out our tooltip plugin, per https://github.com/twbs/bootstrap/issues/5257
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted @abbr-border-color;
+  speak: spell-out;
+  .initialism {
+    // override BS rules
+    font-size: 100%;
+    text-transform: none;
+  }
+  .acronym {
+    speak: normal;
+  }
+  .truncation {
+    speak: normal;
+  }
+}
