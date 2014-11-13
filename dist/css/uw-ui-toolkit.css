@@ -6304,3 +6304,6 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 [data-slug="examples"] .row {
   margin-bottom: 50px;
 }
+container-fluid {
+  padding: 15px;
+}

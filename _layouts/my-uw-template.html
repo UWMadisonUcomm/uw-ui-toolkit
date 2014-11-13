@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 {% if page.slug == 'home' %}
 <div class="jumbotron uw-texture-tan-light">
   <div class="container">
@@ -16,15 +17,17 @@ layout: default
 </div>
 {% endif %}
 <div class="container-fluid">
-  <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-  {% if page.title %}
-
-  <div class="page-header">
-    <h1>{{ page.title }}</h1>
-  </div>
-
-  {% endif %}
-
-  {{ content }}
+  <br><br><br>
+  <div class="row">
+    <div class="col-xs-12 col-sm-2">
+      {% if page.title %}
+      <div class="page-header">
+        <h1>{{ page.title }}</h1>
+      </div>
+      {% endif %}
+    </div>
+    <div class="col-xs-12 col-sm-10" >
+      {{ content }}
+    </div>
   </div>
 </div>
