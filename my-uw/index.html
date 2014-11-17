@@ -7,6 +7,7 @@ slug: my-uw
     <div class="row">
 
       <!-- LIST OF LINKS PORTLET -->
+      <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
       <div class="card">
         <div class="card-header">
@@ -18,9 +19,14 @@ slug: my-uw
         <div id="portletContent_u4514l1n19" class="fl-widget-content fl-fix up-portlet-content-wrapper round-bottom">
           <div class="up-portlet-content-wrapper-inner">
             <div data-role='content'>
-              <ul data-role='listview'>
-                <li><a href='https://admin.lists.wisc.edu/classlists' target='_blank'>Manage EMAIL CLASS LISTS (Classlist Module)</a></li>
-                <li><a href='http://www.registrar.wisc.edu/classroom_scheduling.htm' target='_blank'>Classroom scheduling</a></li>
+              <ul data-role='listview' class="fa list-of-links">
+                <li>
+                  <a href='https://admin.lists.wisc.edu/classlists' target='_blank'>Manage EMAIL CLASS LISTS (Classlist Module)</a>
+                  <p>Optional text to describe the link. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet egestas enim, id volutpat massa. Quisque laoreet urna eu turpis tempor aliquam in sed velit.</p>
+                </li>
+                <li><a href='http://www.registrar.wisc.edu/classroom_scheduling.htm' target='_blank'>Classroom scheduling</a>
+                <p>Nullam sit amet egestas enim, id volutpat massa. Quisque laoreet urna eu turpis tempor aliquam in sed velit.</p>
+                </li>
                 <li><a href='http://registrar.wisc.edu/grades_and_grading_policy.htm' target='_blank'>Grades and grading policy</a></li>
                 <li><a href='http://www.doit.wisc.edu/learnatuw/' target='_blank'>Learn about Learn@UW</a>
                 <li><a href='http://www.library.wisc.edu/inst-services' target='_blank'>Library Instructional Services for Faculty</a></li>
@@ -45,6 +51,33 @@ slug: my-uw
           </div>
         </div>
         <div id="portletContent_u4514l1n9" class="fl-widget-content fl-fix up-portlet-content-wrapper round-bottom">
+          <script>
+            $(document).ready(function() {
+              $('.inner-nav ul li').on('click', function() {
+                $('.inner-nav ul li').not(this).removeClass('active');
+                $(this).addClass('active');
+              });
+            });
+          </script>
+          <div class="inner-nav">
+            <ul>
+              <li class='active one'><span>Earning Statements</span></li>
+              <li class='two'><span>Tax Statements</span></li>
+              <li class="float-right"><span>Help</span><li>
+            </ul>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
           <div class="up-portlet-content-wrapper-inner">
             <link href="/HRSPortlets/css/BeaQSi51czcXzB48Tn1dpA.aggr.min.css" rel="stylesheet" type="text/css"/>
             <link href="/ResourceServingWebapp/rs/jqueryui/1.8.13/theme/smoothness/jquery-ui-1.8.13-smoothness.min.css" rel="stylesheet" type="text/css"/>

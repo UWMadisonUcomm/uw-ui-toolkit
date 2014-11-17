@@ -1208,14 +1208,105 @@ span:focus {
 
 
 
+/* All Portlets */
+
+.up-portlet-content-wrapper {
+  padding:10px 20px;
+  padding-right:20px;
+  padding-left:20px;
+}
+
+
+/* List of Links portlets */
+
+.list-of-links {
+  padding:0px;
+  margin:0px;
+  text-rendering: auto;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+}
+.list-of-links li {
+  font-size:20px;
+  padding:7px 0px;
+  line-height:1.41em;
+}
+.list-of-links li a {
+  font-weight:400;
+}
+.list-of-links li:before {
+  content: "\f18e";
+  color:#ccc;
+  padding-right:8px;
+}
+.list-of-links li a:hover {
+}
+.list-of-links li p {
+  font-size:14px;
+  color:#aaa;
+  padding:0px 35px 0px 35px;
+  margin-bottom:-7px;;
+  line-height:1.41em;
+}
 
 
 
 
 
 
+.inner-nav ul {
+  overflow:auto;
+  padding-left:0px;
+  width:100%;
+  margin:0;
+  border-bottom:1px solid #b70101;
+}
+.inner-nav ul li {
+  float:left;
+  margin-right:30px;
+  font-size:18px;
+  display:inline;
+  text-align:center;
+  padding:5px 20px;
+}
+.inner-nav ul li.active {
+  border-bottom:4px solid #b70101;
+}
+.inner-nav ul li span {
+  cursor:pointer;
+  font-weight:200;
+  font-size:18px;
+  color:#b70101;
+}
 
-
+.inner-nav ul li span:hover {
+  color:#900;
+}
+.inner-nav ul li.active span {
+  font-weight:400;
+}
+.inner-nav ul li a {
+  font-weight:200;
+  margin-bottom:8px;
+}
+.inner-nav ul li a:hover {
+  text-decoration:none;
+}
+.inner-nav ul li.float-right {
+  float:right;
+}
+.inner-nav ul hr {
+  margin:0;
+  height:4px;
+  border:none;
+  background-color:#b70101;
+}
+.inner-nav > hr  {
+  margin:0;
+  height:1px;
+  border:none;
+  background-color:#b70101;
+}
 
 
 
@@ -1230,6 +1321,12 @@ span:focus {
   padding-right:25px;
 }
 
+.page-header {
+  padding-top:40px;
+}
+.my-uw-header {
+  border-bottom:0px;
+}
 
 
 
