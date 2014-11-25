@@ -16,15 +16,17 @@ layout: default
 </div>
 {% endif %}
 <div class="container-fluid">
-  <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-  {% if page.title %}
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+    {% if page.title %}
 
-  <div class="page-header">
-    <h1>{{ page.title }}</h1>
-  </div>
+    <div class="page-header">
+      <h1>{{ page.title }}</h1>
+    </div>
 
-  {% endif %}
+    {% endif %}
 
-  {{ content }}
+    {{ content }}
+    </div>
   </div>
 </div>
