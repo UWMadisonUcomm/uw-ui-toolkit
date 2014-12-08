@@ -6426,7 +6426,6 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 }
 /******* MyUW frame *******/
 .my-uw {
-  background-color: #f7f5e8;
   /* MyUW colors */
   /* General MyUW Styles */
   /* Card UI Styling */
@@ -6493,6 +6492,13 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 .my-uw h5,
 .my-uw h6 {
   vertical-align: center;
+}
+.my-uw .typography h1,
+.my-uw .typography h2,
+.my-uw .typography h3,
+.my-uw .typography h4,
+.my-uw .typography h5,
+.my-uw .typography h6 {
   font-weight: 200;
 }
 .my-uw #body-background {
