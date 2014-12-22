@@ -24,7 +24,7 @@ slug: getting-started
           </head>
 
           ...
-          
+
           <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
           <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
           </body>
@@ -39,16 +39,16 @@ slug: getting-started
 #### 1. Get the code using either of these methods:
 
   - Install via bower:
-  
+
         $ bower install uw-ui-toolkit
- 
+
   - Install via npm:
-  
+
         $ npm install uw-ui-tookit (<-- need to register)
 
   - **For contributors:** Fork from GitHub:
-  
-        $ git clone git@github.com:UWMadisonUcomm/uw-ui-toolkit.git        
+
+        $ git clone git@github.com:UWMadisonUcomm/uw-ui-toolkit.git
 
 <br>
 #### 2. Set up your development environment:
@@ -71,7 +71,7 @@ After cloning/downloading the files, `cd` into your UW UI Toolkit's directory an
 #### 3. Start the local server ####
 
 1. To start the local web server, run:
-        
+
         $ jekyll serve --watch
 
 1. View the site at [http://localhost:4000](http://localhost:4000)

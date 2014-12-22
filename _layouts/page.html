@@ -16,14 +16,17 @@ layout: default
 </div>
 {% endif %}
 <div class="container">
-  {% if page.title %}
+  <div class="row">
+    <div class="col-xs-12">
+    {% if page.title %}
 
-  <div class="page-header">
-    <h1>{{ page.title }}</h1>
+    <div class="page-header">
+      <h1>{{ page.title }}</h1>
+    </div>
+
+    {% endif %}
+
+    {{ content }}
+    </div>
   </div>
-
-  {% endif %}
-
-  {{ content }}
-
 </div>

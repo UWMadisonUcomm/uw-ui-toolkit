@@ -1,0 +1,127 @@
+/* MyUW Portlet Styles */
+
+.up-portlet-content-wrapper {
+  padding:10px 20px;
+  padding-right:20px;
+  padding-left:20px;
+  font-weight:200;
+
+  /* List of links */
+  ul {
+    padding:0px;
+    margin:0px;
+    text-rendering: auto;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    li {
+      font-size:18px;
+      padding:7px 0px;
+      line-height:1.41em;
+      a {
+        font-weight:400;
+      }
+      &:before {
+        content: "\f18e";
+        color:#ccc;
+        padding-right:8px;
+      }
+      p {
+        font-size:14px;
+        color:#aaa;
+        padding:0px 35px 0px 35px;
+        margin-bottom:-7px;;
+        line-height:1.41em;
+      }
+    }
+  }
+
+  /* Inner Nav */
+  .inner-nav ul {
+    overflow:auto;
+    padding-left:0px;
+    width:100%;
+    margin:0;
+    border-bottom:1px solid #b70101;
+    li {
+      float:left;
+      margin-right:30px;
+      font-size:18px;
+      display:inline;
+      text-align:center;
+      padding:5px 20px;
+      .active {
+        border-bottom:4px solid #b70101;
+      }
+      span {
+        cursor:pointer;
+        font-weight:200;
+        font-size:18px;
+        color:#b70101;
+        &:hover {
+          color:#900;
+        }
+      }
+      a {
+        font-weight:200;
+        margin-bottom:8px;
+        &:hover {
+          text-decoration:none;
+        }
+      }
+      .float-right {
+        float:right;
+      }
+    }
+    hr {
+      margin:0;
+      height:4px;
+      border:none;
+      background-color:#b70101;
+    }
+  }
+  .inner-nav > hr  {
+    margin:0;
+    height:1px;
+    border:none;
+    background-color:#b70101;
+  }
+  .inner-nav .help {
+    font-size:12px;
+  }
+
+
+
+
+  /* Grid List */
+  .grid-item {
+    width:230px;
+    padding:20px;
+    margin:10px;
+    text-align:center;
+    border-radius: 4px;
+    background-color:#f7f5e8;
+    display:inline-block;
+    &:hover {
+      background-color:#efe8d8;
+      cursor:pointer;
+    }
+    h2 {
+      font-size:3.5em;
+      margin:0px auto;
+    }
+    h3 {
+      margin:0px;
+    }
+  }
+  .centered-div {
+    display:block;
+    margin:0px auto;
+  }
+
+
+
+
+
+
+
+}
