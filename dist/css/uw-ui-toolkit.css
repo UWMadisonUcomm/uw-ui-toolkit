@@ -6281,7 +6281,7 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   margin-top: 50px;
 }
 .page-header {
-  border-bottom: 1px solid #600;
+  border-bottom: 1px solid #ccc;
   padding-bottom: 3px;
 }
 #page-header h1 {
