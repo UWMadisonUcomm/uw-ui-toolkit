@@ -6320,6 +6320,8 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   /* List of links */
   /* Inner Nav */
   /* Grid List */
+  /* Buttons */
+  /* Search */
 }
 .up-portlet-content-wrapper ul {
   padding: 0px;
@@ -6335,11 +6337,6 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 }
 .up-portlet-content-wrapper ul li a {
   font-weight: 400;
-}
-.up-portlet-content-wrapper ul li:before {
-  content: "\f18e";
-  color: #ccc;
-  padding-right: 8px;
 }
 .up-portlet-content-wrapper ul li p {
   font-size: 14px;
@@ -6424,6 +6421,158 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   display: block;
   margin: 0px auto;
 }
+.up-portlet-content-wrapper .btn-lg {
+  padding: 12px 40px;
+}
+.up-portlet-content-wrapper .btn-sm {
+  padding: 4px 12px;
+}
+.up-portlet-content-wrapper .btn-xs {
+  padding: 2px 5px;
+}
+.up-portlet-content-wrapper .btn-uw {
+  background-color: #b70101;
+  margin: 10px 0px;
+  color: #fff;
+  border-radius: 4px;
+  border: 0px solid transparent;
+  box-shadow: 0px 5px 0px #600;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  position: relative;
+}
+.up-portlet-content-wrapper .btn-uw:hover {
+  transform: translateY(2px);
+  background-color: #900;
+  text-decoration: none;
+  box-shadow: 0px 3px 0px #000;
+  transition: 0.1s ease-in-out;
+}
+.up-portlet-content-wrapper .btn-uw-flat {
+  background-color: #b70101;
+  border: 0px solid transparent;
+  border-radius: 4px;
+  margin: 10px 0px;
+  color: #fff;
+  box-shadow: none;
+}
+.up-portlet-content-wrapper .btn-uw-flat:hover {
+  transform: none;
+  background-color: #900;
+  box-shadow: none;
+}
+.up-portlet-content-wrapper .btn-uw-outline {
+  background-color: transparent;
+  color: #b70101;
+  margin: 10px 0px;
+  border-radius: 4px;
+  border: 1px solid #b70101;
+  box-shadow: none;
+}
+.up-portlet-content-wrapper .btn-uw-outline:hover {
+  background-color: #b70101;
+  box-shadow: none;
+  transform: none;
+  color: #fff;
+}
+.up-portlet-content-wrapper .btn-uw-dark {
+  background-color: #900;
+  box-shadow: 0px 5px 0px #600;
+}
+.up-portlet-content-wrapper .btn-uw-dark:hover {
+  background-color: #600;
+}
+.up-portlet-content-wrapper .btn-uw-success {
+  background-color: #00c70d;
+  box-shadow: 0px 5px 0px #009411;
+}
+.up-portlet-content-wrapper .btn-uw-success:hover {
+  background-color: #009411;
+  box-shadow: 0px 3px 0px #067500;
+}
+.up-portlet-content-wrapper .btn-uw-neutral {
+  background-color: #007acc;
+  box-shadow: 0px 5px 0px #004980;
+}
+.up-portlet-content-wrapper .btn-uw-neutral:hover {
+  background-color: #004980;
+  box-shadow: 0px 3px 0px #002c52;
+}
+.up-portlet-content-wrapper .btn-uw-disabled {
+  background-color: #ddd;
+  color: #999;
+  box-shadow: 0px 5px 0px #ccc;
+  cursor: default;
+}
+.up-portlet-content-wrapper .btn-uw-disabled:hover {
+  transform: none;
+  background-color: #ddd;
+  color: #999;
+  box-shadow: 0px 5px 0px #ccc;
+  cursor: default;
+}
+.up-portlet-content-wrapper .uw-search-group {
+  display: inline-block;
+}
+.up-portlet-content-wrapper .uw-search-group input {
+  display: inline;
+}
+.up-portlet-content-wrapper .uw-search-group button {
+  display: inline;
+}
+.up-portlet-content-wrapper .uw-search {
+  display: table-cell;
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #f7f5e8;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  font-size: 1.6em;
+  color: #660000;
+  padding: 3px 0px 3px 15px;
+}
+.up-portlet-content-wrapper .uw-search[placeholder="Search My-UW"] {
+  color: #b70101;
+}
+.up-portlet-content-wrapper .uw-search:focus {
+  outline: none;
+}
+.up-portlet-content-wrapper .btn-uw-search {
+  display: table-cell;
+  padding: 9px 12px;
+  border: 0px solid transparent;
+  background-color: #b70101;
+  top: 2px;
+}
+.up-portlet-content-wrapper .btn-uw-search:hover {
+  background-color: #900;
+}
+.up-portlet-content-wrapper .uw-search-group {
+  width: 300px;
+}
+.up-portlet-content-wrapper ::-webkit-input-placeholder {
+  color: #660000;
+  font-size: 0.8em;
+  font-weight: 200;
+  line-height: 1.8em;
+}
+.up-portlet-content-wrapper :-moz-placeholder {
+  /* Firefox 18- */
+  color: #660000;
+  font-size: 1em;
+  font-weight: 200;
+}
+.up-portlet-content-wrapper ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #660000;
+  font-size: 1em;
+  font-weight: 200;
+}
+.up-portlet-content-wrapper :-ms-input-placeholder {
+  color: #660000;
+  font-size: 1em;
+  font-weight: 200;
+}
 /******* MyUW frame *******/
 .my-uw {
   /* MyUW colors */
@@ -6461,7 +6610,6 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   /* Beta to Classic Transition */
   /* Notification Styling */
   /* old styles as backup
-
   .notifications-list li {
     font-size: 1.1em;
     color: #333;
@@ -6492,14 +6640,6 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 .my-uw h5,
 .my-uw h6 {
   vertical-align: center;
-}
-.my-uw .typography h1,
-.my-uw .typography h2,
-.my-uw .typography h3,
-.my-uw .typography h4,
-.my-uw .typography h5,
-.my-uw .typography h6 {
-  font-weight: 200;
 }
 .my-uw #body-background {
   background-color: #f7f5e8;
