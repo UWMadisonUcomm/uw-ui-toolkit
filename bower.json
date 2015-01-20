@@ -1,6 +1,6 @@
 {
   "name": "uw-ui-toolkit",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "homepage": "https://github.com/UWMadisonUcomm/uw-ui-toolkit",
   "authors": [
     "UW-Madison University Communications"
@@ -24,6 +24,15 @@
     "**/.*",
     "_config.yml",
     "_site",
+    "_includes",
+    "_layouts",
+    "_plugins",
+    "doc-assets",
+    "documentation",
+    "examples",
+    "getting-started",
+    "my-uw",
+    "ui-components",
     "config.json",
     ".bundle",
     ".ruby-version",
@@ -38,7 +47,9 @@
     "bower_components",
     "Gemfile*",
     "Gruntfile*",
-    "bower.json"
+    "bower.json",
+    "kitchensink.html",
+    "index.md"
   ],
   "dependencies": {
     "bootstrap": "3.1.1"
