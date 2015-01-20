@@ -11,7 +11,7 @@ The dependency can then be referenced via:
     <dependency>
       <groupId>edu.wisc.uc</groupId>
       <artifactId>uw-ui-toolkit</artifactId>
-      <version>0.1.5</version>
+      <version>0.2.0</version>
     </dependency>
     
 -SNAPSHOTS and releases are published in the Shared Tools *UW Releases* repository.
