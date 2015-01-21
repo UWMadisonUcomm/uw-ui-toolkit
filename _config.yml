@@ -1,6 +1,6 @@
 ---
 name: UW UI Toolkit
 permalink: pretty
-pygments: true
+highlighter: pygments
 markdown: redcarpet
 exclude: [".gitignore", "CNAME", "LICENSE", "Gruntfile.js", "package.json", "bower.json", "node_modules", "README.md", "src", "Gemfile*", "vendor", "bower_components", "build", "config.json", "README-Maven.md", "pom.xml", "NOTICE", "NOTICE.template", "target"]
