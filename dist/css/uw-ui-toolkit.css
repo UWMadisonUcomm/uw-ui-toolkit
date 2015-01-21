@@ -6234,10 +6234,6 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   padding-bottom: 20px;
   padding-top: 20px;
 }
-[class*="col-"] p a,
-[class*="col-"] li a {
-  font-weight: bold;
-}
 .uw-intro {
   font-size: 1em;
   font-weight: bold;
