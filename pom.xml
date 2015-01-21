@@ -42,8 +42,8 @@
 
 	<repositories>
 	    <repository>
-	        <id>code.doit-uw-releases</id>
-	        <url>https://code.doit.wisc.edu/maven/content/repositories/uw-releases/</url>
+	        <id>code.doit-public-releases</id>
+	        <url>https://code.doit.wisc.edu/maven/content/repositories/public-releases/</url>
 	    </repository>
 	</repositories>
 
