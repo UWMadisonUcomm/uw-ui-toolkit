@@ -1,6 +1,6 @@
 {
   "name": "uw-ui-toolkit",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/UWMadisonUcomm/uw-ui-toolkit",
   "authors": [
     "UW-Madison University Communications"
@@ -28,11 +28,11 @@
     "_layouts",
     "_plugins",
     "doc-assets",
-    "documentation",
-    "examples",
-    "getting-started",
-    "my-uw",
-    "ui-components",
+    "./documentation",
+    "./examples",
+    "./getting-started",
+    "./my-uw",
+    "./ui-components",
     "config.json",
     ".bundle",
     ".ruby-version",
