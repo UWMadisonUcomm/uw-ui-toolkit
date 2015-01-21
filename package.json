@@ -18,5 +18,8 @@
     "grunt-contrib-uglify": "~0.2.4",
     "grunt-contrib-watch": "~0.5.3",
     "nconf": "~0.6"
+  },
+  "scripts": {
+    "start": "jekyll serve --watch & grunt watch"
   }
 }
