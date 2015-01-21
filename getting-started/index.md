@@ -13,22 +13,23 @@ slug: getting-started
 1. [Download](https://github.com/UWMadisonUcomm/uw-ui-toolkit/releases/download/v0.2.0/uw-ui-toolkit-0.2.0.zip) the compressed files and open them.
 2. Link the CSS and JavaScript files in your HTML as follows (you can also use the [examples](/examples/) as a starting point for your project):
 
+```html
+<html>
+  <head>
+    <title>Your site title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="/css/uw-ui-toolkit.css" rel="stylesheet" media="screen">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  </head>
 
-        <html>
-          <head>
-            <title>Your site title</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-            <link href="/css/uw-ui-toolkit.css" rel="stylesheet" media="screen">
-            <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-          </head>
+  ...
 
-          ...
-
-          <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-          <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-          </body>
-        </html>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
+```
 
 <br>
 ## 2. Download the UW UI Toolkit source code (advanced, best for customizing and/or contributing to the project): ##
