@@ -1,11 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
-    	<groupId>edu.wisc.doit.code</groupId>
-    	<artifactId>shared-tools-public-parent</artifactId>
-    	<version>7</version>
-	</parent>
-	<groupId>edu.wisc.uc</groupId>
+	<groupId>edu.wisc.umark</groupId>
 	<artifactId>uw-ui-toolkit</artifactId>
 	<version>0.2.2-SNAPSHOT</version>
 	<name>UW UI Toolkit</name>
@@ -15,12 +10,31 @@
 		<name>University of Wisconsin-Madison</name>
 		<url>http://www.wisc.edu</url>
 	</organization>
+	
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0</url>
+		</license>
+	</licenses>
+	
 	<scm>
 		<url>https://github.com/UWMadisonUcomm/uw-ui-toolkit</url>
 		<connection>scm:git:https://github.com/UWMadisonUcomm/uw-ui-toolkit.git</connection>
 		<developerConnection>scm:git:https://github.com/UWMadisonUcomm/uw-ui-toolkit.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
+	
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
 	
 	<developers>
 		<developer>
@@ -39,13 +53,6 @@
 			<email>nicholas.blair@wisc.edu</email>
 		</contributor>
 	</contributors>
-
-	<repositories>
-	    <repository>
-	        <id>code.doit-public-releases</id>
-	        <url>https://code.doit.wisc.edu/maven/content/repositories/public-releases/</url>
-	    </repository>
-	</repositories>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -99,9 +106,24 @@
         		<artifactId>maven-release-plugin</artifactId>
         		<version>2.5</version>
         		<configuration>
+        			<!-- disable 'release' profile from super pom -->
+        			<useReleaseProfile>false</useReleaseProfile>
+   					<releaseProfiles>ossrh-release</releaseProfiles>
+    				<goals>deploy</goals>
           			<tagNameFormat>@{project.artifactId}-maven-@{project.version}</tagNameFormat>
         		</configuration>
       		</plugin>
+			<plugin>
+				<groupId>org.sonatype.plugins</groupId>
+				<artifactId>nexus-staging-maven-plugin</artifactId>
+				<version>1.6.3</version>
+				<extensions>true</extensions>
+				<configuration>
+					<serverId>ossrh</serverId>
+					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+					<autoReleaseAfterClose>true</autoReleaseAfterClose>
+				</configuration>
+			</plugin>
       		<plugin>
 				<groupId>com.mycila.maven-license-plugin</groupId>
 				<artifactId>maven-license-plugin</artifactId>
@@ -114,4 +136,28 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<profiles>
+		<profile>
+			<id>ossrh-release</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-gpg-plugin</artifactId>
+						<version>1.5</version>
+						<executions>
+							<execution>
+								<id>sign-artifacts</id>
+								<phase>verify</phase>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 </project>
