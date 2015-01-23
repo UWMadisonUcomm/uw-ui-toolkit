@@ -32,7 +32,7 @@ the target directory, and repack with the folders in the correct locations per t
 To perform a Maven release, you must have the following authorizations:
 
 1. push access to https://github.com/UWMadisonUcomm/uw-ui-toolkit.
-2. Ability to publish to the `edu.wisc.uc` groupId in Maven Central. These permissions are maintained by [Sonatype](http://central.sonatype.org/pages/ossrh-guide.html). Contact the developers of this project if you'd like to request access.
+2. Ability to publish to the `edu.wisc.umark` groupId in Maven Central. These permissions are maintained by [Sonatype](http://central.sonatype.org/pages/ossrh-guide.html). Contact the developers of this project if you'd like to request access.
 
 Once those grants are in place:
 
