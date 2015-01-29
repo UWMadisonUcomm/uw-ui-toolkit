@@ -6273,9 +6273,6 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
     min-height: inherit;
   }
 }
-.container-fluid {
-  margin-top: 50px;
-}
 .page-header {
   border-bottom: 1px solid #ccc;
   padding-bottom: 3px;
@@ -6308,47 +6305,179 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   margin-bottom: 50px;
 }
 /* MyUW Portlet Styles */
-.up-portlet-content-wrapper {
-  padding: 10px 20px;
-  padding-right: 20px;
-  padding-left: 20px;
-  font-weight: 200;
-  /* List of links */
-  /* Inner Nav */
+.my-uw {
   /* Grid List */
-  /* Buttons */
   /* Search */
 }
-.up-portlet-content-wrapper ul {
+.my-uw a {
+  text-decoration: none;
+}
+.my-uw a:hover {
+  text-decoration: underline;
+}
+.my-uw p a:hover {
+  border-bottom: 1px solid #6b0101;
+  text-decoration: none;
+}
+.my-uw .btn {
+  margin: 10px 0px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  position: relative;
+  border: 0px solid transparent;
+  box-shadow: 0px 0px 0px transparent;
+}
+.my-uw .btn:hover {
+  transform: translateY(2px);
+  text-decoration: none;
+  transition: 0.1s ease-in-out;
+}
+.my-uw .btn-lg {
+  padding: 12px 40px;
+}
+.my-uw .btn-sm {
+  padding: 4px 12px;
+}
+.my-uw .btn-xs {
+  padding: 2px 5px;
+}
+.my-uw .btn-default {
+  background-color: transparent;
+  color: #222;
+  box-shadow: 0px 2px 0px #ccc;
+  border: 1px solid #ddd;
+}
+.my-uw .btn-default:hover {
+  background-color: #ddd;
+  box-shadow: 0px 0px 0px #000;
+}
+.my-uw .btn-primary {
+  background-color: #b70101;
+  color: #fff;
+  box-shadow: 0px 2px 0px #600;
+  border: 0px solid transparent;
+}
+.my-uw .btn-primary:hover {
+  background-color: #900;
+  box-shadow: 0px 0px 0px #900;
+}
+.my-uw .btn-flat {
+  background-color: #b70101;
+  border: 0px solid transparent;
+  border-radius: 4px;
+  margin: 10px 0px;
+  color: #fff;
+  box-shadow: none;
+}
+.my-uw .btn-flat:hover {
+  transform: none;
+  background-color: #900;
+  color: #fff;
+  box-shadow: none;
+}
+.my-uw .btn-outline {
+  background-color: transparent;
+  color: #b70101;
+  margin: 10px 0px;
+  border-radius: 4px;
+  border: 1px solid #b70101;
+  box-shadow: none;
+}
+.my-uw .btn-outline:hover {
+  background-color: #b70101;
+  box-shadow: none;
+  transform: none;
+  color: #fff;
+}
+.my-uw .btn-dark {
+  background-color: #900;
+  box-shadow: 0px 2px 0px #600;
+  border: 0px solid transparent;
+  color: #fff;
+}
+.my-uw .btn-dark:hover {
+  background-color: #600;
+  box-shadow: 0px 0px 0px #900;
+  color: #fff;
+}
+.my-uw .btn-success {
+  background-color: #00c70d;
+  box-shadow: 0px 2px 0px #009411;
+  border: 0px solid transparent;
+  color: #fff;
+}
+.my-uw .btn-success:hover {
+  background-color: #009411;
+  box-shadow: 0px 0px 0px #067500;
+  color: #fff;
+}
+.my-uw .btn-neutral {
+  background-color: #007acc;
+  box-shadow: 0px 2px 0px #004980;
+  border: 0px solid transparent;
+  color: #fff;
+}
+.my-uw .btn-neutral:hover {
+  background-color: #004980;
+  box-shadow: 0px 0px 0px #002c52;
+  color: #fff;
+}
+.my-uw .btn-disabled {
+  background-color: #ddd;
+  color: #999;
+  box-shadow: 0px 2px 0px #ccc;
+  border: 0px solid transparent;
+  cursor: default;
+}
+.my-uw .btn-disabled:hover {
+  transform: none;
+  background-color: #ddd;
+  color: #999;
+  cursor: default;
+}
+.my-uw .btn-primary:active {
+  box-shadow: inset 0px 2px 3px #555;
+  outline: none;
+}
+.my-uw .btn-flat:active,
+.my-uw .btn-outline:active {
+  box-shadow: 0px 0px 0px transparent;
+  outline: none;
+}
+.my-uw .btn-disabled:active {
+  box-shadow: 0px 2px 0px #ccc;
+}
+.my-uw ul.list-of-links {
   padding: 0px;
   margin: 0px;
   text-rendering: auto;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
 }
-.up-portlet-content-wrapper ul li {
+.my-uw ul.list-of-links li {
   font-size: 18px;
   padding: 7px 0px;
   line-height: 1.41em;
 }
-.up-portlet-content-wrapper ul li a {
+.my-uw ul.list-of-links li a {
   font-weight: 400;
 }
-.up-portlet-content-wrapper ul li p {
+.my-uw ul.list-of-links li p {
   font-size: 14px;
   color: #aaa;
   padding: 0px 35px 0px 35px;
   margin-bottom: -7px;
   line-height: 1.41em;
 }
-.up-portlet-content-wrapper .inner-nav ul {
+.my-uw .inner-nav ul {
   overflow: auto;
   padding-left: 0px;
   width: 100%;
   margin: 0;
   border-bottom: 1px solid #b70101;
 }
-.up-portlet-content-wrapper .inner-nav ul li {
+.my-uw .inner-nav ul li {
   float: left;
   margin-right: 30px;
   font-size: 18px;
@@ -6356,44 +6485,44 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   text-align: center;
   padding: 5px 20px;
 }
-.up-portlet-content-wrapper .inner-nav ul li .active {
+.my-uw .inner-nav ul li .active {
   border-bottom: 4px solid #b70101;
 }
-.up-portlet-content-wrapper .inner-nav ul li span {
+.my-uw .inner-nav ul li span {
   cursor: pointer;
   font-weight: 200;
   font-size: 18px;
   color: #b70101;
 }
-.up-portlet-content-wrapper .inner-nav ul li span:hover {
+.my-uw .inner-nav ul li span:hover {
   color: #900;
 }
-.up-portlet-content-wrapper .inner-nav ul li a {
+.my-uw .inner-nav ul li a {
   font-weight: 200;
   margin-bottom: 8px;
 }
-.up-portlet-content-wrapper .inner-nav ul li a:hover {
+.my-uw .inner-nav ul li a:hover {
   text-decoration: none;
 }
-.up-portlet-content-wrapper .inner-nav ul li .float-right {
+.my-uw .inner-nav ul li .float-right {
   float: right;
 }
-.up-portlet-content-wrapper .inner-nav ul hr {
+.my-uw .inner-nav ul hr {
   margin: 0;
   height: 4px;
   border: none;
   background-color: #b70101;
 }
-.up-portlet-content-wrapper .inner-nav > hr {
+.my-uw .inner-nav > hr {
   margin: 0;
   height: 1px;
   border: none;
   background-color: #b70101;
 }
-.up-portlet-content-wrapper .inner-nav .help {
+.my-uw .inner-nav .help {
   font-size: 12px;
 }
-.up-portlet-content-wrapper .grid-item {
+.my-uw .grid-item {
   width: 230px;
   padding: 20px;
   margin: 10px;
@@ -6402,121 +6531,31 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   background-color: #f7f5e8;
   display: inline-block;
 }
-.up-portlet-content-wrapper .grid-item:hover {
+.my-uw .grid-item:hover {
   background-color: #efe8d8;
   cursor: pointer;
 }
-.up-portlet-content-wrapper .grid-item h2 {
+.my-uw .grid-item h2 {
   font-size: 3.5em;
   margin: 0px auto;
 }
-.up-portlet-content-wrapper .grid-item h3 {
+.my-uw .grid-item h3 {
   margin: 0px;
 }
-.up-portlet-content-wrapper .centered-div {
+.my-uw .centered-div {
   display: block;
   margin: 0px auto;
 }
-.up-portlet-content-wrapper .btn-lg {
-  padding: 12px 40px;
-}
-.up-portlet-content-wrapper .btn-sm {
-  padding: 4px 12px;
-}
-.up-portlet-content-wrapper .btn-xs {
-  padding: 2px 5px;
-}
-.up-portlet-content-wrapper .btn-uw {
-  background-color: #b70101;
-  margin: 10px 0px;
-  color: #fff;
-  border-radius: 4px;
-  border: 0px solid transparent;
-  box-shadow: 0px 5px 0px #600;
-  cursor: pointer;
-  transition: 0.1s ease-in-out;
-  position: relative;
-}
-.up-portlet-content-wrapper .btn-uw:hover {
-  transform: translateY(2px);
-  background-color: #900;
-  text-decoration: none;
-  box-shadow: 0px 3px 0px #000;
-  transition: 0.1s ease-in-out;
-}
-.up-portlet-content-wrapper .btn-uw-flat {
-  background-color: #b70101;
-  border: 0px solid transparent;
-  border-radius: 4px;
-  margin: 10px 0px;
-  color: #fff;
-  box-shadow: none;
-}
-.up-portlet-content-wrapper .btn-uw-flat:hover {
-  transform: none;
-  background-color: #900;
-  box-shadow: none;
-}
-.up-portlet-content-wrapper .btn-uw-outline {
-  background-color: transparent;
-  color: #b70101;
-  margin: 10px 0px;
-  border-radius: 4px;
-  border: 1px solid #b70101;
-  box-shadow: none;
-}
-.up-portlet-content-wrapper .btn-uw-outline:hover {
-  background-color: #b70101;
-  box-shadow: none;
-  transform: none;
-  color: #fff;
-}
-.up-portlet-content-wrapper .btn-uw-dark {
-  background-color: #900;
-  box-shadow: 0px 5px 0px #600;
-}
-.up-portlet-content-wrapper .btn-uw-dark:hover {
-  background-color: #600;
-}
-.up-portlet-content-wrapper .btn-uw-success {
-  background-color: #00c70d;
-  box-shadow: 0px 5px 0px #009411;
-}
-.up-portlet-content-wrapper .btn-uw-success:hover {
-  background-color: #009411;
-  box-shadow: 0px 3px 0px #067500;
-}
-.up-portlet-content-wrapper .btn-uw-neutral {
-  background-color: #007acc;
-  box-shadow: 0px 5px 0px #004980;
-}
-.up-portlet-content-wrapper .btn-uw-neutral:hover {
-  background-color: #004980;
-  box-shadow: 0px 3px 0px #002c52;
-}
-.up-portlet-content-wrapper .btn-uw-disabled {
-  background-color: #ddd;
-  color: #999;
-  box-shadow: 0px 5px 0px #ccc;
-  cursor: default;
-}
-.up-portlet-content-wrapper .btn-uw-disabled:hover {
-  transform: none;
-  background-color: #ddd;
-  color: #999;
-  box-shadow: 0px 5px 0px #ccc;
-  cursor: default;
-}
-.up-portlet-content-wrapper .uw-search-group {
+.my-uw .uw-search-group {
   display: inline-block;
 }
-.up-portlet-content-wrapper .uw-search-group input {
+.my-uw .uw-search-group input {
   display: inline;
 }
-.up-portlet-content-wrapper .uw-search-group button {
+.my-uw .uw-search-group button {
   display: inline;
 }
-.up-portlet-content-wrapper .uw-search {
+.my-uw .uw-search {
   display: table-cell;
   background-color: #fff;
   border: none;
@@ -6527,44 +6566,44 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   color: #660000;
   padding: 3px 0px 3px 15px;
 }
-.up-portlet-content-wrapper .uw-search[placeholder="Search My-UW"] {
+.my-uw .uw-search[placeholder="Search My-UW"] {
   color: #b70101;
 }
-.up-portlet-content-wrapper .uw-search:focus {
+.my-uw .uw-search:focus {
   outline: none;
 }
-.up-portlet-content-wrapper .btn-uw-search {
+.my-uw .btn-uw-search {
   display: table-cell;
   padding: 9px 12px;
   border: 0px solid transparent;
   background-color: #b70101;
   top: 2px;
 }
-.up-portlet-content-wrapper .btn-uw-search:hover {
+.my-uw .btn-uw-search:hover {
   background-color: #900;
 }
-.up-portlet-content-wrapper .uw-search-group {
+.my-uw .uw-search-group {
   width: 300px;
 }
-.up-portlet-content-wrapper ::-webkit-input-placeholder {
+.my-uw ::-webkit-input-placeholder {
   color: #660000;
   font-size: 0.8em;
   font-weight: 200;
   line-height: 1.8em;
 }
-.up-portlet-content-wrapper :-moz-placeholder {
+.my-uw :-moz-placeholder {
   /* Firefox 18- */
   color: #660000;
   font-size: 1em;
   font-weight: 200;
 }
-.up-portlet-content-wrapper ::-moz-placeholder {
+.my-uw ::-moz-placeholder {
   /* Firefox 19+ */
   color: #660000;
   font-size: 1em;
   font-weight: 200;
 }
-.up-portlet-content-wrapper :-ms-input-placeholder {
+.my-uw :-ms-input-placeholder {
   color: #660000;
   font-size: 1em;
   font-weight: 200;
