@@ -10,7 +10,7 @@ slug: getting-started
 
 ##1. Download the UW UI Toolkit compiled files (easy, best for front-end development): ##
 
-1. [Download](https://github.com/UWMadisonUcomm/uw-ui-toolkit/releases/download/v0.2.2/uw-ui-toolkit-0.2.2.zip) the compressed files and open them.
+1. [Download](https://github.com/UWMadisonUcomm/uw-ui-toolkit/releases/download/v{% uw_ui_toolkit_version %}/uw-ui-toolkit-{% uw_ui_toolkit_version %}.zip) the compressed files and open them.
 2. Link the CSS and JavaScript files in your HTML as follows (you can also use the [examples](/examples/) as a starting point for your project):
 
 ```html
