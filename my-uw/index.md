@@ -3,7 +3,7 @@ layout: my-uw-template
 title: MyUW Style Guide
 slug: my-uw
 ---
-<p class="lead">These are the styles for the redesign of MyUW. You can view the beta redesign by logging in with your NetID <a href="https://my.wisc.edu/portal/Login?profile=bucky" target="blank">here</a>. This page is a work in progress. These styles are all namespaced under the class 'my-uw', which includes the styles for the frame as well (the header, search bar, sidebar, etc).</p>
+<p class="lead">These are the styles for the redesign of MyUW. You can view the beta redesign by logging in with your NetID <a href="https://my.wisc.edu/portal/Login?profile=bucky" target="blank">here</a>. This page is a work in progress. These styles are all namespaced under the class 'my-uw', which affects everything outside the MyUW frame. The frame consists of the sidebar, header, and footer.</p>
 <div>
 
   <div class="page-header">
@@ -161,7 +161,8 @@ slug: my-uw
 
 <!-- List of Links -->
 <div class="portlet-frame">
-  <div class="portlet-header no-image">
+  <div class="portlet-header">
+    <img class="header-image" src="/dist/img/bascom-spring.jpg" alt="UW Campus cover image">
     <h1>List of Links</h1>
     <p>A whole bunch of links, all in one place.</p>
   </div>
