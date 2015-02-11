@@ -6306,7 +6306,7 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 }
 /* MyUW Portlet Styles */
 .my-uw {
-  /* Grid List */
+  /* Card UI Styling */
   /* Search */
 }
 .my-uw a {
@@ -6318,6 +6318,58 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 .my-uw p a:hover {
   border-bottom: 1px solid #6b0101;
   text-decoration: none;
+}
+.my-uw ul {
+  list-style-type: none;
+}
+.my-uw .table {
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+.my-uw .center {
+  text-align: center;
+  margin: 0 auto;
+}
+.my-uw .portlet-frame {
+  border-radius: 4px;
+  padding: 0px 0px;
+  margin: 16px 0px 16px;
+  background-color: #ffffff;
+  padding-bottom: 5px;
+  box-shadow: 0px 0px 15px #bbb;
+  position: relative;
+}
+.my-uw .portlet-header {
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  z-index: 20;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #222;
+}
+.my-uw .portlet-header h1 {
+  color: #ffffff;
+  margin-top: 10px;
+  font-weight: 200;
+  padding: 5px 20px 0px;
+  z-index: 5;
+}
+.my-uw .portlet-header p {
+  color: #ffffff;
+  width: 60%;
+  max-width: 500px;
+  padding: 0px 20px;
+  z-index: 5;
+}
+.my-uw .portlet-header img {
+  width: 120%;
+  z-index: -1;
+  position: absolute;
+  opacity: 0.3;
+}
+.my-uw .no-image {
+  background-color: #b70101;
 }
 .my-uw .btn {
   margin: 10px 0px;
@@ -6448,6 +6500,57 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 .my-uw .btn-disabled:active {
   box-shadow: 0px 2px 0px #ccc;
 }
+.my-uw .uw-pager-bar {
+  margin: 15px 0px 5px;
+  padding: 0px;
+  height: 35px;
+  display: inline-block;
+}
+.my-uw .uw-pager-bar ul {
+  padding: 0px;
+}
+.my-uw .uw-pager-bar li {
+  margin: 0px;
+  padding: 0px !important;
+  display: inline-block;
+  float: left;
+  width: auto !important;
+}
+.my-uw .uw-pager-bar li a {
+  padding: 6px 12px;
+  margin: 0px;
+  border: 1px solid #ddd;
+  border-radius: 0px;
+}
+.my-uw .uw-pager-bar li a:hover {
+  background-color: #eee;
+  text-decoration: none;
+  color: #222;
+}
+.my-uw .uw-pager-bar li a:focus {
+  outline: none;
+  text-decoration: none;
+}
+.my-uw .uw-pager-bar > li:first-child a {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.my-uw .uw-pager-bar > li:last-child a {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.my-uw .uw-pager-bar li ul li a {
+  position: relative;
+}
+.my-uw .uw-pager-bar li ul li:first-child a {
+  border-radius: 0px;
+  border-left: 0px solid transparent;
+  border-right: 0px solid transparent;
+}
+.my-uw .uw-pager-bar li ul li:last-child a {
+  border-radius: 0px;
+  border-right: 0px solid transparent;
+}
 .my-uw ul.list-of-links {
   padding: 0px;
   margin: 0px;
@@ -6470,81 +6573,94 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   margin-bottom: -7px;
   line-height: 1.41em;
 }
-.my-uw .inner-nav ul {
-  overflow: auto;
-  padding-left: 0px;
-  width: 100%;
-  margin: 0;
-  border-bottom: 1px solid #b70101;
-}
-.my-uw .inner-nav ul li {
-  float: left;
-  margin-right: 30px;
-  font-size: 18px;
-  display: inline;
-  text-align: center;
-  padding: 5px 20px;
-}
-.my-uw .inner-nav ul li .active {
-  border-bottom: 4px solid #b70101;
-}
-.my-uw .inner-nav ul li span {
-  cursor: pointer;
-  font-weight: 200;
-  font-size: 18px;
-  color: #b70101;
-}
-.my-uw .inner-nav ul li span:hover {
-  color: #900;
-}
-.my-uw .inner-nav ul li a {
-  font-weight: 200;
-  margin-bottom: 8px;
-}
-.my-uw .inner-nav ul li a:hover {
-  text-decoration: none;
-}
-.my-uw .inner-nav ul li .float-right {
-  float: right;
-}
-.my-uw .inner-nav ul hr {
-  margin: 0;
-  height: 4px;
-  border: none;
-  background-color: #b70101;
-}
-.my-uw .inner-nav > hr {
-  margin: 0;
-  height: 1px;
-  border: none;
-  background-color: #b70101;
-}
-.my-uw .inner-nav .help {
-  font-size: 12px;
-}
-.my-uw .grid-item {
-  width: 230px;
-  padding: 20px;
-  margin: 10px;
-  text-align: center;
-  border-radius: 4px;
-  background-color: #f7f5e8;
-  display: inline-block;
-}
-.my-uw .grid-item:hover {
-  background-color: #efe8d8;
-  cursor: pointer;
-}
-.my-uw .grid-item h2 {
-  font-size: 3.5em;
-  margin: 0px auto;
-}
-.my-uw .grid-item h3 {
+.my-uw .inner-nav-container {
+  border: 0px solid transparent;
+  padding: 0px;
   margin: 0px;
 }
-.my-uw .centered-div {
-  display: block;
-  margin: 0px auto;
+.my-uw .inner-nav-container .inner-nav {
+  background-color: #ffffff;
+  border: 0px solid transparent;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 0px;
+  margin: 0px;
+  border-bottom: 1px solid #b70101;
+  font-size: 0px;
+}
+.my-uw .inner-nav-container .inner-nav li {
+  background: #ffffff;
+  border: 0px solid transparent;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+  top: 0px;
+  display: inline-block;
+}
+.my-uw .inner-nav-container .inner-nav li a {
+  display: inline-block;
+  padding: 8px 20px;
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #777;
+}
+.my-uw .inner-nav-container .inner-nav li a:hover {
+  background-color: #ffffff;
+  padding: 8px 20px 10px;
+  border-bottom: 1px solid #b70101;
+  color: #666;
+  text-decoration: none;
+  cursor: pointer;
+}
+.my-uw .inner-nav-container .inner-nav li.active {
+  border-bottom: 3px solid #b70101 !important;
+  padding-bottom: 0px;
+}
+.my-uw .inner-nav-container .inner-nav li.active a {
+  font-weight: 600;
+  color: #b70101;
+}
+.my-uw .inner-nav-container .inner-nav li.active a:hover {
+  padding: 8px 20px;
+  border-bottom: 0px !important;
+}
+.my-uw .inner-nav-container .inner-nav li.active a:focus {
+  outline: none;
+}
+@media (max-width: 768px) {
+  .my-uw .inner-nav-container .inner-nav {
+    border-bottom: 0px solid transparent;
+  }
+  .my-uw .inner-nav-container .inner-nav li:nth-child(odd) {
+    border-right: 1px solid #ccc;
+  }
+  .my-uw .inner-nav-container .inner-nav li,
+  .my-uw .inner-nav-container .inner-nav li.ui-tabs-selected {
+    width: 50%;
+    border-bottom: 1px solid #ccc !important;
+    text-align: center;
+  }
+  .my-uw .inner-nav-container .inner-nav li a,
+  .my-uw .inner-nav-container .inner-nav li.ui-tabs-selected a {
+    padding: 8px 20px;
+    width: 100%;
+  }
+  .my-uw .inner-nav-container .inner-nav li a:hover,
+  .my-uw .inner-nav-container .inner-nav li.ui-tabs-selected a:hover {
+    padding: 8px 20px;
+    border-bottom: 0px !important;
+  }
+  .my-uw .inner-nav-container .inner-nav li.ui-tabs-selected {
+    border-bottom: 1px solid 
+     !important;
+  }
+}
+.my-uw .page-content {
+  padding: 15px 20px;
 }
 .my-uw .uw-search-group {
   display: inline-block;
