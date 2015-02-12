@@ -1,25 +1,26 @@
 ---
 layout: my-uw-template
-title: MyUW Style Guide
+title: MyUW App Style Guide
 slug: my-uw
 ---
-<p class="lead">These are the styles for the redesign of MyUW. You can view the beta redesign by logging in with your NetID <a href="https://my.wisc.edu/portal/Login?profile=bucky" target="blank">here</a>. This page is a work in progress. These styles are all namespaced under the class 'my-uw', which affects the content of MyUW. It does not affect the sidebar, top header, or footer of MyUW.</p>
+<p class="lead">Your content in MyUW Beta is called an app. The following are the styles for apps. This page is a work in progress. These styles are all namespaced under the class 'my-uw', which affects the content of MyUW. It does not affect the sidebar, top header, or footer of MyUW.</p>
+<p class="lead">You can view current apps in MyUW Beta by logging in with your NetID <a href="https://my.wisc.edu/portal/Login?profile=bucky" target="blank">here</a>.</p>
 <div>
 
   <div class="page-header">
-    <h2>Portlet Structure</h3>
+    <h2>App Structure</h3>
   </div>
-  <p>Portlets should be structured the same way for consistency and improved usability. Below is the basic portlet framework that all portlets should use. Each portlet should have a portlet header which contains the title and optionally a cover image and description, and a portlet body, which contains the main content and an optional navigation if necessary.</p>
+  <p>Apps should be structured the same way for consistency and improved usability. Below is the basic app framework that all apps should use. Each app should have an app header which contains the title and optionally a cover image and description, and an app body, which contains the main content and an optional navigation if necessary.</p>
   {% highlight html %}
   <div class="portlet-frame">
     <div class="portlet-header">
       <!-- Optional Cover Image -->
       <img src="somewhere" alt="portlet cover image">
-      <h1>Portlet Title</h1>
-      <p>Optional Portlet Description.</p>
+      <h1>App Title</h1>
+      <p>Optional App Description.</p>
     </div>
     <div class="portlet-body">
-    <!-- Portlet Navigation if Needed -->
+    <!-- App Navigation if Needed -->
       <div class="inner-nav-container">
         <ul class="inner-nav">
           <li class="active"><a>Nav Item 1</a></li>
@@ -28,7 +29,7 @@ slug: my-uw
         </ul>
       </div>
       <div class="page-content">
-        <!-- Your Portlet Content Here -->
+        <!-- Your App Content Here -->
       </div>
     </div>
   </div>
@@ -36,11 +37,11 @@ slug: my-uw
   <div class="portlet-frame">
     <div class="portlet-header">
       <img src="http://www.rockymtnrefl.com/BalancedRockPanocd2283287.jpg" alt="portlet cover image">
-      <h1>Portlet Title</h1>
-      <p>Optional Portlet Description.</p>
+      <h1>App Title</h1>
+      <p>Optional App Description.</p>
     </div>
     <div class="portlet-body">
-      <!-- Portlet Navigation if Needed -->
+      <!-- App Navigation if Needed -->
       <div class="inner-nav-container">
         <ul class="inner-nav">
           <li class="active"><a>Nav Item 1</a></li>
@@ -49,17 +50,20 @@ slug: my-uw
         </ul>
       </div>
       <div class="page-content" style="height:400px;">
-        <h3 class="center" style="margin-top:180px;">Portlet Content</h3>
+        <h3 class="center" style="margin-top:180px;">App Content</h3>
       </div>
     </div>
   </div>
   
-  <div class="well">
-    <h3>What are these things called?</h3>
-    <p>The user-facing term for the above object is an <b>app</b>. It should not be called a tile, card, portlet, or anything else in a user-facing context. The internal term for it is a portlet, or app. 
+  
+  <div class="page-header">
+    <h2>Text Guidelines</h2>
   </div>
-  
-  
+  <p>'MyUW' never has a space between the letters.</p>
+  <h4>App Title</h4>
+  <p>30 characters maximum. Avoid the word “your.” When possible, avoid the word “my” unless it’s necessary to differentiate it from another app. (For example, an app with a list of a student’s courses would be titled “My Courses” because a “Courses” app would be a list of all courses at the university.)</p>
+  <h4>App Description</h4>
+  <p>80 characters maximum. Avoid the word “your.” (For example, instead of “view your earnings and tax statements,” use “view earnings and tax statements.”)</p>
   
   <div class="page-header">
     <h2>Typography</h2>
@@ -156,7 +160,7 @@ slug: my-uw
 
 
 <div class="page-header">
-  <h1>Portlet Examples</h1>
+  <h1>App Examples</h1>
 </div>
 
 <!-- List of Links -->
@@ -194,7 +198,7 @@ slug: my-uw
   <div class="portlet-header">
     <img src="http://www.arb.ca.gov/msprog/moyer/yosemite_pan.jpg" alt="UW Campus cover image">
     <h1>Benefit Information</h1>
-    <p>This is the portlet where you can check your benefit information.</p>
+    <p>This is the app where you can check your benefit information.</p>
   </div>
   <div class="portlet-body">
     <script>
