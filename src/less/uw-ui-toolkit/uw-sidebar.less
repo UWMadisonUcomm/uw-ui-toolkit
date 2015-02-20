@@ -1,0 +1,54 @@
+
+// Classic UW - left/right sidebar
+
+.uw-content-classic .sidebar {
+	background: @uw-tan-light;
+	position:relative;
+	padding: @grid-gutter-width;
+	> h2:first-child {
+		margin-top: 8px;
+	}
+	&.sidebar-right {
+		border-left: 1px solid @uw-gray-medium;
+	}
+	&.sidebar-left {
+		border-right: 1px solid @uw-gray-medium;	
+	}
+	h2 {
+		font-size: 20px;
+	}
+	.nav-sidebar {
+		a:hover,
+		a:focus {
+			background-color: transparent;
+		}
+	}	
+	&.sidebar-right,
+	&.sidebar-left {
+		@media (max-width: @grid-float-breakpoint) {
+			border:none;
+		}		
+	}
+}
+
+@media (min-width: @grid-float-breakpoint) {
+	.uw-content-classic .sidebar {
+		padding: (@grid-gutter-width / 2);
+		> h2:first-child {
+			margin-top: 24px;
+		}
+	}
+	.uw-content-classic > .container > .row {
+		margin-left: (@grid-gutter-width / -2) - 1;
+		margin-right: (@grid-gutter-width / -2) - 1;
+	}
+	.uw-content-classic > .container > .row > .container {
+	  display: table;
+	  padding: 0;
+	}
+  .uw-content-classic > .container > .row > .container > [class*="col-"] {
+    float: none !important;
+    display: table-cell;
+    vertical-align: top;
+  }
+}

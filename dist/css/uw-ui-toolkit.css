@@ -6212,18 +6212,98 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffefe8d8', endColorstr='#ffffffff', GradientType=0);
 }
-.uw-content-classic .container {
+.uw-content-classic > .container {
   background-color: #ffffff;
   border-width: 0 1px 2px;
   border-color: #c8c5bb #c8c5bb #b70101;
   border-style: none solid solid;
 }
-.uw-content-classic .container .main {
-  min-height: 70%;
+@media (max-width: 768px) {
+  .uw-content-classic > .container {
+    border: none;
+  }
+}
+.uw-content-classic > .container > .row > .container {
+  padding: 0;
+}
+.uw-content-classic > .container > .row > .container > .main {
+  background-color: white;
+  padding: 30px;
+}
+.uw-content-classic > .container > .row > .container > .main > h1:first-child {
+  margin-top: 0;
+}
+.uw-content-classic .main > h1:first-child {
+  font-size: 24px;
+}
+.uw-content-classic .main h2 {
+  font-size: 20px;
+}
+.uw-content-classic .main li,
+.uw-content-classic .main p {
+  margin-bottom: 1em;
+}
+.uw-content-classic .main ul,
+.uw-content-classic .main ol {
+  padding-left: 0;
+}
+.uw-content-classic .main li {
+  margin-left: 1.2em;
+}
+@media (min-width: 768px) {
+  .uw-content-classic .main > h1:first-child {
+    font-size: 30px;
+  }
+}
+.uw-content-classic .sidebar {
+  background: #efe8d8;
+  position: relative;
+  padding: 30px;
+}
+.uw-content-classic .sidebar > h2:first-child {
+  margin-top: 8px;
+}
+.uw-content-classic .sidebar.sidebar-right {
+  border-left: 1px solid #c8c5bb;
+}
+.uw-content-classic .sidebar.sidebar-left {
+  border-right: 1px solid #c8c5bb;
+}
+.uw-content-classic .sidebar h2 {
+  font-size: 20px;
+}
+.uw-content-classic .sidebar .nav-sidebar a:hover,
+.uw-content-classic .sidebar .nav-sidebar a:focus {
+  background-color: transparent;
 }
 @media (max-width: 768px) {
-  .uw-content-classic .container {
+  .uw-content-classic .sidebar.sidebar-right,
+  .uw-content-classic .sidebar.sidebar-left {
     border: none;
+  }
+}
+@media (min-width: 768px) {
+  .uw-content-classic .sidebar {
+    padding: 15px;
+  }
+  .uw-content-classic .sidebar > h2:first-child {
+    margin-top: 24px;
+  }
+  .uw-content-classic > .container {
+    background-color: #efe8d8;
+  }
+  .uw-content-classic > .container > .row {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+  .uw-content-classic > .container > .row > .container {
+    display: table;
+    padding: 0;
+  }
+  .uw-content-classic > .container > .row > .container > [class*="col-"] {
+    float: none !important;
+    display: table-cell;
+    vertical-align: top;
   }
 }
 .uw-footer-classic .container {
@@ -6243,34 +6323,6 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 @media (min-width: 768px) {
   .uw-intro {
     font-size: 1.5em;
-  }
-}
-.sidebar {
-  background: #efe8d8;
-  position: relative;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  min-height: 70%;
-}
-.sidebar.sidebar-right {
-  border-left: 1px solid #c8c5bb;
-}
-.sidebar.sidebar-left {
-  border-right: 1px solid #c8c5bb;
-}
-.sidebar .nav-sidebar a:hover,
-.sidebar .nav-sidebar a:focus {
-  background-color: transparent;
-}
-@media (max-width: 768px) {
-  .sidebar.sidebar-right,
-  .sidebar.sidebar-left {
-    border: none;
-  }
-}
-@media (max-width: 768px) {
-  .sidebar {
-    min-height: inherit;
   }
 }
 .page-header {
