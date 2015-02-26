@@ -31,7 +31,12 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 
 .navbar.uw-navbar-classic .container .nav > li.active,
 .navbar.uw-navbar-classic .container .nav > li > a:hover {
-	background: #770000;
+	background: #555;
+}
+@media (min-width: 768px) {
+	.navbar.uw-navbar-classic .container .nav > li.active, .navbar.uw-navbar-classic .container .navbar-collapse .nav > li > a:hover {
+		background: #700;
+	}
 }
 
 #navbar .uw-navbar-classic {
@@ -49,8 +54,15 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 }
 #navbar .navbar-nav li li,
 #navbar .navbar-nav li li a {
-	border: none;
-	color: #333;
+	/*border: none;*/
+	color: white;
+}
+@media (min-width: 768px) {
+	#navbar .navbar-nav li li,
+	#navbar .navbar-nav li li a {
+		border: none;
+		color: #333;
+	}
 }
 
 
@@ -58,8 +70,8 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 	color: #aaa;
 }
 .navbar.uw-navbar-classic .container .caret {
-	border-top-color:#6e6a5b;
-	border-bottom-color:#6e6a5b;
+	border-top-color: white;
+	border-bottom-color: white;
 }
 
 #content {

@@ -13,9 +13,11 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 #navbar .container {
 	box-shadow: none;
 }
-#navbar .navbar-nav li,
-#navbar .navbar-nav a {
-	border: none;
+@media (min-width: 768px) {
+  #navbar .navbar-nav li,
+  #navbar .navbar-nav a {
+    border: none;
+  }  
 }
 
 #content {

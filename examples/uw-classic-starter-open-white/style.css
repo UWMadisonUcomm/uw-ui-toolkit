@@ -30,7 +30,12 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 
 .navbar.uw-navbar-classic .container .nav > li.active,
 .navbar.uw-navbar-classic .container .nav > li > a:hover {
-	background: #d9c39e;
+	background: #555;
+}
+@media (min-width: 768px) {
+	.navbar.uw-navbar-classic .container .nav > li.active, .navbar.uw-navbar-classic .container .navbar-collapse .nav > li > a:hover {
+		background: #d9c39e;
+	}
 }
 
 #navbar .uw-navbar-classic {
