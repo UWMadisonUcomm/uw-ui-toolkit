@@ -9,7 +9,7 @@
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-accessibility": "^1.1.1",
-    "grunt-autoshot": "^0.2.0",
+    "grunt-autoshot": "git://github.com/UWMadisonUcomm/grunt-autoshot.git",
     "grunt-aws-s3": "~0.7.0",
     "grunt-contrib-compress": "~0.5.0",
     "grunt-contrib-concat": "~0.3.0",
