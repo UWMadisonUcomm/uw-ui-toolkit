@@ -16,12 +16,15 @@
   > .container > .row > .container {
     padding: 0;
   }
-  > .container > .row > .container > .main {
+  > .container .main {
     background-color: white;
-    padding: (@grid-gutter-width);
+    padding: @grid-gutter-width 0;
     & > h1:first-child {
       margin-top: 0;
     }
+  }
+  > .container > .row > .container > .main { // sidebar pages
+    padding: @grid-gutter-width;
   }
   .main > h1:first-child {
     font-size: 24px;
@@ -29,14 +32,14 @@
   .main h2 {
     font-size: 20px;
   }
+  .main h3 {
+    font-size: 16px;
+  }
   .main li, .main p {
     margin-bottom: 1em;
   }
   .main ul, .main ol {
-    padding-left: 0;
-  }
-  .main li {
-    margin-left: 1.2em;
+    padding-left: 1.5em;
   }
   @media (min-width: @grid-float-breakpoint) {
     .main > h1:first-child {

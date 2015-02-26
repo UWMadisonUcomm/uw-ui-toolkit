@@ -6226,12 +6226,15 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 .uw-content-classic > .container > .row > .container {
   padding: 0;
 }
-.uw-content-classic > .container > .row > .container > .main {
+.uw-content-classic > .container .main {
   background-color: white;
-  padding: 30px;
+  padding: 30px 0;
 }
-.uw-content-classic > .container > .row > .container > .main > h1:first-child {
+.uw-content-classic > .container .main > h1:first-child {
   margin-top: 0;
+}
+.uw-content-classic > .container > .row > .container > .main {
+  padding: 30px;
 }
 .uw-content-classic .main > h1:first-child {
   font-size: 24px;
@@ -6239,16 +6242,16 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 .uw-content-classic .main h2 {
   font-size: 20px;
 }
+.uw-content-classic .main h3 {
+  font-size: 16px;
+}
 .uw-content-classic .main li,
 .uw-content-classic .main p {
   margin-bottom: 1em;
 }
 .uw-content-classic .main ul,
 .uw-content-classic .main ol {
-  padding-left: 0;
-}
-.uw-content-classic .main li {
-  margin-left: 1.2em;
+  padding-left: 1.5em;
 }
 @media (min-width: 768px) {
   .uw-content-classic .main > h1:first-child {
@@ -6288,9 +6291,6 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   }
   .uw-content-classic .sidebar > h2:first-child {
     margin-top: 24px;
-  }
-  .uw-content-classic > .container {
-    background-color: #efe8d8;
   }
   .uw-content-classic > .container > .row {
     margin-left: -16px;
