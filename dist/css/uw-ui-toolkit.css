@@ -4185,7 +4185,7 @@ body > .container {
   border: none;
   position: absolute;
   top: -47px;
-  right: -20px;
+  right: -10px;
 }
 .navbar.uw-navbar-classic .container .navbar-toggle .icon-bar {
   background-color: #fff;
@@ -6284,6 +6284,12 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   .uw-content-classic .sidebar.sidebar-left {
     border: none;
   }
+}
+.uw-content-classic.uw-content-carousel > .container > .row > .container .main {
+  padding: 0;
+}
+.uw-content-classic.uw-content-carousel > .container > .row > .container .main .main-content {
+  padding: 30px;
 }
 @media (min-width: 768px) {
   .uw-content-classic .sidebar {
