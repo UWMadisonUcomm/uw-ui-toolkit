@@ -177,7 +177,8 @@ module.exports = function(grunt){
           remote: {
             files: []
           },
-          viewport: ['1024x768']
+          viewport: ['1024x768'],
+          crop: true
         }
       }
     },
