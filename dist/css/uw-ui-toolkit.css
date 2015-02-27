@@ -4153,6 +4153,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar .navbar-collapse .nav > li > a:hover {
     background-color: #660000;
   }
+  .navbar.navbar-default .navbar-form.pull-right,
+  .navbar.navbar-inverse .navbar-form.pull-right {
+    float: right !important;
+  }
 }
 .navbar-collapse {
   max-height: inherit;
@@ -4292,6 +4296,34 @@ body > .container {
   margin: 0;
   padding: 10px 15px;
   box-shadow: none;
+}
+.navbar-collapse .navbar-form .uw-search-input {
+  border-radius: 4px 0 0 4px;
+  border-right: 0;
+  width: 85%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.navbar-collapse .navbar-form .uw-search-submit {
+  margin-left: -4px;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #EFEFEF;
+  width: 15%;
+  display: inline-block;
+  vertical-align: middle;
+}
+@media (min-width: 768px) {
+  .navbar-collapse .navbar-form .uw-search-input,
+  .navbar-collapse .navbar-form .uw-search-submit {
+    display: inline-block;
+  }
+  .navbar-collapse .navbar-form .uw-search-input {
+    width: auto;
+  }
+  .navbar-collapse .navbar-form .uw-search-submit {
+    width: auto;
+  }
 }
 .navbar-collapse .navbar-form + ul li:first-child a {
   border-top: 1px dotted #797979;
