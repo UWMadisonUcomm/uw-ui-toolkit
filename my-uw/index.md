@@ -31,6 +31,11 @@ slug: my-uw
       <div class="page-content">
         <!-- Your App Content Here -->
       </div>
+      <div class="portlet-footer">
+        <ul>
+          <!-- Footer Links --> 
+        </ul>
+      </div>
     </div>
   </div>
   {% endhighlight %}
@@ -52,6 +57,14 @@ slug: my-uw
       <div class="page-content" style="height:400px;">
         <h3 class="center" style="margin-top:180px;">App Content</h3>
       </div>
+    </div>
+    <div class="portlet-footer">
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link 1</a></li>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link 2</a></li>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link 3</a></li>
+        <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link 4</a></li>  
+      </ul>
     </div>
   </div>
   
