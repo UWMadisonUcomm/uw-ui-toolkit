@@ -347,10 +347,6 @@ body > .container {
       right: 0px;
       top: -110px;
       > li {
-        border-right: 1px solid @uw-brown-light;
-        &:last-child {
-          border-right: none;
-        }
         > a {
           border:0;
           color: @uw-tan-light;
@@ -395,10 +391,13 @@ body > .container {
       }
       .nav.uw-navbar-classic-utility {
         > li {
+          border-right: none;
           &.active {
             filter: none;
           }
           > a {
+            border-right: none;
+            color: @uw-tan-light;
             filter: none;
           }
         }
