@@ -4157,6 +4157,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar.navbar-inverse .navbar-form.pull-right {
     float: right !important;
   }
+  .navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-color: #e2d0b3;
+  }
 }
 .navbar-collapse {
   max-height: inherit;
@@ -4510,6 +4514,12 @@ body > .container {
     background-image: linear-gradient(to bottom, #fdfcfa 0%, #d9c39e 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffdfcfa', endColorstr='#ffd9c39e', GradientType=0);
+  }
+  .navbar.uw-navbar-classic .container .nav.uw-navbar-classic-utility > li.active {
+    filter: none;
+  }
+  .navbar.uw-navbar-classic .container .nav.uw-navbar-classic-utility > li > a {
+    filter: none;
   }
 }
 .breadcrumb {

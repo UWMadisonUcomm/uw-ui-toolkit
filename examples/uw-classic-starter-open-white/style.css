@@ -4,10 +4,12 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 
 
 #header {
+	filter: none;
 	background: #fff;
 }
 
 #header .container {
+	filter: none;
 	background-color: transparent;
 }
 
@@ -35,6 +37,7 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 @media (min-width: 768px) {
 	.navbar.uw-navbar-classic .container .nav > li.active, .navbar.uw-navbar-classic .container .navbar-collapse .nav > li > a:hover {
 		background: #d9c39e;
+		filter: none;
 	}
 }
 
@@ -53,6 +56,7 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 
 #content {
 	background: none;
+	filter: none;
 }
 
 #content .container {

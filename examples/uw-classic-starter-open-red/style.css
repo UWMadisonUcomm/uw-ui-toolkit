@@ -6,8 +6,10 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 	background-color: transparent;
 }
 
-.uw-navbar-classic {
+.uw-navbar-classic.navbar {
+  filter: none;
 	background-image: linear-gradient(to bottom, #e7dbcb 0%, #d9c39e 100%);
+  background-color: #e7dbcb;
 }
 
 #navbar .container {
@@ -22,6 +24,7 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 
 #content {
 	background: none;
+  filter: none;
 }
 
 #content .container {

@@ -51,6 +51,9 @@
         }
       }
     }
+    .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
+      background-color: darken(#F0E7D8,10%);
+    }
   }
 }
 .navbar-collapse {
@@ -387,6 +390,16 @@ body > .container {
             &:hover {
               #gradient > .vertical (#FDFCFA, #D9C39E);
             }
+          }
+        }
+      }
+      .nav.uw-navbar-classic-utility {
+        > li {
+          &.active {
+            filter: none;
+          }
+          > a {
+            filter: none;
           }
         }
       }

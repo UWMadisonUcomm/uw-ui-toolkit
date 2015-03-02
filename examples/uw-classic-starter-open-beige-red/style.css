@@ -8,10 +8,12 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
   background: -o-linear-gradient(#f7f5e8, #e1dbcc);
   background: -moz-linear-gradient(#f7f5e8, #e1dbcc);
   background: linear-gradient(#f7f5e8, #e1dbcc);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff7f5e8', endColorstr='#ffe1dbcc', GradientType=0)
 }
 
 #header .container {
 	background-color: transparent;
+	filter: none;
 }
 
 #header .uw-header-site-title a {
@@ -32,20 +34,24 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 .navbar.uw-navbar-classic .container .nav > li.active,
 .navbar.uw-navbar-classic .container .nav > li > a:hover {
 	background: #555;
+	filter: none;
 }
 @media (min-width: 768px) {
 	.navbar.uw-navbar-classic .container .nav > li.active, .navbar.uw-navbar-classic .container .navbar-collapse .nav > li > a:hover {
 		background: #700;
+		filter: none;
 	}
 }
 
 #navbar .uw-navbar-classic {
 	background: #990000;
+	filter: none;
 }
 
 #navbar .container {
 	box-shadow: none;
 	background: #990000;
+	filter: none;
 }
 #navbar .navbar-nav li,
 #navbar .navbar-nav a {
@@ -61,7 +67,7 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 	#navbar .navbar-nav li li,
 	#navbar .navbar-nav li li a {
 		border: none;
-		color: #333;
+		color: #b70101;
 	}
 }
 
@@ -76,6 +82,7 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 
 #content {
 	background: none;
+	filter: none;
 }
 
 #content .container {
