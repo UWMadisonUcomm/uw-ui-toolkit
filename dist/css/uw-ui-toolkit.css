@@ -6329,18 +6329,12 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
     border: none;
   }
 }
-.uw-content-classic > .container > .row > .container {
-  padding: 0;
-}
 .uw-content-classic > .container .main {
   background-color: white;
   padding: 30px 0;
 }
 .uw-content-classic > .container .main > h1:first-child {
   margin-top: 0;
-}
-.uw-content-classic > .container > .row > .container > .main {
-  padding: 30px;
 }
 .uw-content-classic .main > h1:first-child {
   font-size: 24px;
@@ -6391,31 +6385,28 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
     border: none;
   }
 }
-.uw-content-classic.uw-content-carousel > .container > .row > .container .main {
+.uw-sidebars > .container > .row .main {
+  padding: 30px;
+}
+.uw-content-classic.uw-content-carousel > .container > .row .main {
   padding: 0;
 }
-.uw-content-classic.uw-content-carousel > .container > .row > .container .main .main-content {
+.uw-content-classic.uw-content-carousel > .container > .row .main .main-content {
   padding: 30px;
 }
 @media (min-width: 768px) {
+  .uw-sidebars > .container > .row {
+    overflow: hidden;
+  }
+  .uw-sidebars > .container > .row .sidebar {
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+  }
   .uw-content-classic .sidebar {
     padding: 15px;
   }
   .uw-content-classic .sidebar > h2:first-child {
     margin-top: 24px;
-  }
-  .uw-content-classic > .container > .row {
-    margin-left: -16px;
-    margin-right: -16px;
-  }
-  .uw-content-classic > .container > .row > .container {
-    display: table;
-    padding: 0;
-  }
-  .uw-content-classic > .container > .row > .container > [class*="col-"] {
-    float: none !important;
-    display: table-cell;
-    vertical-align: top;
   }
 }
 .uw-footer-classic .container {
