@@ -6536,6 +6536,18 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 .my-uw .no-image {
   background-color: #b70101;
 }
+.my-uw .portlet-footer {
+  border-top: 1px solid #b70101;
+  text-align: center;
+}
+.my-uw .portlet-footer ul {
+  margin: 0px;
+  padding: 0px;
+}
+.my-uw .portlet-footer li {
+  display: inline-block;
+  padding: 8px 10px 6px;
+}
 .my-uw .btn {
   margin: 10px 0px;
   border-radius: 4px;
