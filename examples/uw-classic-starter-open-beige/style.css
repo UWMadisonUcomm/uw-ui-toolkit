@@ -21,13 +21,8 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 	color: #333;
 }
 
-/*.navbar.uw-navbar-classic .container .navbar-toggle .icon-bar{
-	background-color: #CCC
-}
-*/
-
 .navbar.uw-navbar-classic .container .nav.uw-navbar-classic-utility > li > a {
-	color: #666;
+	color: #900;
 }
 
 .navbar.uw-navbar-classic .container .nav > li.active,
