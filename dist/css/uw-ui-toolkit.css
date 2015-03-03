@@ -4189,7 +4189,7 @@ body > .container {
 }
 .navbar-toggle {
   padding: 7px 7px;
-  margin-top: 11px;
+  margin-top: 8px;
   border: none;
   right: -10px;
 }
@@ -4395,7 +4395,7 @@ body > .container {
 }
 .navbar.uw-navbar-classic .container .navbar-toggle {
   position: absolute;
-  top: -47px;
+  top: -44px;
 }
 @media (min-width: 768px) {
   .navbar.uw-navbar-classic .container {
