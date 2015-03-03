@@ -4,10 +4,12 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 
 
 #header {
+	filter: none;
 	background: #fff;
 }
 
 #header .container {
+	filter: none;
 	background-color: transparent;
 }
 
@@ -19,18 +21,19 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 	color: #333;
 }
 
-/*.navbar.uw-navbar-classic .container .navbar-toggle .icon-bar{
-	background-color: #CCC
-}
-*/
-
 .navbar.uw-navbar-classic .container .nav.uw-navbar-classic-utility > li > a {
-	color: #c8c5bb;
+	color: #900;
 }
 
 .navbar.uw-navbar-classic .container .nav > li.active,
 .navbar.uw-navbar-classic .container .nav > li > a:hover {
-	background: #d9c39e;
+	background: #555;
+}
+@media (min-width: 768px) {
+	.navbar.uw-navbar-classic .container .nav > li.active, .navbar.uw-navbar-classic .container .navbar-collapse .nav > li > a:hover {
+		background: #d9c39e;
+		filter: none;
+	}
 }
 
 #navbar .uw-navbar-classic {
@@ -48,6 +51,7 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 
 #content {
 	background: none;
+	filter: none;
 }
 
 #content .container {

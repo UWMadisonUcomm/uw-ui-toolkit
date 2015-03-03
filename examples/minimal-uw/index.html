@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -10,7 +11,7 @@
 
     <!-- UW UI Toolkit CSS -->
     <link href="/dist/css/uw-ui-toolkit.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -41,10 +42,11 @@
           <li><a href="#">Link</a></li>
         </ul>
         <form class="navbar-form navbar-left" role="search">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
+          <div class="form-group uw-search">
+            <label class="sr-only" for="s">Search</label>
+            <input type="text" class="form-control uw-search-input" placeholder="Search">
+            <button class="form-control uw-search-submit" value="Search" aria-label="Search" name="btnG" type="submit"> <span class="glyphicon glyphicon-search"></span> </button>
           </div>
-          <button type="submit" class="btn btn-default">Submit</button>
         </form>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">Link</a></li>

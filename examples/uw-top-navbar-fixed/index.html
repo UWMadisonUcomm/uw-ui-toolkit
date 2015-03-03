@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -6,11 +7,11 @@
   <meta name="author" content="">
   <link rel="shortcut icon" href="/dist/img/favicon.ico">
 
-  <title>UW Top Navbar Fixed</title>
+  <title>Minimal UW with hero image</title>
 
   <!-- UW UI Toolkit CSS -->
   <link href="/dist/css/uw-ui-toolkit.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
 
   <!-- Custom CSS -->
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -54,15 +55,17 @@
             </li>            
           </ul>
           <form class="navbar-form pull-right" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
+            <div class="form-group uw-search">
+              <label class="sr-only" for="s">Search</label>
+              <input type="text" class="form-control uw-search-input" placeholder="Search">
+              <button class="form-control uw-search-submit" value="Search" aria-label="Search" name="btnG" type="submit"> <span class="glyphicon glyphicon-search"></span> </button>
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
           </form>
 
         </div><!-- /.navbar-collapse -->
       </nav>
       <div id="billboard">
+        <p style="min-height: 250px;"><!-- With this design, you would put content in this area that would appear on top of the CSS background image --></p>
       </div>
       <div id="marketing">
         <div class="container">

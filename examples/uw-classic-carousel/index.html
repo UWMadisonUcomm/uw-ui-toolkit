@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -6,11 +7,11 @@
   <meta name="author" content="">
   <link rel="shortcut icon" href="/dist/img/favicon.ico">
 
-  <title>UW Classic - Carousel</title>
+  <title>UW Classic with Carousel</title>
 
   <!-- UW UI Toolkit CSS -->
   <link href="/dist/css/uw-ui-toolkit.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -29,7 +30,7 @@
           <img src="/dist/img/crest.png" class="uw-header-logo" alt="Logo">
         </a>
         <a href="http://www.wisc.edu" class="uw-header-wordmark">
-          UNIVERSITY OF WISCONSIN&ndash;MADISON
+          University of Wisconsin–Madison
         </a>
         <h1 class="uw-header-site-title">
           <a href="#">Your Unit Name Here</a>
@@ -52,8 +53,10 @@
         </div> <!-- .navbar-header -->
         <div class="navbar-collapse collapse">
           <form class="navbar-form navbar-right uw-navbar-classic-search" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
+            <div class="form-group uw-search">
+              <label class="sr-only" for="s">Search</label>
+              <input type="text" class="form-control uw-search-input" placeholder="Search">
+              <button class="form-control uw-search-submit" value="Search" aria-label="Search" name="btnG" type="submit"> <span class="glyphicon glyphicon-search"></span> </button>
             </div>
           </form>
           <ul class="nav navbar-nav">
@@ -86,75 +89,86 @@
     </div>
   </div> <!-- #navbar -->
 
-  <div id="content" class="uw-content-classic">
-    <div class="container">
+  <div id="content" class="uw-content-classic uw-sidebars uw-content-carousel">
+    <div class="container">   
       <div class="row">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="0">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-          </ol>
+<!--         <div class="grid-table">
+          <div class="grid-table-row"> -->
+            <div class="col-sm-9 main">
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="0">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
 
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <img src="http://placehold.it/1200x350/ddd/aaa&text=Image here" class="img-responsive" alt="...">
-              <div class="carousel-caption">
-                Caption here.
-              </div>
-            </div>
-            <div class="item">
-              <img src="http://placehold.it/1200x350/ddd/aaa&text=Another image here" class="img-responsive" alt="...">
-              <div class="carousel-caption">
-                Caption here.
-              </div>
-            </div>             
-            <div class="item">
-              <img src="http://placehold.it/1200x350/ddd/aaa&text=And another image here" class="img-responsive" alt="...">
-              <div class="carousel-caption">
-                Caption here.
-              </div>
-            </div>
-          </div>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="http://placehold.it/1200x350/ddd/aaa&text=Image here" class="img-responsive" alt="...">
+                    <div class="carousel-caption">
+                      Caption here.
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="http://placehold.it/1200x350/ddd/aaa&text=Another image here" class="img-responsive" alt="...">
+                    <div class="carousel-caption">
+                      Caption here.
+                    </div>
+                  </div>             
+                  <div class="item">
+                    <img src="http://placehold.it/1200x350/ddd/aaa&text=And another image here" class="img-responsive" alt="...">
+                    <div class="carousel-caption">
+                      Caption here.
+                    </div>
+                  </div>
+                </div>
 
-          <!-- Controls -->
-          <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-          </a>
-          <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-        </div>          
-      </div>    
-      <div class="row">
-        <div class="col-sm-9 main">
-          <h1>UW Classic - carousel</h1>
-          <p>A simple carousel on top of your content.
-            <p>To learn more about how to use and customize
-              the carousel feature in Bootstrap,
-              <br> please take a look at their <a href="http://getbootstrap.com/javascript/#carousel">documentation</a>.</p>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div>
+              <div class="main-content">
+                <h1>UW Classic - carousel</h1>
+                <p>A simple carousel on top of your content.
+                <p>To learn more about how to use and customize the carousel feature in Bootstrap, please take a look at their <a href="http://getbootstrap.com/javascript/#carousel">documentation</a>.
+                </p>
+                <p style="min-height: 300px;"></p>
+              </div>
             </div>
             <div class="col-sm-3 sidebar sidebar-right">
+              <h2>Related links</h2>
+              <ul class="nav nav-sidebar">
+                <li><a href="#">Link here</a></li>
+                <li><a href="#">Link there</a></li>
+                <li><a href="#">Link everywhere</a></li>
+              </ul>
+              <h2>Other links</h2>
               <ul class="nav nav-sidebar">
                 <li><a href="#">Link here</a></li>
                 <li><a href="#">Link there</a></li>
                 <li><a href="#">Link everywhere</a></li>
               </ul>
             </div>
-          </div>
-        </div>
-      </div> <!-- #content -->
+<!--           </div>
+        </div> -->
+      </div>
+    </div>
+  </div> <!-- #content -->
 
-      <div id="footer" class="uw-footer-classic">
-        <div class="container">
-          <p>
-            Feedback, questions or accessibility issues: <a href="mailto:emailaddress">[ Enter email address here ]</a>
-            <br/>
-            &copy; [ Year ] Board of Regents of the <a href="http://www.wisconsin.edu">University of Wisconsin System</a></p>
-          </div>
-        </div>
+  <div id="footer" class="uw-footer-classic">
+    <div class="container">
+      <p>
+        Feedback, questions or accessibility issues: <a href="mailto:emailaddress">[ Enter email address here ]</a>
+        <br/>
+        &copy; [ Year ] Board of Regents of the <a href="http://www.wisconsin.edu">University of Wisconsin System</a></p>
+      </div>
+    </div>
 
   <!-- Le javascript
   ================================================== -->

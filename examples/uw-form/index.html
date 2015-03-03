@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -44,10 +45,11 @@
             <li><a href="#">Link</a></li>
           </ul>
           <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
+            <div class="form-group uw-search">
+              <label class="sr-only" for="s">Search</label>
+              <input type="text" class="form-control uw-search-input" placeholder="Search">
+              <button class="form-control uw-search-submit" value="Search" aria-label="Search" name="btnG" type="submit"> <span class="glyphicon glyphicon-search"></span> </button>
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
           </form>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Link</a></li>
@@ -66,6 +68,9 @@
 
       <div class="container">
         <div class="well col-sm-6 col-sm-offset-3">
+          <p>
+            <i>See <a href="http://getbootstrap.com/css/#forms">Bootstrap’s documentation for forms</a> for more detail about working with forms.</i>
+          </p>
           <form class="form-horizontal">
             <fieldset>
               <legend>Sign Up</legend>
@@ -108,7 +113,6 @@
                     </label>
                   </div>
                   <br>                
-                  <button class="btn btn-default">Cancel</button>
                   <button type="submit" class="btn btn-primary">Create Account</button>
                 </div>
               </div>

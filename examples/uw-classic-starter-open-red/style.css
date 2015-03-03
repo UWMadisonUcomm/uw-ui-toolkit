@@ -6,20 +6,25 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 	background-color: transparent;
 }
 
-.uw-navbar-classic {
+.uw-navbar-classic.navbar {
+  filter: none;
 	background-image: linear-gradient(to bottom, #e7dbcb 0%, #d9c39e 100%);
+  background-color: #e7dbcb;
 }
 
 #navbar .container {
 	box-shadow: none;
 }
-#navbar .navbar-nav li,
-#navbar .navbar-nav a {
-	border: none;
+@media (min-width: 768px) {
+  #navbar .navbar-nav li,
+  #navbar .navbar-nav a {
+    border: none;
+  }  
 }
 
 #content {
 	background: none;
+  filter: none;
 }
 
 #content .container {
