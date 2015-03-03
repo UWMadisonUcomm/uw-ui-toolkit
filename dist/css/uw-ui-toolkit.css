@@ -4191,7 +4191,6 @@ body > .container {
   padding: 7px 7px;
   margin-top: 8px;
   border: none;
-  right: -10px;
 }
 .navbar-toggle:hover,
 .navbar-toggle:focus {
@@ -4396,6 +4395,7 @@ body > .container {
 .navbar.uw-navbar-classic .container .navbar-toggle {
   position: absolute;
   top: -44px;
+  right: -10px;
 }
 @media (min-width: 768px) {
   .navbar.uw-navbar-classic .container {
