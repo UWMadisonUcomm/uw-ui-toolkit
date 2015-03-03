@@ -4202,7 +4202,6 @@ body > .container {
 }
 .navbar-collapse {
   background-color: #333333;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
   padding: 0;
 }
 .navbar-collapse .nav > li.active > a,
