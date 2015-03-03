@@ -4229,12 +4229,7 @@ body > .container {
   }
 }
 .navbar-collapse .navbar-nav {
-  margin: 0px 0 3px 0;
-}
-@media (min-width: 768px) {
-  .navbar-collapse .navbar-nav {
-    margin-bottom: 0;
-  }
+  margin: 0px;
 }
 .navbar-collapse .nav .dropdown-menu {
   text-transform: none;
