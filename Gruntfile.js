@@ -230,7 +230,7 @@ module.exports = function(grunt){
   grunt.registerTask('default', ['build']);
   grunt.registerTask('build', ['less','copy:img','uglify']);
 
-  // Deploy builds to S3
+  // Package examples with proper CSS/JS paths into builds and then cleanup after ourselves
   grunt.registerTask('snapshot', [
     'build',
     'copy:examples',
