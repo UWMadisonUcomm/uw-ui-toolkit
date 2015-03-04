@@ -80,12 +80,15 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
       }
       .uw-header-tagline {
         display: none;
-        color: @uw-cream;
-        font-size: @font-size-small ;
-        font-weight: bold;
-        position: absolute;
-        top: 36px;
-        left: 76px;
+        @media (min-width: @grid-float-breakpoint) {
+          display: none;
+          // display: block; 
+          position: absolute;
+          top: 40px;
+          left: 78px;
+          color: @uw-cream;
+          font-size: @font-size-small;
+        }
       }
     }
     .uw-header-search {

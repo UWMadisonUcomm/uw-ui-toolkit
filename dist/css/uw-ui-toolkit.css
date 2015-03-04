@@ -6300,12 +6300,16 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 }
 .uw-header-classic .container .uw-header-branding .uw-header-tagline {
   display: none;
-  color: #f7f5e8;
-  font-size: 12px;
-  font-weight: bold;
-  position: absolute;
-  top: 36px;
-  left: 76px;
+}
+@media (min-width: 768px) {
+  .uw-header-classic .container .uw-header-branding .uw-header-tagline {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 78px;
+    color: #f7f5e8;
+    font-size: 12px;
+  }
 }
 .uw-header-classic .container .uw-header-search {
   display: none;

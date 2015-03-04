@@ -16,6 +16,9 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 #header .uw-header-site-title a {
 	color: #b70101; 
 }
+#header .uw-header-tagline {
+	color: #6E6A5B;
+}
 
 #header .uw-header-wordmark {
 	color: #333;

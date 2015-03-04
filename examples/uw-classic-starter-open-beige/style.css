@@ -20,6 +20,9 @@ The following CSS rules override the default UW UI Toolkit's UW Classic starter 
 #header .uw-header-wordmark {
 	color: #333;
 }
+#header .uw-header-tagline {
+	color: #6E6A5B;
+}
 
 .navbar.uw-navbar-classic .container .nav.uw-navbar-classic-utility > li > a {
 	color: #900;
