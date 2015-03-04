@@ -64,6 +64,9 @@ module.exports = function(grunt){
       img: {
         files: [{src: 'src/img/**/*', dest: 'dist/img/', flatten: true, expand: true}]
       },
+      examples: {
+        files: [{src: 'examples/**/*', dest: 'dist/', flatten: false, expand: true}]
+      },
       /**
        * copy:bootstrap is used to upgrade bootstrap in
        * src/less/bootstrap, and should not be run routinely
@@ -182,6 +185,20 @@ module.exports = function(grunt){
         }
       }
     },
+    replace: {
+      examples_css_paths: {
+        src: ['dist/examples/**/*.html'],
+        overwrite: true,
+        replacements: [{
+          from: "/dist/",
+          to: "../../"
+        }]
+      }
+    },
+    clean: {
+      dist_examples_index: ["dist/examples/index.html"],
+      dist_examples: ["dist/examples"]
+    },
     accessibility: {
       options: {
         accessibilityLevel: 'WCAG2A',
@@ -206,13 +223,31 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-compress');
   grunt.loadNpmTasks('grunt-autoshot');
   grunt.loadNpmTasks('grunt-accessibility');
+  grunt.loadNpmTasks('grunt-text-replace');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
   // Register tasks
   grunt.registerTask('default', ['build']);
   grunt.registerTask('build', ['less','copy:img','uglify']);
 
   // Deploy builds to S3
-  grunt.registerTask('snapshot', ['build', 'compress:snapshot_zip', 'aws_s3:snapshot']);
-  grunt.registerTask('release', ['build', 'compress:release_zip', 'aws_s3:release']);
+  grunt.registerTask('snapshot', [
+    'build',
+    'copy:examples',
+    'replace:examples_css_paths',
+    'clean:dist_examples_index',
+    'compress:snapshot_zip',
+    'aws_s3:snapshot',
+    'clean:dist_examples'
+  ]);
+  grunt.registerTask('release', [
+    'build',
+    'copy:examples',
+    'replace:examples_css_paths',
+    'clean:dist_examples_index',
+    'compress:release_zip',
+    'aws_s3:release',
+    'clean:dist_examples'
+  ]);
 
 }
