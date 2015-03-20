@@ -8,7 +8,7 @@ slug: my-uw
 <div>
 
   <div class="page-header">
-    <h2>App Structure</h3>
+    <h2>App Structure</h2>
   </div>
   <p>Apps should be structured the same way for consistency and improved usability. Below is the basic app framework that all apps should use. Each app should have an app header which contains the title and optionally a cover image and description, and an app body, which contains the main content and an optional navigation if necessary.</p>
   {% highlight html %}
@@ -171,10 +171,20 @@ slug: my-uw
   
 </div>
 
+<div class="page-header">
+  <h2>Widget Structure</h2>
+</div>
+  <h3>Widget Templates</h3>
+  <p>Front page cards have the option to include a Template to display in their card.  <a href="https://gist.github.com/timlevett/9a829a44f967230cd2a5" target="_blank">See tutorial and example.</a></p>
+
+  <h4>When to use</h4>
+  <p>Widget template content is a great way to get some content right on the homepage.  You can show static content that is the same for all users or show data that is supplied via a json feed from the portal. It is not useful to use widget content to only show a link that directly links to the portlet.  Reserve the widget template for more rich displays of content.  Also most web proxy portlets are not a good candidate for widget templating.  Constructing specific urls for specific users without a json feed is not what the template can do.</p>
+
 
 <div class="page-header">
   <h1>App Examples</h1>
 </div>
+
 
 <!-- List of Links -->
 <div class="portlet-frame">
