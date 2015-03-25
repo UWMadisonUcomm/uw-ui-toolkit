@@ -6469,8 +6469,10 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 }
 /* MyUW Portlet Styles */
 .my-uw {
+  /* General Helper Classes */
   /* Card UI Styling */
   /* Search */
+  /* Widget Styles */
 }
 .my-uw a {
   text-decoration: none;
@@ -6492,6 +6494,12 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 .my-uw .center {
   text-align: center;
   margin: 0 auto;
+}
+.my-uw .rounded {
+  border-radius: 1000px;
+}
+.my-uw .input-group .btn {
+  margin: 0px 0px;
 }
 .my-uw .portlet-frame {
   border-radius: 4px;
@@ -6896,4 +6904,37 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   color: #660000;
   font-size: 1em;
   font-weight: 200;
+}
+.my-uw .widget-body .fa {
+  font-size: 14px;
+  padding: 0px;
+}
+.my-uw .input-group input {
+  border: 0px solid transparent;
+}
+.my-uw .widget-body .input-group {
+  margin: 10px 10px 30px;
+}
+.my-uw .widget-body .input-group .fa {
+  font-size: 18px;
+}
+.my-uw .widget-body .icon-button-div {
+  padding: 0px;
+  text-align: center;
+}
+.my-uw .widget-body .icon-button-div p {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0px;
+}
+.my-uw .widget-body .icon-button {
+  width: 55px;
+  height: 54px;
+  border-radius: 1000px;
+  padding-top: 17px;
+  margin: 0px auto 3px;
+}
+.my-uw .widget-body .icon-button a .fa {
+  color: #fff;
+  font-size: 24px;
 }
