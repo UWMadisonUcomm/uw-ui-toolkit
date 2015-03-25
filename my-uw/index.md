@@ -78,6 +78,108 @@ slug: my-uw
   <h4>App Description</h4>
   <p>80 characters maximum. Avoid the word “your.” (For example, instead of “view your earnings and tax statements,” use “view earnings and tax statements.”)</p>
   
+
+  <div class="page-header">
+    <h2>Widgets</h2>
+  </div>
+  <p>MyUW displays a grid of widgets on the home page in widget mode. You can fairly easily create widgets using the <a href="https://github.com/UW-Madison-DoIT/myuw-smart-widget-creator">Widget Creator</a>. Each widget follows approximately this structure, but you should not have to worry about that when using the Widget Creator or creating pithy content.</p>
+  {% highlight html %}
+  <div class="widget-frame">
+    <div class="widget-header">
+      <div class='widget-info'>
+        <i class="fa fa-info-circle" ... ></i>
+      </div>
+      <div class='widget-remove'>
+        <i class="fa fa-times" ... ></i>
+      </div>
+      <div class="widget-title">
+        <h4>My Courses (6)</h4>
+      </div>
+    </div>
+    <div class="widget-body">
+      <ul class="widget-list">
+        <li><!-- Your list item here--></li>
+        <li><!-- And here--></li>
+        <li><!-- And here--></li>
+      </ul>
+      <a class="btn btn-default launch-app-button">See All</a>
+    </div>
+  </div>
+  {% endhighlight %}
+  <div class="row">
+    <div class="col-xs-4">
+      <div class="widget-frame" id="portlet-id-{{::portlet.nodeId}}">
+        <div>
+          <div class='widget-info'>
+            <i title="Info" class="fa fa-info-circle"
+            tooltip="{{::portlet.description}}"
+            tooltip-trigger="mouseenter"
+            tooltip-placement="top"
+            tooltip-popup-delay="200"></i>
+          </div>
+          <div class='widget-remove'>
+            <i title="Remove" class="fa fa-times portlet-options" ng-click="widgetCtrl.removePortlet(portlet.nodeId, portlet.title)"></i>
+          </div>
+          <div class="widget-title">
+            <h4>My Courses (6)</h4>
+          </div>
+          <ul class="widget-list">
+            <li>
+              <p class="bold">General Physics</p>
+              <p>M 10:30 ECCR 1203</p>
+            </li>
+            <li>
+              <p class="bold">Introduction to Pottery</p>
+              <p>TR 2:30 CS 3223</p>
+            </li>
+            <li>
+              <p class="bold">European Intellectual History</p>
+              <p>TR 12:10 BIO 143</p>
+            </li>
+            <li>
+              <p class="bold">Molecular Mechanics</p>
+              <p>MWF 8:30 ECCR 1302</p>
+            </li>
+            <li>
+              <p class="bold">Biochemistry</p>
+              <p>F 10:15 CHEM 405</p>
+            </li>
+          </ul>
+          <a class="btn btn-default launch-app-button" href="{{::portlet.url}}" target="{{::portlet.target}}">See All</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-4">
+      <div class="widget-frame" id="portlet-id-u29l1n11">
+        <div class="widget-header">
+          <!-- Widget Chrome -->
+          <div class="widget-info">
+            <i title="Info" class="fa fa-info-circle" tooltip="View professional development opportunities for faculty and staff on the UW-Madison campus." tooltip-trigger="mouseenter" tooltip-placement="top" tooltip-popup-delay="200"></i>
+          </div>
+          <div class="widget-remove">
+            <i title="Remove" class="fa fa-times portlet-options" ng-click="widgetCtrl.removePortlet(portlet.nodeId, portlet.title)"></i>
+          </div>
+          
+          <div class="widget-title">
+            <h4 class="ng-binding">My Professional Development</h4>
+          </div>
+        </div>
+        
+        <div ng-if="'GENERIC' === widgetCtrl.portletType(portlet)" class="ng-scope">
+          <div ng-controller="GenericWidgetController as genericWidgetCtrl" class="ng-scope">
+              <content-item><div id="portlet-id-u29l1n11" class="ng-scope"><div><div class="widget-body"><form action="http://www.myprofdev.wisc.edu/portal/portal_login.asp" target="_blank" class="ng-pristine ng-valid"><div class="input-group"><input type="text" name="searchtext" class="form-control" placeholder="Search courses and events"><span class="input-group-btn"><button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button></span></div></form><div class="row"><div class="col-xs-5 col-xs-offset-1 icon-button-div"><div class="btn btn-primary rounded icon-button"><a href="http://www.myprofdev.wisc.edu/default.asp" target="_blank"><i class="fa fa-book"></i></a></div><p>All Courses and Events</p></div><div class="col-xs-5 icon-button-div"><div class="btn btn-primary rounded icon-button"><a href="http://www.ohrd.wisc.edu/ohrdcatalogportal/LearningTranscript/tabid/57/Default.aspx?ctl=login" target="_blank"><i class="fa fa-envelope-o"></i></a></div><p>My Transcript</p></div></div></div><a class="btn btn-default launch-app-button" href="/portal/f/u29l1s4/p/my-professional-development.u29l1n11/max/render.uP" target="">Launch Full App</a></div></div></content-item>
+          </div>
+        </div> 
+      </div>
+    </div>  
+  </div>
+
+
+
+
+
+
+
   <div class="page-header">
     <h2>Typography</h2>
   </div>

@@ -6938,3 +6938,161 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   color: #fff;
   font-size: 24px;
 }
+.my-uw .list-content .widget-info,
+.my-uw .list-content .widget-remove,
+.my-uw .widget-frame .widget-info,
+.my-uw .widget-frame .widget-remove {
+  display: none;
+}
+.my-uw .list-content .widget-info .tooltip-inner,
+.my-uw .list-content .widget-remove .tooltip-inner,
+.my-uw .widget-frame .widget-info .tooltip-inner,
+.my-uw .widget-frame .widget-remove .tooltip-inner {
+  max-width: 200px;
+  width: 200px;
+}
+.my-uw .list-content:hover .widget-info,
+.my-uw .widget-frame:hover .widget-info {
+  display: inline;
+  position: absolute;
+  left: 8px;
+  top: 3px;
+}
+.my-uw .list-content:hover .widget-info i,
+.my-uw .widget-frame:hover .widget-info i {
+  color: #999;
+}
+.my-uw .list-content:hover .widget-info i:hover,
+.my-uw .widget-frame:hover .widget-info i:hover {
+  cursor: pointer;
+  color: #666;
+}
+.my-uw .widget-remove {
+  display: inline;
+  position: absolute;
+  right: 8px;
+  top: 3px;
+}
+.my-uw .widget-remove i {
+  color: #999;
+}
+.my-uw .widget-remove i:hover {
+  cursor: pointer;
+  color: #666;
+}
+.my-uw .widget-frame {
+  position: relative;
+  margin: 5px;
+  background: #f3f3f3;
+  border-radius: 3px;
+  height: 280px;
+  color: #333;
+}
+.my-uw .widget-frame .widget-title {
+  font-size: 1.2em;
+  padding: 8px;
+  margin: 0px;
+  text-align: center;
+  color: #333;
+}
+.my-uw .widget-frame .widget-title h4 {
+  margin: 0px;
+}
+.my-uw .widget-frame a:hover {
+  text-decoration: none;
+}
+.my-uw .widget-frame .widget-icon-container {
+  width: 100%;
+  height: 67%;
+  text-align: center;
+}
+.my-uw .widget-frame .widget-icon-container i {
+  color: #333;
+  vertical-align: middle;
+  padding: 30px 10px;
+  font-size: 70px;
+}
+.my-uw .widget-frame p {
+  padding: 3px 8px;
+}
+.my-uw .widget-frame hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.my-uw .widget-frame .launch-app-button {
+  width: 100%;
+  padding: 8px;
+  position: absolute;
+  background-color: #ddd;
+  border: 0px solid transparent;
+  bottom: 0px;
+  margin: 0px;
+  text-align: center;
+  display: block;
+  color: #666;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.my-uw .widget-frame .launch-app-button:hover {
+  background-color: #900;
+  color: #ffffff;
+  text-decoration: none;
+}
+.my-uw .widget-frame select.form-control {
+  margin: 0px auto 10px;
+  width: auto;
+}
+.my-uw .widget-list {
+  margin: 0;
+  padding: 0;
+}
+.my-uw .widget-list li {
+  border-top: 1px solid #ddd;
+  margin: 0px 15px;
+  padding: 3px 0px;
+}
+.my-uw .widget-list li:first-child {
+  border-top: 0px solid transparent;
+}
+.my-uw .widget-list li:hover {
+  cursor: pointer;
+  margin: 0px 5px;
+  padding: 3px 10px;
+  background-color: #ddd;
+  border-radius: 4px;
+}
+.my-uw .widget-list li:hover + li {
+  border-top: 0px solid transparent;
+  padding: 4px 0px 3px;
+}
+.my-uw .widget-list p {
+  color: #666;
+  margin: 0;
+  padding: 0px;
+  font-size: 12px;
+}
+.my-uw .widget-list .bold {
+  font-weight: 600;
+  color: #222;
+}
+.my-uw .widget-list .right {
+  float: right;
+}
+.my-uw .widget-list .offset {
+  position: absolute;
+  left: 55px;
+}
+.my-uw .portlet-widget {
+  background-color: #f7f5e8;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+}
+.my-uw .simple-content-container {
+  height: 280px;
+  overflow: hidden;
+}
+.my-uw .widget-simple-html {
+  height: 210px;
+  overflow: scroll;
+}
