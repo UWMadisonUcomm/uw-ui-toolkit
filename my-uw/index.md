@@ -83,6 +83,9 @@ slug: my-uw
     <h2>Widgets</h2>
   </div>
   <p>MyUW displays a grid of widgets on the home page in widget mode. You can fairly easily create widgets using the <a href="https://github.com/UW-Madison-DoIT/myuw-smart-widget-creator">Widget Creator</a>. Each widget follows approximately this structure, but you should not have to worry about that when using the Widget Creator or creating pithy content.</p>
+
+  <h4>When to use</h4>
++ <p>Widget template content is a great way to get some content right on the homepage.  You can show static content that is the same for all users or show data that is supplied via a json feed from the portal. It is not useful to use widget content to only show a link that directly links to the portlet.  Reserve the widget template for more rich displays of content.  Also most web proxy portlets are not a good candidate for widget templating.  Constructing specific urls for specific users without a json feed is not what the template can do.</p>
   {% highlight html %}
   <div class="widget-frame">
     <div class="widget-header">
