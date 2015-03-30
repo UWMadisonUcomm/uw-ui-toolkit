@@ -6919,7 +6919,7 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   font-size: 18px;
 }
 .my-uw .widget-body .icon-button-div {
-  padding: 0px;
+  padding: 0px 0px 10px 0px;
   text-align: center;
 }
 .my-uw .widget-body .icon-button-div p {
@@ -7095,4 +7095,7 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 .my-uw .widget-simple-html {
   height: 210px;
   overflow: scroll;
+}
+.my-uw .widget-grid {
+  margin: 15px 15px 0px 15px;
 }

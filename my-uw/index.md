@@ -82,10 +82,7 @@ slug: my-uw
   <div class="page-header">
     <h2>Widgets</h2>
   </div>
-  <p>MyUW displays a grid of widgets on the home page in widget mode. You can fairly easily create widgets using the <a href="https://github.com/UW-Madison-DoIT/myuw-smart-widget-creator">Widget Creator</a>. Each widget follows approximately this structure, but you should not have to worry about that when using the Widget Creator or creating pithy content.</p>
-
-  <h4>When to use</h4>
-+ <p>Widget template content is a great way to get some content right on the homepage.  You can show static content that is the same for all users or show data that is supplied via a json feed from the portal. It is not useful to use widget content to only show a link that directly links to the portlet.  Reserve the widget template for more rich displays of content.  Also most web proxy portlets are not a good candidate for widget templating.  Constructing specific urls for specific users without a json feed is not what the template can do.</p>
+  <p>MyUW displays a grid of widgets on the home page in widget mode. You can easily create widgets using the <a href="https://github.com/UW-Madison-DoIT/myuw-smart-widget-creator">Widget Creator</a>. Each widget follows approximately this structure, but <i>widget developers only need to worry about the code inside the widget-body div.</i></p>
   {% highlight html %}
   <div class="widget-frame">
     <div class="widget-header">
@@ -96,23 +93,21 @@ slug: my-uw
         <i class="fa fa-times" ... ></i>
       </div>
       <div class="widget-title">
-        <h4>My Courses (6)</h4>
+        <h4>My Courses Services</h4>
       </div>
     </div>
     <div class="widget-body">
-      <ul class="widget-list">
-        <li><!-- Your list item here--></li>
-        <li><!-- And here--></li>
-        <li><!-- And here--></li>
-      </ul>
+      <!-- Your widget content here -->
       <a class="btn btn-default launch-app-button">See All</a>
     </div>
   </div>
   {% endhighlight %}
+  <h4>When to use</h4>
+  <p>Widget template content is a great way to get some content right on the homepage.  You can show static content that is the same for all users or show data that is supplied via a json feed from the portal. It is not useful to use widget content to only show a link that directly links to the portlet.  Reserve the widget template for more rich displays of content.  Also most web proxy portlets are not a good candidate for widget templating.  Constructing specific urls for specific users without a json feed is not what the template can do.</p>
   <div class="row">
     <div class="col-xs-4">
       <div class="widget-frame" id="portlet-id-{{::portlet.nodeId}}">
-        <div>
+        <div class="widget-header">
           <div class='widget-info'>
             <i title="Info" class="fa fa-info-circle"
             tooltip="{{::portlet.description}}"
@@ -151,6 +146,56 @@ slug: my-uw
           <a class="btn btn-default launch-app-button" href="{{::portlet.url}}" target="{{::portlet.target}}">See All</a>
         </div>
       </div>
+      <p>List Template example</p>
+    </div>
+    <div class="col-xs-4">
+      <div class="widget-frame" id="portlet-id-{{::portlet.nodeId}}">
+        <div class="widget-header">
+          <div class='widget-info'>
+            <i title="Info" class="fa fa-info-circle"
+            tooltip="{{::portlet.description}}"
+            tooltip-trigger="mouseenter"
+            tooltip-placement="top"
+            tooltip-popup-delay="200"></i>
+          </div>
+          <div class='widget-remove'>
+            <i title="Remove" class="fa fa-times portlet-options" ng-click="widgetCtrl.removePortlet(portlet.nodeId, portlet.title)"></i>
+          </div>
+          <div class="widget-title">
+            <h4>My Courses (6)</h4>
+          </div>    
+        </div>
+        <div class='widget-body widget-grid'>
+          <div class='row'>
+            <div class='col-xs-6 center icon-button-div'>
+               <div class='btn btn-primary rounded icon-button'>
+                  <a href='{{item.link}}'><i class='fa fa-calendar'></i></a> 
+               </div>
+               <p>Link 1</p>
+            </div>
+            <div class='col-xs-6 center icon-button-div'>
+               <div class='btn btn-primary rounded icon-button'>
+                  <a href='{{item.link}}'><i class='fa fa-book'></i></a> 
+               </div>
+               <p>Link 2</p>
+            </div>
+            <div class='col-xs-6 center icon-button-div'>
+               <div class='btn btn-primary rounded icon-button'>
+                  <a href='{{item.link}}'><i class='fa fa-filter'></i></a> 
+               </div>
+               <p>Link 3</p>
+            </div>
+            <div class='col-xs-6 center icon-button-div'>
+               <div class='btn btn-primary rounded icon-button'>
+                  <a href='{{item.link}}'><i class='fa fa-list'></i></a> 
+               </div>
+               <p>Link 4</p>
+            </div>
+          </div>
+        </div>
+        <a class='btn btn-default launch-app-button ng-scope' href='/portal/p/course-services'>Launch Full App</a>
+      </div>
+      <p>Grid Template example - links</p>
     </div>
     <div class="col-xs-4">
       <div class="widget-frame" id="portlet-id-u29l1n11">
@@ -162,24 +207,87 @@ slug: my-uw
           <div class="widget-remove">
             <i title="Remove" class="fa fa-times portlet-options" ng-click="widgetCtrl.removePortlet(portlet.nodeId, portlet.title)"></i>
           </div>
-          
           <div class="widget-title">
             <h4 class="ng-binding">My Professional Development</h4>
           </div>
         </div>
-        
         <div ng-if="'GENERIC' === widgetCtrl.portletType(portlet)" class="ng-scope">
           <div ng-controller="GenericWidgetController as genericWidgetCtrl" class="ng-scope">
-              <content-item><div id="portlet-id-u29l1n11" class="ng-scope"><div><div class="widget-body"><form action="http://www.myprofdev.wisc.edu/portal/portal_login.asp" target="_blank" class="ng-pristine ng-valid"><div class="input-group"><input type="text" name="searchtext" class="form-control" placeholder="Search courses and events"><span class="input-group-btn"><button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button></span></div></form><div class="row"><div class="col-xs-5 col-xs-offset-1 icon-button-div"><div class="btn btn-primary rounded icon-button"><a href="http://www.myprofdev.wisc.edu/default.asp" target="_blank"><i class="fa fa-book"></i></a></div><p>All Courses and Events</p></div><div class="col-xs-5 icon-button-div"><div class="btn btn-primary rounded icon-button"><a href="http://www.ohrd.wisc.edu/ohrdcatalogportal/LearningTranscript/tabid/57/Default.aspx?ctl=login" target="_blank"><i class="fa fa-envelope-o"></i></a></div><p>My Transcript</p></div></div></div><a class="btn btn-default launch-app-button" href="/portal/f/u29l1s4/p/my-professional-development.u29l1n11/max/render.uP" target="">Launch Full App</a></div></div></content-item>
+              <content-item><div id="portlet-id-u29l1n11" class="ng-scope"><div><div class="widget-body widget-grid"><form action="http://www.myprofdev.wisc.edu/portal/portal_login.asp" target="_blank" class="ng-pristine ng-valid"><div class="input-group"><input type="text" name="searchtext" class="form-control" placeholder="Search courses and events"><span class="input-group-btn"><button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button></span></div></form><div class="row"><div class="col-xs-6 icon-button-div"><div class="btn btn-primary rounded icon-button"><a href="http://www.myprofdev.wisc.edu/default.asp" target="_blank"><i class="fa fa-book"></i></a></div><p>All Courses and Events</p></div><div class="col-xs-6 icon-button-div"><div class="btn btn-primary rounded icon-button"><a href="http://www.ohrd.wisc.edu/ohrdcatalogportal/LearningTranscript/tabid/57/Default.aspx?ctl=login" target="_blank"><i class="fa fa-envelope-o"></i></a></div><p>My Transcript</p></div></div></div><a class="btn btn-default launch-app-button" href="/portal/f/u29l1s4/p/my-professional-development.u29l1n11/max/render.uP" target="">Launch Full App</a></div></div></content-item>
           </div>
         </div> 
       </div>
-    </div>  
+      <p>Grid Template example - form and links</p> 
+    </div>
+     
   </div>
 
+  <h3>Widget Templates</h3>
+  <p>Generally, widgets should follow one of the following template structures for consistency and maintainability.</p>
 
-
-
+  <h4>List Template</h4>
+  <p>Display a list of up to 5 items. Each list item can have primary text, secondary text, and optional text on the right side. For this template, in the widget creator, choose 'list-of-content'. Here is the sample code:</p>
+  {% highlight html %}
+  <div class="widget-body">
+    <ul class="widget-list">
+      <li>
+        <p class="bold">List Item 1<span class="right">More Text</span></p>
+        <p>Secondary Text</p>
+      </li>
+      <li>
+        <p class="bold">List Item 2<span class="right">...</span></p>
+        <p>Good for a description of the item</p>
+      </li>
+      <li>
+        <p class="bold">List Item 3<span class="right">...</span></p>
+        <p>Or for extra information</p>
+      </li>
+      <li>
+        <p class="bold">List Item 4<span class="right">...</span></p>
+        <p>...</p>
+      </li>
+      <li>
+        <p class="bold">List Item 5<span class="right">...</span></p>
+        <p>...</p>
+      </li>
+    </ul>
+    <a class="btn btn-default launch-app-button">See All</a>
+  </div>
+  {% endhighlight %}
+  <h4>Grid Template</h4>
+  <p>Display a 2x2 grid, which can show links (as circular buttons), inline search forms, help text, etc. The My Course Services and My Professional Development portlets shown above are examples of grid widgets. For this template, in the Widget Creator, select either 'list-of-links' or 'search-plus-links'. Here is the sample code:</p>
+  {% highlight html %}
+    <div class='widget-body widget-grid'>
+        <div class='row'>
+          <div class='col-xs-6 center icon-button-div'>
+             <div class='btn btn-primary rounded icon-button'>
+                <a href='...'><i class='fa fa-calendar'></i></a> 
+             </div>
+             <p>Link 1</p>
+          </div>
+          <div class='col-xs-6 center icon-button-div'>
+             <div class='btn btn-primary rounded icon-button'>
+                <a href='...'><i class='fa fa-book'></i></a> 
+             </div>
+             <p>Link 2</p>
+          </div>
+          <div class='col-xs-6 center icon-button-div'>
+             <div class='btn btn-primary rounded icon-button'>
+                <a href='...'><i class='fa fa-filter'></i></a> 
+             </div>
+             <p>Link 3</p>
+          </div>
+          <div class='col-xs-6 center icon-button-div'>
+             <div class='btn btn-primary rounded icon-button'>
+                <a href='...'><i class='fa fa-list'></i></a> 
+             </div>
+             <p>Link 4</p>
+          </div>
+        </div>
+      </div>
+      <a class='btn btn-default launch-app-button' href='...'>Launch Full App</a>
+    </div>
+  {% endhighlight %}
 
 
 
