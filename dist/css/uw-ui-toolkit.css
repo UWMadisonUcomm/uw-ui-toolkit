@@ -6798,7 +6798,7 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   cursor: pointer;
 }
 .my-uw .inner-nav-container .inner-nav li.active {
-  border-bottom: 3px solid #b70101 !important;
+  border-bottom: 4px solid #b70101 !important;
   padding-bottom: 0px;
 }
 .my-uw .inner-nav-container .inner-nav li.active a {
