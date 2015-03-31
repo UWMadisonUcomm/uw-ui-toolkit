@@ -82,7 +82,7 @@ slug: my-uw
   <div class="page-header">
     <h2>Widgets</h2>
   </div>
-  <p>MyUW displays a grid of widgets on the home page in widget mode. You can easily create widgets using the <a href="https://github.com/UW-Madison-DoIT/myuw-smart-widget-creator">Widget Creator</a>. Each widget follows approximately this structure, but <i>widget developers only need to worry about the code inside the widget-body div.</i></p>
+  <p>MyUW displays a grid of smart widgets on the home page in smart widget mode. You can easily create widgets using the <a href="https://github.com/UW-Madison-DoIT/myuw-smart-widget-creator">Widget Creator</a>. Each widget follows approximately this structure, but <i>widget developers only need to worry about the code inside the widget-body div.</i></p>
   {% highlight html %}
   <div class="widget-frame">
     <div class="widget-header">
@@ -103,7 +103,7 @@ slug: my-uw
   </div>
   {% endhighlight %}
   <h4>When to use</h4>
-  <p>Widget template content is a great way to get some content right on the homepage.  You can show static content that is the same for all users or show data that is supplied via a json feed from the portal. It is not useful to use widget content to only show a link that directly links to the portlet.  Reserve the widget template for more rich displays of content.  Also most web proxy portlets are not a good candidate for widget templating.  Constructing specific urls for specific users without a json feed is not what the template can do.</p>
+  <p>Widget template content is a great way to get some content right on the homepage.  You can show static content that is the same for all users or show data that is supplied via a json feed from the portal. It is not useful to use widget content to only show a link that directly links to the app.  Reserve the widget template for richer displays of content.  Also most web proxy portlets are not a good candidate for widget templating.  Constructing specific urls for specific users without a json feed is not what the template can do.</p>
   <div class="row">
     <div class="col-xs-4">
       <div class="widget-frame" id="portlet-id-{{::portlet.nodeId}}">
