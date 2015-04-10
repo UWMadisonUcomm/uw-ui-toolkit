@@ -98,7 +98,7 @@ slug: my-uw
     </div>
     <div class="widget-body">
       <!-- Your widget content here -->
-      <a class="btn btn-default launch-app-button">See All</a>
+      <a class="btn btn-default launch-app-button">See all</a>
     </div>
   </div>
   {% endhighlight %}
@@ -143,7 +143,7 @@ slug: my-uw
               <p>F 10:15 CHEM 405</p>
             </li>
           </ul>
-          <a class="btn btn-default launch-app-button" href="{{::portlet.url}}" target="{{::portlet.target}}">See All</a>
+          <a class="btn btn-default launch-app-button" href="{{::portlet.url}}" target="{{::portlet.target}}">See all</a>
         </div>
       </div>
       <p>List Template example</p>
@@ -193,7 +193,7 @@ slug: my-uw
             </div>
           </div>
         </div>
-        <a class='btn btn-default launch-app-button ng-scope' href='/portal/p/course-services'>Launch Full App</a>
+        <a class='btn btn-default launch-app-button ng-scope' href='/portal/p/course-services'>Launch full app</a>
       </div>
       <p>Grid Template example - links</p>
     </div>
@@ -213,7 +213,7 @@ slug: my-uw
         </div>
         <div ng-if="'GENERIC' === widgetCtrl.portletType(portlet)" class="ng-scope">
           <div ng-controller="GenericWidgetController as genericWidgetCtrl" class="ng-scope">
-              <content-item><div id="portlet-id-u29l1n11" class="ng-scope"><div><div class="widget-body widget-grid"><form action="http://www.myprofdev.wisc.edu/portal/portal_login.asp" target="_blank" class="ng-pristine ng-valid"><div class="input-group"><input type="text" name="searchtext" class="form-control" placeholder="Search courses and events"><span class="input-group-btn"><button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button></span></div></form><div class="row"><div class="col-xs-6 icon-button-div"><div class="btn btn-primary rounded icon-button"><a href="http://www.myprofdev.wisc.edu/default.asp" target="_blank"><i class="fa fa-book"></i></a></div><p>All Courses and Events</p></div><div class="col-xs-6 icon-button-div"><div class="btn btn-primary rounded icon-button"><a href="http://www.ohrd.wisc.edu/ohrdcatalogportal/LearningTranscript/tabid/57/Default.aspx?ctl=login" target="_blank"><i class="fa fa-envelope-o"></i></a></div><p>My Transcript</p></div></div></div><a class="btn btn-default launch-app-button" href="/portal/f/u29l1s4/p/my-professional-development.u29l1n11/max/render.uP" target="">Launch Full App</a></div></div></content-item>
+              <content-item><div id="portlet-id-u29l1n11" class="ng-scope"><div><div class="widget-body widget-grid"><form action="http://www.myprofdev.wisc.edu/portal/portal_login.asp" target="_blank" class="ng-pristine ng-valid"><div class="input-group"><input type="text" name="searchtext" class="form-control" placeholder="Search courses and events"><span class="input-group-btn"><button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button></span></div></form><div class="row"><div class="col-xs-6 icon-button-div"><div class="btn btn-primary rounded icon-button"><a href="http://www.myprofdev.wisc.edu/default.asp" target="_blank"><i class="fa fa-book"></i></a></div><p>All Courses and Events</p></div><div class="col-xs-6 icon-button-div"><div class="btn btn-primary rounded icon-button"><a href="http://www.ohrd.wisc.edu/ohrdcatalogportal/LearningTranscript/tabid/57/Default.aspx?ctl=login" target="_blank"><i class="fa fa-envelope-o"></i></a></div><p>My Transcript</p></div></div></div><a class="btn btn-default launch-app-button" href="/portal/f/u29l1s4/p/my-professional-development.u29l1n11/max/render.uP" target="">Launch full app</a></div></div></content-item>
           </div>
         </div> 
       </div>
@@ -251,7 +251,7 @@ slug: my-uw
         <p>...</p>
       </li>
     </ul>
-    <a class="btn btn-default launch-app-button">See All</a>
+    <a class="btn btn-default launch-app-button">See all</a>
   </div>
   {% endhighlight %}
   <h4>Grid Template</h4>
@@ -285,9 +285,12 @@ slug: my-uw
           </div>
         </div>
       </div>
-      <a class='btn btn-default launch-app-button' href='...'>Launch Full App</a>
+      <a class='btn btn-default launch-app-button' href='...'>Launch full app</a>
     </div>
   {% endhighlight %}
+
+  <h3>Text Guidelines</h3>
+  <p>The action button at the bottom of every widget should always be in sentence case, i.e. "See all course services" rather than "See all Course Services".</p>
 
 
 
