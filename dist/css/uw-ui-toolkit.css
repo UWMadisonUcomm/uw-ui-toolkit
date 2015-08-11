@@ -6493,7 +6493,6 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 }
 .my-uw .center {
   text-align: center;
-  margin: 0 auto;
 }
 .my-uw .rounded {
   border-radius: 1000px;
