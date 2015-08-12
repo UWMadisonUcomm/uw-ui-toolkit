@@ -3,6 +3,7 @@
 	<groupId>edu.wisc.umark</groupId>
 	<artifactId>uw-ui-toolkit</artifactId>
 	<version>0.3.2-SNAPSHOT</version>
+    <packaging>jar</packaging>
 	<name>UW UI Toolkit</name>
 	<description>A web front-end toolkit based on Bootstrap for designing and developing modern, mobile-first websites for the University of Wisconsin-Madison.</description>
 	<url>https://github.com/UWMadisonUcomm/uw-ui-toolkit</url>
@@ -65,7 +66,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<upstreamVersion>0.2.2</upstreamVersion>
+		<upstreamVersion>0.3.1</upstreamVersion>
 		<sourceRootUrl>https://github.com/UWMadisonUcomm/uw-ui-toolkit/releases/download/v${upstreamVersion}</sourceRootUrl>
 		<destDir>${project.build.outputDirectory}/META-INF/resources/${project.groupId}/${project.artifactId}/${upstreamVersion}</destDir>
 	</properties>

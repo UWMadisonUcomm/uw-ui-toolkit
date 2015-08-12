@@ -37,8 +37,9 @@ To perform a Maven release, you must have the following authorizations:
 Once those grants are in place:
 
 1. Set the `upstreamVersion` property in pom.xml to match the latest release available at https://github.com/UWMadisonUcomm/uw-ui-toolkit/releases.
-2. Verify the build succeeds with a *mvn install*
-3. If successful, continue the release:
+2. Update `bower.json` and `package.json` with the proper version.
+3. Verify the build succeeds with a *mvn install*
+4. If successful, continue the release:
     1. *mvn release:prepare*
     2. *mvn release:perform*
     
