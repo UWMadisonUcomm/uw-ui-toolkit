@@ -8,7 +8,7 @@ slug: my-uw
 <div>
 
   <div class="page-header">
-    <h2>App Structure</h3>
+    <h2>App Structure</h2>
   </div>
   <p>Apps should be structured the same way for consistency and improved usability. Below is the basic app framework that all apps should use. Each app should have an app header which contains the title and optionally a cover image and description, and an app body, which contains the main content and an optional navigation if necessary.</p>
   {% highlight html %}
