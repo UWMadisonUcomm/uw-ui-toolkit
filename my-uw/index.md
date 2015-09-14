@@ -387,7 +387,6 @@ slug: my-uw
   
 </div>
 
-
 <div class="page-header">
   <h1>App Examples</h1>
 </div>
@@ -533,3 +532,33 @@ slug: my-uw
     </div>
   </div>
 </div>
+
+<!--Coarse Grain Access -->
+<div class="page-header">
+  <h2 id='coarse-grain-access'>Coarse Grain Access</h2>
+</div>
+
+<h2>Initial Landing Before Shib Authorization</h2>
+![http://goo.gl/hqaa6o](http://goo.gl/hqaa6o)
+<ul style='list-style-type : circle;'>
+<li>Redirect to login.wisc.edu. (This should be configured at the apache layer in most cases.)</li>
+<li>After auth, redirect to the original destination. Note that shib removes # so your app should use HTML5 mode.</li>
+<li>If the application has a public state, show this with notice that you can login to see personalize content.</li>
+</ul>
+<h2>Initial Landing After Shib Authorization</h2>
+![http://goo.gl/Y7BqZ1](http://goo.gl/Y7BqZ1)
+<ol style='list-style-type : circle;'>
+  <li>Check if user has access on initial landing (easy security check server side).</li>
+  <li> Don’t automatically redirect an unauthorized user, because the lack of context creates confusion.</li>
+  <li>Present “access denied” page. If it’s an application, include the header to provide context. If applicable, this will include a link to the app’s directory page or service’s website. Otherwise, the default will have a link back to the user’s MyUW homepage.</li>
+  <li>If a user session has timed out when hitting a service, redirect the user to authenticate via login.wisc.edu.</li>
+</ol>
+
+## What really makes your application secure
+<ol style='list-style-type : circle;'>
+<li>Applying access control on the backing JSON web services themselves.  </li>
+<li>Making the UI reflect lack of access provides a better user experience to unauthorized users.  </li>
+<li>Making the backing JSON web services require authorization prevents unauthorized users from doing things they are not authorized to do.</li>
+</ol>
+
+<!--End Coarse Grain Access -->
