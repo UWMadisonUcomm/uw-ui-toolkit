@@ -7,8 +7,28 @@ slug: my-uw
 <p class="lead">You can view current apps in MyUW Beta by logging in with your NetID <a href="https://my.wisc.edu/portal/Login?profile=bucky" target="blank">here</a>.</p>
 <div>
 
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="quickaccess" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Quick Access
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="quickaccess">
+    <li class='dropdown-header'>Application Configuration</li>
+    <li><a href="#app-structure">App Structure</a></li>
+    <li><a href="#text-guidelines">Text Guidelines</a></li>
+    <li><a href="#coarse-grain-access">Coarse Grain Access</a></li>
+    <li><a href="#app-examples">App Examples</a></li>
+    <li class="dropdown-header">Components</li>
+    <li><a href="#typography">Typography</a></li>
+    <li><a href="#widgets">Widgets</a></li>
+    <li><a href="#links">Links</a></li>
+    <li><a href="#buttons">Buttons</a></li>
+    <li><a href="#tables">Tables</a></li>
+  </ul>
+</div>
+
   <div class="page-header">
-    <h2>App Structure</h3>
+    <h2 id='app-structure'>App Structure</h2>
   </div>
   <p>Apps should be structured the same way for consistency and improved usability. Below is the basic app framework that all apps should use. Each app should have an app header which contains the title and optionally a cover image and description, and an app body, which contains the main content and an optional navigation if necessary.</p>
   {% highlight html %}
@@ -70,7 +90,7 @@ slug: my-uw
   
   
   <div class="page-header">
-    <h2>Text Guidelines</h2>
+    <h2 id='text-guidelines'>Text Guidelines</h2>
   </div>
   <p>'MyUW' never has a space between the letters.</p>
   <h4>App Title</h4>
@@ -80,7 +100,7 @@ slug: my-uw
   
 
   <div class="page-header">
-    <h2>Widgets</h2>
+    <h2 id='widgets'>Widgets</h2>
   </div>
   <p>MyUW displays a grid of smart widgets on the home page in smart widget mode. You can easily create widgets using the <a href="https://github.com/UW-Madison-DoIT/myuw-smart-widget-creator">Widget Creator</a>. Each widget follows approximately this structure, but <i>widget developers only need to worry about the code inside the widget-body div.</i></p>
   {% highlight html %}
@@ -295,7 +315,7 @@ slug: my-uw
 
 
   <div class="page-header">
-    <h2>Typography</h2>
+    <h2 id='typography'>Typography</h2>
   </div>
   <p class="lead">MyUW uses a default font-weight of 200.</p>
   <h1>Header 1</h1>
@@ -306,13 +326,13 @@ slug: my-uw
   <h6>Header 6</h6>
   
   <div class="page-header">
-    <h2>Links</h2>
+    <h2 id='links'>Links</h2>
   </div>
   <p><a href="">Linky link</a></p>
   <p><a href="">Student center</a></p>
   
   <div class="page-header">
-    <h2>Buttons</h2>
+    <h2 id='buttons'>Buttons</h2>
   </div>
   <p class="lead">UW buttons build off the Bootstrap button styles. Buttons can be either <code>button</code> or <code>a</code> elements. Give every button a class of <code>.btn</code>, then add classes below to suit your needs.</p>
   <div class="row">
@@ -351,7 +371,7 @@ slug: my-uw
   </div>
   
   <div class="page-header">
-    <h2>Tables</h2>
+    <h2 id='tables'>Tables</h2>
   </div>
   <p>MyUW tables add little to the tables provided by Bootstrap. All tables should be given a class of <code>.table</code>. It is recommended to use responsive tables by surrounding your &lttable&gt element with a div with a class of <code>.table-responsive</code>.</p>
   <h4 class="center">UW 2014 Football Roster</h4><br>
@@ -372,7 +392,7 @@ slug: my-uw
   </div>
   
   <!-- <div class="page-header">
-    <h2>Search</h2>
+    <h2 id='search'>Search</h2>
   </div>
   <p class="lead"></p>
   <h3>Simple searchbar</h3>
@@ -387,9 +407,8 @@ slug: my-uw
   
 </div>
 
-
 <div class="page-header">
-  <h1>App Examples</h1>
+  <h1 id='app-examples'>App Examples</h1>
 </div>
 
 <!-- List of Links -->
@@ -533,3 +552,33 @@ slug: my-uw
     </div>
   </div>
 </div>
+
+<!--Coarse Grain Access -->
+<div class="page-header">
+  <h2 id='coarse-grain-access'>Coarse Grain Access</h2>
+</div>
+
+<h2>Initial Landing Before Shib Authorization</h2>
+![http://goo.gl/hqaa6o](http://goo.gl/hqaa6o)
+<ul style='list-style-type : circle;'>
+<li>Redirect to login.wisc.edu. (This should be configured at the apache layer in most cases.)</li>
+<li>After auth, redirect to the original destination. Note that shib removes # so your app should use HTML5 mode.</li>
+<li>If the application has a public state, show this with notice that you can login to see personalize content.</li>
+</ul>
+<h2>Initial Landing After Shib Authorization</h2>
+![http://goo.gl/Y7BqZ1](http://goo.gl/Y7BqZ1)
+<ol style='list-style-type : circle;'>
+  <li>Check if user has access on initial landing (easy security check server side).</li>
+  <li> Don’t automatically redirect an unauthorized user, because the lack of context creates confusion.</li>
+  <li>Present “access denied” page. If it’s an application, include the header to provide context. If applicable, this will include a link to the app’s directory page or service’s website. Otherwise, the default will have a link back to the user’s MyUW homepage.</li>
+  <li>If a user session has timed out when hitting a service, redirect the user to authenticate via login.wisc.edu.</li>
+</ol>
+
+## What really makes your application secure
+<ol style='list-style-type : circle;'>
+<li>Applying access control on the backing JSON web services themselves.  </li>
+<li>Making the UI reflect lack of access provides a better user experience to unauthorized users.  </li>
+<li>Making the backing JSON web services require authorization prevents unauthorized users from doing things they are not authorized to do.</li>
+</ol>
+
+<!--End Coarse Grain Access -->
