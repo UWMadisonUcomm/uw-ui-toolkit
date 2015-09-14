@@ -23,7 +23,7 @@ slug: my-uw
     <li><a href="#widgets">Widgets</a></li>
     <li><a href="#links">Links</a></li>
     <li><a href="#buttons">Buttons</a></li>
-    <li><a href="#Tables">Tables</a></li>
+    <li><a href="#tables">Tables</a></li>
   </ul>
 </div>
 
