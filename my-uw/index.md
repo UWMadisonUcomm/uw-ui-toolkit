@@ -330,7 +330,9 @@ slug: my-uw
   </div>
   <p><a href="">Linky link</a></p>
   <p><a href="">Student center</a></p>
-  
+  <br>
+  <h4>Lists of Links</h4>
+  <p>A list of links to various websites and services is a common UI structure implemented in MyUW. These can be styled consistently by using the <code>.list-of-links</code> class on a <code>ul</code> or <code>ol</code> element containing the links.</p><br>
   <div class="page-header">
     <h2 id='buttons'>Buttons</h2>
   </div>
