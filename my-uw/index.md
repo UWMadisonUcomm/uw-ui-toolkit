@@ -3,8 +3,8 @@ layout: my-uw-template
 title: MyUW App Style Guide
 slug: my-uw
 ---
-<p class="lead">Your content in MyUW Beta is called an app. The following are the styles for apps. This page is a work in progress. These styles are all namespaced under the class 'my-uw', which affects the content of MyUW. It does not affect the sidebar, top header, or footer of MyUW.</p>
-<p class="lead">You can view current apps in MyUW Beta by logging in with your NetID <a href="https://my.wisc.edu/portal/Login?profile=bucky" target="blank">here</a>.</p>
+<p class="lead">Your content in the new MyUW is called an app. The following are the styles for apps. This page is a work in progress. These styles are all namespaced under the class 'my-uw', which affects the content of MyUW. It does not affect the sidebar, top header, or footer of MyUW.</p>
+<p class="lead">You can view current apps in the new MyUW by logging in with your NetID <a href="https://my.wisc.edu/portal/Login?profile=bucky" target="blank">here</a>.</p>
 <div>
 
 <div class="dropdown">
