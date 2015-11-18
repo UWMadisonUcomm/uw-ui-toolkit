@@ -92,7 +92,9 @@ slug: my-uw
   <div class="page-header">
     <h2 id='text-guidelines'>Text Guidelines</h2>
   </div>
-  <p>'MyUW' never has a space between the letters.</p>
+  <h4>MyUW, My UW-Madison, My UW-System</h4>
+    <p>Bare 'MyUW' never has a space between the letters. 
+     However, 'My UW-Madison' and 'My UW-System' are always spaced and dashed as so.</p>
   <h4>App Title</h4>
   <p>30 characters maximum. Avoid the word “your.” When possible, avoid the word “my” unless it’s necessary to differentiate it from another app. (For example, an app with a list of a student’s courses would be titled “My Courses” because a “Courses” app would be a list of all courses at the university.)</p>
   <h4>App Description</h4>
