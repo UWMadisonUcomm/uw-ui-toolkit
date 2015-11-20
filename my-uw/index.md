@@ -245,68 +245,64 @@ slug: my-uw
   <h3>Widget Templates</h3>
   <p>Generally, widgets should follow one of the following template structures for consistency and maintainability.</p>
 
-  <h4>List Template</h4>
-  <p>Display a list of up to 5 items. Each list item can have primary text, secondary text, and optional text on the right side. For this template, in the widget creator, choose 'list-of-content'. Here is the sample code:</p>
+  <h4>List of Links Template</h4>
+  <p>To use the list of links template, give the app's entity file a widgetType of 'list-of-links' and provide an object to the widgetConfig with the information for the links. You can provide 1-7 links and the template will display accordingly using the circle-button directive. Sample code for entity file:</p>
   {% highlight html %}
-  <div class="widget-body">
-    <ul class="widget-list">
-      <li>
-        <p class="bold">List item 1<span class="right">More text</span></p>
-        <p>Secondary Text</p>
-      </li>
-      <li>
-        <p class="bold">List item 2<span class="right">...</span></p>
-        <p>Good for a description of the item</p>
-      </li>
-      <li>
-        <p class="bold">List item 3<span class="right">...</span></p>
-        <p>Or for extra information</p>
-      </li>
-      <li>
-        <p class="bold">List item 4<span class="right">...</span></p>
-        <p>...</p>
-      </li>
-      <li>
-        <p class="bold">List item 5<span class="right">...</span></p>
-        <p>...</p>
-      </li>
-    </ul>
-    <a class="btn btn-default launch-app-button">See all</a>
-  </div>
+  <portlet-preference>
+      <name>widgetType</name>
+      <value>list-of-links</value>
+  </portlet-preference>
+  <portlet-preference>
+    <name>widgetConfig</name>
+    <value>{
+      "launchText":"Launch talent development",
+      "links": [{
+          "title":"All courses and events",
+          "href":"https://www.ohrd.wisc.edu/home/", 
+          icon":"fa-at",
+          "target":"_blank"
+        },
+        {
+          "title":"My transcript",
+          "href":"https://www.ohrd.wisc.edu/ohrdcatalogportal/LearningTranscript/tabid/57/Default.aspx?ctl=login",
+          "icon":"fa-envelope-o",
+          "target":"_blank"}]
+      }
+    </value>
+  </portlet-preference>
   {% endhighlight %}
-  <h4>Grid Template</h4>
-  <p>Display a 2x2 grid, which can show links (as circular buttons), inline search forms, help text, etc. The My Course Services and My Professional Development portlets shown above are examples of grid widgets. For this template, in the Widget Creator, select either 'list-of-links' or 'search-plus-links'. Here is the sample code:</p>
+  
+  <h4>Search with Links Template</h4>
+  <p>Display a search bar and two links.  Here is the sample code:</p>
   {% highlight html %}
-    <div class='widget-body widget-grid'>
-        <div class='row'>
-          <div class='col-xs-6 center icon-button-div'>
-             <div class='btn btn-primary rounded icon-button'>
-                <a href='...'><i class='fa fa-calendar'></i></a> 
-             </div>
-             <p>Link 1</p>
-          </div>
-          <div class='col-xs-6 center icon-button-div'>
-             <div class='btn btn-primary rounded icon-button'>
-                <a href='...'><i class='fa fa-book'></i></a> 
-             </div>
-             <p>Link 2</p>
-          </div>
-          <div class='col-xs-6 center icon-button-div'>
-             <div class='btn btn-primary rounded icon-button'>
-                <a href='...'><i class='fa fa-filter'></i></a> 
-             </div>
-             <p>Link 3</p>
-          </div>
-          <div class='col-xs-6 center icon-button-div'>
-             <div class='btn btn-primary rounded icon-button'>
-                <a href='...'><i class='fa fa-list'></i></a> 
-             </div>
-             <p>Link 4</p>
-          </div>
-        </div>
-      </div>
-      <a class='btn btn-default launch-app-button' href='...'>Launch full app</a>
-    </div>
+  <portlet-preference>
+      <name>widgetType</name>
+      <value>search-with-links</value>
+    </portlet-preference>
+    <portlet-preference>
+      <name>widgetConfig</name>
+      <value><![CDATA[
+             {
+               "actionURL":"https://rprg.wisc.edu/search/",
+               "actionTarget":"_blank",
+               "actionParameter":"q",
+               "launchText":"Go to resource guide",
+               "links":[
+                  {
+                     "title":"Get started at the Initiate Phase",
+                     "href":"https://rprg.wisc.edu/phases/initiate/",
+                     "icon":"fa-map-o",
+                     "target":"_blank"
+                  },
+                  {
+                     "title":"Resource List",
+                     "href":"https://rprg.wisc.edu/category/resource/",
+                     "icon":"fa-th-list",
+                     "target":"_blank"
+                  }
+               ]
+            }]]></value>
+    </portlet-preference>
   {% endhighlight %}
 
   <h3>Text Guidelines</h3>
