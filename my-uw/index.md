@@ -215,7 +215,7 @@ slug: my-uw
         </div>
         <a class='btn btn-default launch-app-button ng-scope' href='/portal/p/course-services'>Launch full app</a>
       </div>
-      <p>Grid Template example - links</p>
+      <p>List of Links example</p>
     </div>
     <div class="col-xs-4">
       <div class="widget-frame" id="portlet-id-u29l1n11">
@@ -237,7 +237,7 @@ slug: my-uw
           </div>
         </div> 
       </div>
-      <p>Grid Template example - form and links</p> 
+      <p>Search with 2 links example</p> 
     </div>
      
   </div>
@@ -304,16 +304,18 @@ slug: my-uw
             }]]></value>
     </portlet-preference>
   {% endhighlight %}
+  
+  
+  <h3>Directives</h3>
+  <p>MyUW uses several pluggable angular directives to ease development. See the <a href>Docs section</a> of uw-frame for full documentation on directives.
+
 
   <h3>Text Guidelines</h3>
   <p>Text inside widgets, including the action button at the bottom, should always be in sentence case, i.e. "See all course services" rather than "See all Course Services". Widget titles should be in title case, i.e. "Course Services".</p>
 
-
-
   <div class="page-header">
     <h2 id='typography'>Typography</h2>
   </div>
-  <p class="lead">MyUW uses a default font-weight of 200.</p>
   <h1>Header 1</h1>
   <h2>Header 2</h2>
   <h3>Header 3</h3>
