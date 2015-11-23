@@ -237,7 +237,7 @@ slug: my-uw
           </div>
         </div> 
       </div>
-      <p>Search with 2 links example</p> 
+      <p>Search with links example</p> 
     </div>
      
   </div>
