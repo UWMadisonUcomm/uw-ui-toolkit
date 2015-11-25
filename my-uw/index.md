@@ -254,7 +254,7 @@ slug: my-uw
   </portlet-preference>
   <portlet-preference>
     <name>widgetConfig</name>
-    <value>{
+    <value><![CDATA[{
       "launchText":"Launch talent development",
       "links": [{
           "title":"All courses and events",
@@ -267,8 +267,7 @@ slug: my-uw
           "href":"https://www.ohrd.wisc.edu/ohrdcatalogportal/LearningTranscript/tabid/57/Default.aspx?ctl=login",
           "icon":"fa-envelope-o",
           "target":"_blank"}]
-      }
-    </value>
+      }]]></value>
   </portlet-preference>
   {% endhighlight %}
   
@@ -281,14 +280,12 @@ slug: my-uw
     </portlet-preference>
     <portlet-preference>
       <name>widgetConfig</name>
-      <value><![CDATA[
-             {
+      <value><![CDATA[{
                "actionURL":"https://rprg.wisc.edu/search/",
                "actionTarget":"_blank",
                "actionParameter":"q",
                "launchText":"Go to resource guide",
-               "links":[
-                  {
+               "links":[{
                      "title":"Get started at the Initiate Phase",
                      "href":"https://rprg.wisc.edu/phases/initiate/",
                      "icon":"fa-map-o",
@@ -299,8 +296,7 @@ slug: my-uw
                      "href":"https://rprg.wisc.edu/category/resource/",
                      "icon":"fa-th-list",
                      "target":"_blank"
-                  }
-               ]
+                  }]
             }]]></value>
     </portlet-preference>
   {% endhighlight %}
