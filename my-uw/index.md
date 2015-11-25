@@ -296,8 +296,8 @@ slug: my-uw
                      "href":"https://rprg.wisc.edu/category/resource/",
                      "icon":"fa-th-list",
                      "target":"_blank"
-                  }]
-            }]]></value>
+              }]
+        }]]></value>
     </portlet-preference>
   {% endhighlight %}
   
