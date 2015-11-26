@@ -371,7 +371,7 @@ slug: my-uw
   <div class="page-header">
     <h2 id='tables'>Tables</h2>
   </div>
-  <p>MyUW tables add little to the tables provided by Bootstrap. All tables should be given a class of <code>.table</code>. It is recommended to use responsive tables by surrounding your &lttable&gt element with a div with a class of <code>.table-responsive</code>.</p>
+  <p>MyUW tables add little to the tables provided by Bootstrap. All tables should be given a class of <code>.table</code>. Prefer responsive tables (achieved by surrounding your &lttable&gt element with a div with a class of <code>.table-responsive</code>).</p>
   <h4 class="center">UW 2014 Football Roster</h4><br>
   <div class="table-responsive">
     <table class="table table-striped">
