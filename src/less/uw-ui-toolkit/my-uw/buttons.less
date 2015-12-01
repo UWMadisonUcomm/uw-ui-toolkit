@@ -33,7 +33,7 @@
   background-color: #b70101;
   color:#fff;
   box-shadow:0px 2px 0px #600;
-  border:0px solid transparent;
+  border:1px solid #b70101;
 }
 .btn-primary:hover {
   background-color:#900;
@@ -41,7 +41,7 @@
 }
 .btn-flat {
   background-color:#b70101;
-  border:0px solid transparent;
+  border:1px solid #b70101;
   border-radius:4px;
   margin:10px 0px;
   color:#fff;
@@ -50,6 +50,7 @@
 .btn-flat:hover {
   transform:none;
   background-color:#900;
+  border:1px solid #900;
   color:#fff;
   box-shadow:none;
 }
@@ -70,48 +71,51 @@
 .btn-dark {
   background-color:#900;
   box-shadow:0px 2px 0px #600;
-  border:0px solid transparent;
+  border:1px solid #900;
   color:#fff;
 }
 .btn-dark:hover {
   background-color:#600;
   box-shadow:0px 0px 0px #900;
+  border:1px solid #600;
   color:#fff;
 }
 .btn-success {
   background-color:#00c70d;
   box-shadow:0px 2px 0px #009411;
-  border:0px solid transparent;
+  border:1px solid #00c70d;
   color:#fff;
 }
 .btn-success:hover {
   background-color:#009411;
   box-shadow:0px 0px 0px #067500;
+  border:1px solid #009411;
   color:#fff;
 }
 .btn-neutral {
   background-color:#007acc;
   box-shadow:0px 2px 0px #004980;
-  border:0px solid transparent;
+  border:1px solid #007acc;
   color:#fff;
 }
 .btn-neutral:hover {
   background-color:#004980;
   box-shadow: 0px 0px 0px #002c52;
+  border:1px solid #004980;
   color:#fff;
 }
 .btn-disabled {
   background-color:#ddd;
   color:#999;
   box-shadow:0px 2px 0px #ccc;
-  border:0px solid transparent;
+  border:1px solid #ddd;
   cursor:default;
 }
 .btn-disabled:hover {
   transform:none;
   background-color:#ddd;
   color:#999;
-  cursor:default;
+  cursor:not-allowed;
 }
 .btn-primary:active {
   box-shadow:inset 0px 2px 3px #555;
@@ -125,9 +129,6 @@
 .btn-disabled:active {
   box-shadow:0px 2px 0px #ccc;
 }
-
-
-// Pagination Buttons 
 
 // Pagination buttons
 .uw-pager-bar {

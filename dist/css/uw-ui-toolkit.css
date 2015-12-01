@@ -6495,7 +6495,7 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   text-align: center;
 }
 .my-uw .rounded {
-  border-radius: 1000px;
+  border-radius: 1000px !important;
 }
 .my-uw .input-group .btn {
   margin: 0px 0px;
@@ -6575,7 +6575,6 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   padding: 2px 5px;
 }
 .my-uw .btn-default {
-  background-color: transparent;
   color: #222;
   box-shadow: 0px 2px 0px #ccc;
   border: 1px solid #ddd;
@@ -6588,7 +6587,7 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   background-color: #b70101;
   color: #fff;
   box-shadow: 0px 2px 0px #600;
-  border: 0px solid transparent;
+  border: 1px solid #b70101;
 }
 .my-uw .btn-primary:hover {
   background-color: #900;
@@ -6596,7 +6595,7 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 }
 .my-uw .btn-flat {
   background-color: #b70101;
-  border: 0px solid transparent;
+  border: 1px solid #b70101;
   border-radius: 4px;
   margin: 10px 0px;
   color: #fff;
@@ -6605,6 +6604,7 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 .my-uw .btn-flat:hover {
   transform: none;
   background-color: #900;
+  border: 1px solid #900;
   color: #fff;
   box-shadow: none;
 }
@@ -6625,7 +6625,7 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 .my-uw .btn-dark {
   background-color: #900;
   box-shadow: 0px 2px 0px #600;
-  border: 0px solid transparent;
+  border: 1px solid #900;
   color: #fff;
 }
 .my-uw .btn-dark:hover {
@@ -6636,30 +6636,32 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 .my-uw .btn-success {
   background-color: #00c70d;
   box-shadow: 0px 2px 0px #009411;
-  border: 0px solid transparent;
+  border: 1px solid #00c70d;
   color: #fff;
 }
 .my-uw .btn-success:hover {
   background-color: #009411;
   box-shadow: 0px 0px 0px #067500;
+  border: 1px solid #009411;
   color: #fff;
 }
 .my-uw .btn-neutral {
   background-color: #007acc;
   box-shadow: 0px 2px 0px #004980;
-  border: 0px solid transparent;
+  border: 1px solid #007acc;
   color: #fff;
 }
 .my-uw .btn-neutral:hover {
   background-color: #004980;
   box-shadow: 0px 0px 0px #002c52;
+  border: 1px solid #004980;
   color: #fff;
 }
 .my-uw .btn-disabled {
   background-color: #ddd;
   color: #999;
   box-shadow: 0px 2px 0px #ccc;
-  border: 0px solid transparent;
+  border: 1px solid #ddd;
   cursor: default;
 }
 .my-uw .btn-disabled:hover {
@@ -6731,22 +6733,29 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   border-radius: 0px;
   border-right: 0px solid transparent;
 }
-.my-uw ul.list-of-links {
+.my-uw .up-portlet-content-wrapper {
+  padding: 10px 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-weight: 200;
+  /* List of links */
+}
+.my-uw .up-portlet-content-wrapper ul.list-of-links {
   padding: 0px;
   margin: 0px;
   text-rendering: auto;
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal normal 14px/1 Helvetica;
 }
-.my-uw ul.list-of-links li {
+.my-uw .up-portlet-content-wrapper ul.list-of-links li {
   font-size: 18px;
   padding: 7px 0px;
   line-height: 1.41em;
 }
-.my-uw ul.list-of-links li a {
+.my-uw .up-portlet-content-wrapper ul.list-of-links li a {
   font-weight: 400;
 }
-.my-uw ul.list-of-links li p {
+.my-uw .up-portlet-content-wrapper ul.list-of-links li p {
   font-size: 14px;
   color: #aaa;
   padding: 0px 35px 0px 35px;
@@ -6904,18 +6913,11 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
   font-size: 1em;
   font-weight: 200;
 }
-.my-uw .widget-body .fa {
-  font-size: 14px;
-  padding: 0px;
-}
 .my-uw .input-group input {
   border: 0px solid transparent;
 }
 .my-uw .widget-body .input-group {
-  margin: 10px 10px 30px;
-}
-.my-uw .widget-body .input-group .fa {
-  font-size: 18px;
+  margin: 10px auto 30px;
 }
 .my-uw .widget-body .icon-button-div {
   padding: 0px 0px 10px 0px;
@@ -6935,7 +6937,6 @@ To use your own licensed copy of FrizQuadrata, un comment the @font-face definit
 }
 .my-uw .widget-body .icon-button a .fa {
   color: #fff;
-  font-size: 24px;
 }
 .my-uw .list-content .widget-info,
 .my-uw .list-content .widget-remove,
