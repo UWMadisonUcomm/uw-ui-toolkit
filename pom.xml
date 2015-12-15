@@ -66,7 +66,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<upstreamVersion>0.4.0</upstreamVersion>
+		<upstreamVersion>0.4.1</upstreamVersion>
 		<sourceRootUrl>https://github.com/UWMadisonUcomm/uw-ui-toolkit/releases/download/v${upstreamVersion}</sourceRootUrl>
 		<destDir>${project.build.outputDirectory}/META-INF/resources/${project.groupId}/${project.artifactId}/${upstreamVersion}</destDir>
 	</properties>
