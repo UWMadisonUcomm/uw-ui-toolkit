@@ -1,3 +1,5 @@
+**PLEASE NOTE: ** This project is no longer maintained. For current UW–Madison web templates, please visit https://brand.wisc.edu/web/templates/
+
 # UW UIToolkit
 
 A web front-end toolkit based on [Bootstrap](http://getbootstrap.com) for designing and developing modern, mobile-first websites for the [University of Wisconsin-Madison](http://www.wisc.edu).
